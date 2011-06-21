@@ -1,0 +1,15 @@
+#header,.leftDiv,#rightNav,#footer,#yesButton,#footerText,#yesButton,#mySearchField,#mySearchButton,#pipe{display:none;}
+#header{height:0;}
+#main_content{width:100%;}
+
+body{font-family:Verdana, Arial, Helvetica, sans-serif;color:#000;width:100%;font-size:90%;background-color:#FFF;margin:10px 0 0 15px;}
+h1#pageTitle{color:#C00;text-transform:capitalize;_margin-top:5px;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#666;font-size:105%;font-weight:700;}
+
+table.dataTable{border:1px solid #000;width:99%;_width:98%;margin-left:3%;_margin-left:0;margin-right:0;}
+.dataTable th.singleHeader{background-color:#000;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-weight:700;border-top:none;border-bottom:1px solid #000;margin:4px;padding:4px;}
+.dataTable td{border:1px solid #000;font-family:Arial, Helvetica, sans-serif;font-weight:400;color:#000;background-color:#FFF;margin:3px;padding:3px;}
+.dataTable th{background-color:#000;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-weight:700;border-top:none;border-right:1px solid #000;border-bottom:1px none;border-left:1px solid #000;margin:4px;padding:4px;}
+.dataTable th.right{background-color:#000;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-size:80%;font-weight:700;border-top:none;border-right:none;border-bottom:none;border-left:1px solid #000;margin:4px;padding:4px;}
+.dataTable th.left{background-color:#000;color:#FFF;font-family:Arial, Helvetica, sans-serif;font-size:80%;font-weight:700;border-top:none;border-right:1px solid #000;border-bottom:1px none;border-left:none;margin:4px;padding:4px;}
+
+ul{list-style-image:none;list-style-type:disc;}

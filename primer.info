@@ -1,0 +1,52 @@
+; $Id: primer.info,v 1.5 2011/06/17 23:27:32 usaussie Exp $
+name = Primer Theme (Drupal 6)
+description = Primer Theme (for use on Drupal 6 only)
+version = 6.x
+core = 6.x
+engine = phptemplate
+
+;stylesheets[all][] = style.css
+;stylesheets[print][] = print.css
+
+;960 Grid System Styles, from http://www.gridsystemgenerator.com
+stylesheets[all][]   = css/960/reset.css
+stylesheets[all][]   = css/960/text.css
+stylesheets[all][]   = css/960/960_96_0_0.css
+
+; base style sheets
+stylesheets[all][]   = css/base/screen.css
+stylesheets[all][]   = css/base/horizontal-nav.css
+stylesheets[print][] = css/base/print.css
+
+; Custom style files for website manager to add rules to (to override anything in other stylesheets)
+stylesheets[all][]   = custom/css/custom-screen.css
+stylesheets[print][] = custom/css/custom-print.css
+
+; javascript that will run on the entire website
+scripts[] = js/base.js
+scripts[] = js/plugins/parseJson.js
+scripts[] = js/plugins/jquery.colorPicker.js
+
+scripts[] = js/plugins/colorpicker/js/colorpicker.js
+stylesheets[all][]   = js/plugins/colorpicker/css/colorpicker.css
+stylesheets[all][]   = css/base/plugins/jquery.colorPicker.css
+
+; set features to NULL, so none of the defaults are displayed
+features[] = favicon
+
+regions[header_search]				= Search Region in Header
+regions[header_small_right_menu]	= Small Menu Region on Right Side of Header
+regions[horizontal_main_menu]		= Horizontal Main Menu
+regions[horizontal_secondary_menu]	= Horizontal Secondary Menu
+regions[left_above_menu]    		= Above Left Menu Region
+regions[left_primary_menu]    		= Left Primary Menu
+regions[left_secondary_menu]    	= Left Secondary Menu
+regions[left_below_menu]    		= Below Left Menu Region
+regions[main_image]  				= Main Image
+regions[main_above_content]   		= Above Main Content
+regions[content]   					= Main Content
+regions[main_below_content]   		= Below Main Content
+regions[right_above_sidebar]    	= Top Right Sidebar Region
+regions[right_center_sidebar]   	= Center Right Sidebar Region
+regions[right_below_sidebar]    	= Bottom Right Sidebar Region
+regions[footer_menu]    			= Footer Menu

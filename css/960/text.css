@@ -1,0 +1,47 @@
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+hr {
+	border: 0 #ccc solid;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+}
+
+ul {
+	list-style: disc;
+}
+ul ul {
+	list-style: circle;
+}
+ul ul ul {
+	list-style: square;
+}
+ol {
+	list-style: decimal;
+}
+ol ol {
+	list-style:upper-alpha;
+}
+ol ol ol {
+	list-style:lower-roman;
+}
+ol ol ol ol {
+	list-style:lower-alpha;
+}
+ul,
+ol {
+	margin: 0 0 0 3em;
+}
+ul ul,
+ol ol {
+	margin: 0 0 0 3.2em;
+}
+ul ul ul,
+ol ol ol {
+	margin: 0 0 0 3.4em;
+}
+ul ul ul ul,
+ol ol ol ol {
+	margin: 0 0 0 3.6em;
+}

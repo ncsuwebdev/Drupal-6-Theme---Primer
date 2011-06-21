@@ -1,0 +1,645 @@
+body {
+
+}
+
+p,fieldset,table {
+    /*so things don't run into each other*/
+    margin-bottom:1em;
+}
+
+form, td {
+    background-color: inherit;
+}
+fieldset {
+    padding: 5px;
+}
+fieldset .description {
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 0 10px 10px 10px;
+    padding: 0 5px 0 5px;
+}
+
+legend {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 10px 0 10px;
+    padding: 0 5px 0 5px;
+}
+
+
+#total-page-wrapper {
+    margin: auto;
+    width: 980px;
+    position: relative;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    ACCESSIBILITY 
+----------------------------------------------------------------------------------------------------------*/
+.access {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow:hidden;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    BRAND BAR REGION 
+----------------------------------------------------------------------------------------------------------*/
+#region-brandbar-container {
+    margin: 0;
+    padding: 0;
+    width: 980px;
+    position: relative;
+    left: -10px; 
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    HEADER 
+----------------------------------------------------------------------------------------------------------*/
+#region-header-container {
+    overflow: hidden;
+}
+
+#header-background {
+    width: 980px;
+    position: relative;
+    left: -10px;
+}
+
+#region-header-left, #region-header-right {
+    padding: 15px 0 15px 0;    
+}
+
+#head {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+}
+
+/* easy clearing */
+#head:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*\*/
+#head {
+    display: block;
+}
+
+/* end easy clearing */
+#head p.noscript {
+    clear: both;
+    z-index: 99;
+    position: relative;
+    margin-left: 340px;
+}
+
+#site-title {
+	margin: 0;
+}
+
+#site-title-top-line {
+    font-weight: normal;
+}
+#site-title-bottom-line {
+    font-weight: bold;
+}
+.site-title-one-line h1 {
+    position: relative;
+}
+#head-forms {
+    float: right;
+    position: relative;
+}
+
+#head-forms .site-search-button {
+    position: relative;
+    top: 5px;
+}
+
+#region-header-left a {
+    text-decoration: none;
+}
+
+/* Search box and quicklinks menu styles */
+#region-header-right .form-text {
+    position: relative;
+    top: 5px;
+    width: 180px;
+    font-size: 10px;
+}
+
+#region-header-right select {
+    width: 185px;
+    font-size: 10px;
+}
+/* hide the label and h2 tag for the search box */
+#region-header-right label, #region-header-right h2 {
+    display: none;
+}
+
+#region-header-right #header-small-right-menu {
+	text-align: right;
+	float: right;
+	text-align: right;
+	position: relative;
+	top: -10px;
+	width: 900px;
+	overflow: hidden;
+}
+
+#region-header-right #header-small-right-menu li {
+    list-style: none;
+    float: right; 
+    position: relative;
+}
+#region-header-right #header-small-right-menu ul.menu {
+    padding: 2px;
+    display: inline-block; 
+}
+#region-header-right #header-small-right-menu ul.menu a {
+	text-decoration: none;
+}
+#region-header-right #header-small-right-menu ul.menu a:hover {
+	text-decoration: underline;
+}
+
+#region-header-right #header-small-right-menu li li { 
+    display: none;
+}
+/* hide block title */
+#region-header-right #header-small-right-menu h2 {
+    display: none;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    HORIZONTAL MENU CONTAINER
+----------------------------------------------------------------------------------------------------------*/
+
+#horizontal-menu-container {
+    /* styles located in horizontal-nav.css */
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
+    CONTENT AREA CONTAINER (EVERYTHING UNDERNEATH THE HEADER AND ABOVE THE FOOTER)
+----------------------------------------------------------------------------------------------------------*/
+#page-container {
+
+}
+
+.content-area-container {
+    
+}
+
+#content-area {
+    margin: 15px 0 15px 0;
+}
+#region-center-content-container {
+      line-height: 1.55em;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    MAIN/CENTER CONTENT (THE CENTER COLUMN IN A 3-COL LAYOUT, OR THE LEFT 2 COLUMNS IN A 2-COL LAYOUT)
+----------------------------------------------------------------------------------------------------------*/
+#main-content {
+    margin: 0;
+    padding: 0;
+}
+
+#main-content #page-title {
+    margin: 5px 0 14px 0;
+    padding: 0 0 13px 0;
+    border-bottom: 1px solid #CCC;
+}
+
+#main-content #page-title h1 {
+    font-size: 2em;
+    line-height: 1.2em;
+    font-weight: normal;
+}
+
+#main-content a,#main-content a:visited {
+    text-decoration: none;
+}
+
+#main-content a:hover {
+    text-decoration: underline;
+}
+#region-center-right-container .block {
+    margin-bottom: 1em;
+}
+#region-center-right-container .block h2 {
+    margin-bottom: 1em;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
+    MAIN/CENTER CONTENT LINKS (UNDERNEATH FOR COMMENTS, TAXONOMY ETC
+----------------------------------------------------------------------------------------------------------*/
+#main-content .links {
+    width: 100%;
+    text-align: right;
+    padding: 10px 0 0 0;
+}
+#main-content ul {
+    margin-bottom: 1em;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    MAIN/CENTER CONTENT COMMENTS REGION
+----------------------------------------------------------------------------------------------------------*/
+.submitted {
+    margin: 10px 0 5px 0;
+    padding: 0;
+}
+
+#comments {
+    border-top: 1px solid #CCC;
+    padding: 5px 0 5px 0;
+}
+
+.comment-wrapper .comment {
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid #DDD;
+}
+
+.comment-wrapper .comment .content {
+    padding: 5px 0 0 0;
+}
+
+.comment-wrapper .comment .links {
+    float: right;
+    width: 100%;
+    text-align: right;
+    padding: 5px 0 5px 0;
+}
+
+#comment-form .form-submit {
+    font-size: 1.2em;
+    margin: 0 5px 0 0;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    LEFT REGION LAYOUT 
+----------------------------------------------------------------------------------------------------------*/
+#region-left-menu-area-container {
+    line-height: 1.55em;
+    width: 230px;
+    position: relative;
+    left: -8px;
+}
+
+#region-left-menu-area-container ul.menu li {
+    margin: 0;
+    padding: 0;
+}
+
+#region-left-menu {
+    overflow: hidden;
+    
+}
+
+#left-above-menu {
+    margin: 0;
+}
+
+#left-main-menu {
+    
+}
+
+#left-sub-menu {
+    margin: 0;
+}
+
+#left-below-menu {
+    margin: 0;
+}
+
+#left-above-menu-content,#left-below-menu-content {
+    padding: 0;
+}
+#region-left-menu-area-container .block {
+    width: 220px;
+    margin: 5px auto !important;
+}
+
+#region-left-menu-area-container .block .content, 
+#region-right-sidebar-container .block .content {
+    padding:  5px 0 0 10px;
+    margin: 0 0 10px 0;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    LEFT & RIGHT MENU LIST/LINK STYLES 
+----------------------------------------------------------------------------------------------------------*/
+#region-left-menu-area-container .block ul, 
+#region-right-sidebar-container .block ul {
+    padding: 0 0 0 5px;
+    margin: 0;
+}
+
+#region-left-menu-area-container h2, 
+#region-right-sidebar-container h2 {
+    display: block;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 10px 0 10px 10px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#region-left-menu-area-container .content .menu ul, 
+#region-left-menu-area-container .content .menu li,
+#region-right-sidebar-container .content .menu ul, 
+#region-right-sidebar-container .content .menu li {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+#region-left-menu-area-container .content .menu li a,
+#region-right-sidebar-container .content .menu li a {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 4px 10px 4px 5px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0px 0.7em;
+}
+
+#region-left-menu-area-container .content .menu li a:hover,
+#region-right-sidebar-container .content .menu li a:hover {
+    text-decoration: underline;
+}
+
+/* first set of sub links underneath the main menu */
+#region-left-menu-area-container .content .menu li ul li a,
+#region-right-sidebar-container .content .menu li ul li a {
+    text-transform: none;
+    padding: 5px 0 5px 15px;
+    background-image: none;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+/* second set of sub links underneath the main menu */
+#region-left-menu-area-container .content .menu li ul li ul li,
+#region-right-sidebar-container .content .menu li ul li ul li {
+    margin: 0 0 0 45px;
+    padding: 0;
+    list-style: square;
+    list-style-position: outside;
+    font-size: 0.9em;
+}
+#region-left-menu-area-container .content .menu li ul li ul li a,
+#region-right-sidebar-container .content .menu li ul li ul li a {
+    padding: 0;
+    margin: 0;
+}
+
+#region-left-menu-area-container .content .menu .last,
+#region-right-sidebar-container .content .menu .last {
+    padding: 0 0 4px 0;
+}
+
+#region-left-menu-area-container a.active, 
+#region-right-sidebar-container a.active {
+    text-decoration: underline !important;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    RIGHT REGION LAYOUT
+----------------------------------------------------------------------------------------------------------*/
+
+.right-sidebar-with-breadcrumbs {
+    position: relative;
+    top: -35px;
+}
+
+
+#region-right-sidebar a, #region-right-sidebar a:visited {
+    text-decoration: underline;
+}
+#region-right-sidebar a:hover {
+    text-decoration: none;
+}
+
+#region-right-sidebar {
+    position: relative;
+    width: 260px;
+    left: 10px;
+    margin: 2px 0 0 0;
+    overflow: hidden;
+    line-height: 1.45em;
+}
+
+#right-above-sidebar,
+#right-center-sidebar,
+#right-below-sidebar {
+    margin: 0;
+}
+
+/* space in between the regions in the right sidebar area */
+#right-above-sidebar, #right-center-sidebar, #right-below-sidebar {
+    margin-bottom: 1em;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
+    RIGHT REGION CONTENT STYLES
+----------------------------------------------------------------------------------------------------------*/
+#right-above-sidebar-content,
+#right-center-sidebar-content,
+#right-below-sidebar-content {
+    margin: 0 10px 0 0;
+}
+
+#right-above-sidebar-content .content,
+#right-center-sidebar-content .content,
+#right-below-sidebar-content .content {
+    padding: 5px;
+}
+
+#region-right-sidebar-container .block {
+    width: 250px;
+    margin: 5px auto !important;
+}
+
+#right-above-sidebar-content .content p,#right-center-sidebar-content .content p,#right-below-sidebar-content .content p {
+    line-height: 1.5em;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
+    CENTER AND RIGHT REGION CONTAINER (EVERYTHING TO THE RIGHT OF THE STATIC LEFT REGION
+----------------------------------------------------------------------------------------------------------*/
+#region-center-right-container {
+    
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    SEARCH FORM STYLES WHEN DISPLAYED IN PLACES OTHER THAN THE HEADER
+----------------------------------------------------------------------------------------------------------*/
+
+.block-search .form-item label {
+    display: none;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
+    BREADCRUMBS (NOT DISPLAYED UNLESS CUSTOM BREADCRUMBS MODULE IS INSTALLED, CONFIGURED & ENABLED
+----------------------------------------------------------------------------------------------------------*/
+#breadcrumb {
+    padding: 4px 13px 2px 0px;
+    margin: 4px 0 4px 3px;
+    line-height: 1.0em;
+}
+
+#breadcrumb a {
+    text-decoration: none;
+}
+
+#breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+#breadcrumb img {
+    display: inline;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    MAIN IMAGE (SLIDER OR STATIC) 
+----------------------------------------------------------------------------------------------------------*/
+#region-main-image {
+    height: 285px;
+    overflow: hidden;
+    margin: 0 0 5px 0;
+}
+
+#region-main-image img {
+    padding: 0;
+    margin: 0;
+}
+
+/*----------------------------------------------------------------------------------------------------------
+    FOOTER CONTAINER
+----------------------------------------------------------------------------------------------------------*/
+#region-footer-container {
+    overflow: hidden;
+    width: 980px;
+}
+
+/* Hide the title of the block, if the user configures a non-default menu for the footer region */
+#region-footer-container .block-menu h2 {
+    display:none;
+}
+
+#footer-separator {
+    width: 980px;
+    margin: 15px 0 0 0;
+    height: 2px;
+}
+
+#footer-horizontal-menu {
+    width: 980px;
+    margin: 0 0 10px 0;
+}
+
+#footer-horizontal-menu ul {
+    display: inline-block;
+    padding: 0;
+}
+/* only one level of links displayed in the footer menu (so hide the second level) */
+#footer-horizontal-menu ul ul {
+	display: none;
+}
+
+
+#footer-horizontal-menu ul li {
+	float: left;
+    display: inline;
+    text-transform: uppercase;
+    padding: 0 15px 0 15px;
+}
+
+#footer-horizontal-menu li.last {
+    
+}
+
+#footer-horizontal-menu ul li a, #footer-horizontal-menu ul li a:visited {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+#footer-horizontal-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+#footer-address-contact-info {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 0 0 25px 0;
+    padding-top: 10px;
+}
+#footer-copyright-information {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.1em;
+    margin: 15px 0 25px 0;
+}
+/*----------------------------------------------------------------------------------------------------------
+    DEFAULT DRUPAL ELEMENTS
+----------------------------------------------------------------------------------------------------------*/
+/* hide the initial json text areas that are used on the theme settings page for the branded color picker */
+.jsonColorList {
+    display: none;
+}
+
+/* make the default tables created by Drupal expand to the width of the container they appear in */
+table.sticky-enabled, table.views-table {
+    width: 100%;
+    margin-bottom: 1.5em;
+   
+}
+table.sticky-enabled thead, table.views-table thead {
+    border-bottom: 2px solid #CCC;
+}
+table.sticky-enabled thead th, table.views-table thead th {
+    border: none;
+}
+table.sticky-enabled tr, table.views-table tr {
+    background-color: transparent;
+}
+table.sticky-enabled td, table.views-table td {
+    padding: 5px;
+    background-color: transparent;
+}
+
+.meta {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid #CCC;
+}
+
+/* terms / taxonomy styles at the base of the node */
+.terms-title {
+    float: left;
+}
+.submitted-title {
+    float: left;
+}

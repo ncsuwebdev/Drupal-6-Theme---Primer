@@ -1,0 +1,198 @@
+/* adapted from http://thedrupalblog.com/suckerfish-css-drop-down-menus-drupal-made-simple */
+
+/* hide block title */
+#horizontal-main-menu h2, #horizontal-secondary-menu h2 {
+    display: none;
+}
+
+/*
+ ***********************************************************************
+ * MAIN MENU STYLES  
+ ************************************************************************
+*/
+
+#horizontal-menu-container {
+    position: relative;
+    top: -1px;
+    z-index: 10000;
+}
+
+/* remove any previously set margins and paddings */
+#horizontal-main-menu * { 
+    margin: 0; 
+    padding: 0;
+}
+
+/* remove <li> list styling off */
+#horizontal-main-menu li { 
+    list-style: none;
+}
+
+#horizontal-main-menu {
+    width: 980px;
+    position: relative;
+    left: -10px;
+    border-bottom: 1px solid #cfcdc8;
+    padding: 0 0 20px 0;
+    z-index: 1000;
+}
+#horizontal-main-menu ul.menu {
+    padding: 10px 10px 10px 0;
+    z-index: 1000;
+    display: inline-block;
+}
+
+#horizontal-main-menu ul ul {
+    border-right: 1px solid #cfcdc8;
+    border-bottom: 1px solid #cfcdc8;
+    border-left: 1px solid #cfcdc8;
+}
+
+#horizontal-main-menu li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    border-right: 1px solid #cfcdc8;
+    padding: 0 15px 0 15px;
+}
+#horizontal-main-menu li li a {
+    text-transform: none;
+    font-weight: normal;
+    font-size: 0.9em;
+    display: block;
+    padding: 0 15px 0 15px;
+    border: none;
+    margin: 0 0 7px 0;
+}
+#horizontal-main-menu li li a:hover {
+    text-decoration: underline;
+}
+#horizontal-main-menu .last a {
+    border: none;
+}
+
+#horizontal-main-menu li {
+    list-style: none;
+}
+#horizontal-main-menu a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* set <li> position */
+#horizontal-main-menu li { 
+    float: left; 
+    position: relative;
+}
+
+/* set position of <ul> in <li> */
+#horizontal-main-menu li ul { 
+    left: -1px; 
+    position: absolute;
+    width: 200px;
+}
+
+/* position child <ul> */
+
+
+#horizontal-main-menu li ul { 
+    display: none;
+}
+#horizontal-main-menu li li {
+    width: 100%;
+    line-height: 1em;
+}
+
+
+
+/*
+ ***********************************************************************
+ * SECONDARY MENU STYLES  
+ ************************************************************************
+*/
+
+#horizontal-secondary-menu {
+    width: 980px;
+    position: relative;
+    left: -10px;
+    border-bottom: 1px solid #cfcdc8;
+    padding: 0 0 15px 0;
+    z-index: 900;
+}
+#horizontal-secondary-menu ul.menu {
+    padding: 7px 7px 7px 0;
+    z-index: 900;
+    display: inline-block;
+}
+#horizontal-secondary-menu ul ul {
+    border-right: 1px solid #cfcdc8;
+    border-bottom: 1px solid #cfcdc8;
+    border-left: 1px solid #cfcdc8;
+}
+
+#horizontal-secondary-menu li a {
+    text-transform: none;
+    text-decoration: none;
+    border-right: 1px solid #cfcdc8;
+    padding: 0 15px 0 15px;
+}
+#horizontal-secondary-menu li li a {
+    text-transform: none;
+    font-weight: normal;
+    font-size: 0.9em;
+    display: block;
+    padding: 0 15px 0 15px;
+    border: none;
+    margin: 0 0 7px 0;
+}
+#horizontal-secondary-menu li li a:hover {
+    text-decoration: underline;
+}
+#horizontal-secondary-menu .last a {
+    border: none;
+}
+
+#horizontal-secondary-menu li {
+    list-style: none;
+    
+}
+#horizontal-secondary-menu a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* remove any previously set margins and paddings */
+#horizontal-secondary-menu * { 
+    margin: 0; padding: 0;
+}
+
+/* remove <li> list styling off */
+#horizontal-secondary-menu li { 
+    list-style: none;
+}
+
+/* set <li> position */
+#horizontal-secondary-menu li { 
+    float: left; 
+    position: relative;
+}
+
+/* set position of <ul> in <li> */
+#horizontal-secondary-menu li ul { 
+    left: -1px; 
+    position: absolute;
+    width: 200px;
+}
+
+/* position child <ul> */
+
+
+#horizontal-secondary-menu li ul { 
+    display: none;
+}
+#horizontal-secondary-menu li li {
+    width: 100%;
+    line-height: 1em;
+}
+
+
+
