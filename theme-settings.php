@@ -210,63 +210,63 @@ function phptemplate_settings($saved_settings) {
     '#type' => 'fieldset',
     '#title' => t('Main Site Settings'),
     '#description' => t("Settings for the overall site"),
-  	'#attributes' => array('class' => 'collapsible'),
+  	'#attributes' => array('class' => 'collapsible collapsed'),
   );
   
   $form['header_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Header Region Settings'),
     '#description' => t("Settings for the header region"),
-  	'#attributes' => array('class' => 'collapsible'),
+  	'#attributes' => array('class' => 'collapsible collapsed'),
   );
   
   $form['breadcrumb_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Breadcrumb Settings'),
     '#description' => t("Settings for the breadcrumbs"),
-  	'#attributes' => array('class' => 'collapsible'),
+  	'#attributes' => array('class' => 'collapsible collapsed'),
   );
   
   $form['horizontal_menu_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Horizontal Menu Settings'),
     '#description' => t("Settings for the horizontal menus"),
-  	'#attributes' => array('class' => 'collapsible'),
+  	'#attributes' => array('class' => 'collapsible collapsed'),
   );
   
   $form['left_region_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Left Region Settings'),
     '#description' => t("Settings for the left region of the site"),
-  	'#attributes' => array('class' => 'collapsible'),
+  	'#attributes' => array('class' => 'collapsible collapsed'),
   );
   
   $form['right_top_region_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Right Top Region Settings'),
     '#description' => t("Settings for the right top region of the site"),
-  	'#attributes' => array('class' => 'collapsible'),
+  	'#attributes' => array('class' => 'collapsible collapsed'),
   );
   
   $form['right_center_region_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Right Center Region Settings'),
     '#description' => t("Settings for the right center region of the site"),
-  	'#attributes' => array('class' => 'collapsible'),
+  	'#attributes' => array('class' => 'collapsible collapsed'),
   );
   
   $form['right_below_region_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Right Bottom Region Settings'),
     '#description' => t("Settings for the right bottom region of the site"),
-  	'#attributes' => array('class' => 'collapsible'),
+  	'#attributes' => array('class' => 'collapsible collapsed'),
   );
   
   $form['footer_region_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Footer Region Settings'),
     '#description' => t("Settings for the footer region of the site"),
-  	'#attributes' => array('class' => 'collapsible'),
+  	'#attributes' => array('class' => 'collapsible collapsed'),
   );
   
    /*
