@@ -52,23 +52,31 @@ jQuery(document).ready(function() {
 		// hide the text areas that contain the color values for the branded form fields.
 		$(".jsonColorList").parent().parent().parent().hide();
 		
+		
 		// set the colors for each of the different types of form fields
 		if($('.branded-colorpicker-all').length > 0) {
-			$.fn.colorPicker.defaultColors = json_parse($('textarea#edit-initialcolorsAll').val());
-			$('.branded-colorpicker-all').attr('readonly', true).colorPicker();
+			$('.branded-colorpicker-all').smallColorPicker({
+				colorValues: json_parse($('textarea#edit-initialcolorsAll').val())
+			});
+			
 		}
 		if($('.branded-colorpicker-primary').length > 0) {
-			$.fn.colorPicker.defaultColors = json_parse($('textarea#edit-initialcolorsPrimary').val());
-			$('.branded-colorpicker-primary').attr('readonly', true).colorPicker();
+			$('.branded-colorpicker-primary').smallColorPicker({
+				colorValues: json_parse($('textarea#edit-initialcolorsPrimary').val())
+			});
 		}
+		
 		if($('.branded-colorpicker-secondary').length > 0) {
-			$.fn.colorPicker.defaultColors = json_parse($('textarea#edit-initialcolorsSecondary').val());
-			$('.branded-colorpicker-secondary').attr('readonly', true).colorPicker();
+			$('.branded-colorpicker-secondary').smallColorPicker({
+				colorValues: json_parse($('textarea#edit-initialcolorsSecondary').val())
+			});
 		}
 		if($('.branded-colorpicker-support').length > 0) {
-			$.fn.colorPicker.defaultColors = json_parse($('textarea#edit-initialcolorsSupport').val());
-			$('.branded-colorpicker-support').attr('readonly', true).colorPicker();
+			$('.branded-colorpicker-support').smallColorPicker({
+				colorValues: json_parse($('textarea#edit-initialcolorsSupport').val())
+			});
 		}
+		
 		
 		// configure the color picker for form fields that allow all/any color to be selected (different plugin)
 		$(".all-colorpicker").each(function(el) {

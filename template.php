@@ -8,6 +8,8 @@
 	$themePath = "var theme_path = '". path_to_theme() . "';";
 	drupal_add_js($themePath, 'inline');
 	
+	drupal_add_js('misc/collapse.js','core');
+	
 /*
 * Initialize theme settings
 */
@@ -148,7 +150,8 @@ function phptemplate_preprocess_page(&$vars, $hook) {
 	
 	/* Add dynamic stylesheet */
   	ob_start();
-  	include('dynamic.css.php');
+  	//include('dynamic.css.php');
+  	include(drupal_get_path('theme', 'primer') . '/css/base/dynamic.css.php');
   	$vars['dynamic_styles'] = ob_get_contents();
   	ob_end_clean();  
 	

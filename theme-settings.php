@@ -18,30 +18,45 @@ function phptemplate_settings($saved_settings) {
 	  	
 	  	// color list for branded colorPicker plugin
 	  	// all branded colors
-		$colors = $color->getColors();
-		$jsonEncodedColorsAll = json_encode($colors);
+		$allColors = $color->getColors();
+		$returnArray = array();
+		foreach(array_values($allColors) as $key => $value) {
+			$returnArray[$key] = '#' . $value;
+		}
+		$jsonEncodedColorsAll = json_encode(array_values($returnArray));
 		$brandedColorsAllClass = 'branded-colorpicker-all';
 		
 		// primary branded colors only
 		$primaryColors = $color->getColors('primary');
-		$jsonEncodedColorsPrimary = json_encode($primaryColors);
+		$returnArray = array();
+		foreach(array_values($primaryColors) as $key => $value) {
+			$returnArray[$key] = '#' . $value;
+		}
+		$jsonEncodedColorsPrimary = json_encode(array_values($returnArray));
 		$brandedColorsPrimaryClass = 'branded-colorpicker-primary';
 		
 		// secondary branded colors only
 		$secondaryColors = $color->getColors('secondary');
-		$jsonEncodedColorsSecondary = json_encode($secondaryColors);
+		$returnArray = array();
+		foreach(array_values($secondaryColors) as $key => $value) {
+			$returnArray[$key] = '#' . $value;
+		}
+		$jsonEncodedColorsSecondary = json_encode(array_values($returnArray));
 		$brandedColorsSecondaryClass = 'branded-colorpicker-secondary';
 		
 		// support branded colors only
 		$supportColors = $color->getColors('support');
-		$jsonEncodedColorsSupport = json_encode($supportColors);
+		$returnArray = array();
+		foreach(array_values($supportColors) as $key => $value) {
+			$returnArray[$key] = '#' . $value;
+		}
+		$jsonEncodedColorsSupport = json_encode(array_values($returnArray));
 		$brandedColorsSupportClass = 'branded-colorpicker-support';
-		
-		
 		
 	}
 	
-	
+   // SET FONT SIZE OPTIONS FOR USE IN MULTIPLE PLACES
+   
 	$fontSizeOptions = array(
       	'0.5em' 	=> '0.5x',
     	'0.55em' 	=> '0.55x',
@@ -155,6 +170,10 @@ function phptemplate_settings($saved_settings) {
 	// Merge the saved variables and their default values
   $settings = array_merge($defaults, $saved_settings);
 
+  // Create the form widgets using Forms API
+  
+  // hidden form fields for use with the branded color picker (hidden from user view by jquery/css)
+  
   $form['hidden']['initialcolorsAll'] = array(
     '#title' => 'Initial Branded Colors for Form Elements',
     '#type' => 'textarea',
@@ -181,67 +200,81 @@ function phptemplate_settings($saved_settings) {
   	'#attributes' => array('class' => 'jsonColorList'),
   );
   
+   /*
+   * 
+   * SET UP FORM FIELDS FOR EACH AREA OF THE THEME CONFIG PAGE
+   * 
+   */
+  
   $form['main_site_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Main Site Settings'),
-    '#description' => t("Settings for the overall site")
+    '#description' => t("Settings for the overall site"),
+  	'#attributes' => array('class' => 'collapsible'),
   );
   
   $form['header_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Header Region Settings'),
-    '#description' => t("Settings for the header region")
+    '#description' => t("Settings for the header region"),
+  	'#attributes' => array('class' => 'collapsible'),
   );
   
   $form['breadcrumb_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Breadcrumb Settings'),
-    '#description' => t("Settings for the breadcrumbs")
+    '#description' => t("Settings for the breadcrumbs"),
+  	'#attributes' => array('class' => 'collapsible'),
   );
   
   $form['horizontal_menu_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Horizontal Menu Settings'),
-    '#description' => t("Settings for the horizontal menus")
+    '#description' => t("Settings for the horizontal menus"),
+  	'#attributes' => array('class' => 'collapsible'),
   );
   
   $form['left_region_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Left Region Settings'),
-    '#description' => t("Settings for the left region of the site")
+    '#description' => t("Settings for the left region of the site"),
+  	'#attributes' => array('class' => 'collapsible'),
   );
-  /*
-  $form['right_region_settings'] = array(
-    '#type' => 'fieldset',
-    '#title' => t('Right Region Settings'),
-    '#description' => t("Settings for the right region of the site")
-  );
-  */
+  
   $form['right_top_region_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Right Top Region Settings'),
-    '#description' => t("Settings for the right top region of the site")
+    '#description' => t("Settings for the right top region of the site"),
+  	'#attributes' => array('class' => 'collapsible'),
   );
   
   $form['right_center_region_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Right Center Region Settings'),
-    '#description' => t("Settings for the right center region of the site")
+    '#description' => t("Settings for the right center region of the site"),
+  	'#attributes' => array('class' => 'collapsible'),
   );
   
   $form['right_below_region_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Right Bottom Region Settings'),
-    '#description' => t("Settings for the right bottom region of the site")
+    '#description' => t("Settings for the right bottom region of the site"),
+  	'#attributes' => array('class' => 'collapsible'),
   );
   
   $form['footer_region_settings'] = array(
     '#type' => 'fieldset',
     '#title' => t('Footer Region Settings'),
-    '#description' => t("Settings for the footer region of the site")
+    '#description' => t("Settings for the footer region of the site"),
+  	'#attributes' => array('class' => 'collapsible'),
   );
   
-  // Create the form widgets using Forms API
+   /*
+   * 
+   * MAIN THEME/SITE STYLES & SETTINGS
+   * 
+   */
+  
   $form['main_site_settings']['total_page_wrapper_top_offset'] = array(
     '#title' => 'Top Offset Margin',
   	'#description' => t('Use this to shift the layout away from the top of the browser window. Include px.'), 
@@ -378,6 +411,13 @@ function phptemplate_settings($saved_settings) {
     '#default_value' => $settings['site_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
+  
+   /*
+   * 
+   * HEADER REGION STYLES & SETTINGS
+   * 
+   */
+  
   $form['header_settings']['site_title_height'] = array(
     '#title' => 'Height (px) of the Site Title Area',
     '#description' => t('Make sure to include the "px" on the end of your height number.'), 
@@ -505,6 +545,12 @@ function phptemplate_settings($saved_settings) {
     '#attributes' => array('class' => $allColorPickerClass),
   );
 	
+   /*
+   * 
+   * BREADCRUMB REGION STYLES & SETTINGS
+   * 
+   */
+  
   $form['breadcrumb_settings']['show_breadcrumbs'] = array(
     '#title' => 'Show Breadcrumbs when available', 
    	'#description' => t('If your site supports breadcrumbs, you can turn them off globally here.'),
@@ -525,6 +571,13 @@ function phptemplate_settings($saved_settings) {
     '#maxlength' => 10, 
     '#required' => FALSE,
   );
+  
+  
+   /*
+   * 
+   * HORIZONTAL MENU REGION STYLES & SETTINGS
+   * 
+   */
   
   $form['horizontal_menu_settings']['horizontal_main_menu_align'] = array(
     '#title' => 'Alignment for horizontal main menu',
@@ -619,6 +672,12 @@ function phptemplate_settings($saved_settings) {
     '#default_value' => $settings['horizontal_secondary_menu_link_hover_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
+  
+   /*
+   * 
+   * LEFT REGION STYLES & SETTINGS
+   * 
+   */
   
   $form['left_region_settings']['left_region_font_size'] = array(
     '#title' => 'Left Region Font Size', 
@@ -835,65 +894,12 @@ function phptemplate_settings($saved_settings) {
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-  
-  
   /*
    * 
-   * RIGHT REGION STYLES & SETTINGS
+   * FOOTER REGION STYLES & SETTINGS
    * 
    */
   
-  /*
-  $form['right_region_settings']['right_region_font_size'] = array(
-    '#title' => 'Right Region Font Size', 
-    '#type' => 'select',
-    '#default_value' => $settings['right_region_font_size'],
-    '#options' => $fontSizeOptions,
-  );
-  
-  $form['right_region_settings']['right_region_background_color'] = array(
-    '#title' => 'Background color of Right Region', 
-    '#type' => 'textfield',
-    '#default_value' => $settings['right_region_background_color'],
-    '#attributes' => array('class' => $allColorPickerClass),
-  );
-  
-  $form['right_region_settings']['right_region_block_color'] = array(
-    '#title' => 'Color of blocks in Right Region', 
-    '#type' => 'textfield',
-    '#default_value' => $settings['right_region_block_color'],
-    '#attributes' => array('class' => $allColorPickerClass),
-  );
-  
-  $form['right_region_settings']['right_region_heading_color'] = array(
-    '#title' => 'Font color for headings in the right-side region', 
-    '#type' => 'textfield',
-    '#default_value' => $settings['right_region_heading_color'],
-    '#attributes' => array('class' => $allColorPickerClass),
-  );
-  
-  $form['right_region_settings']['right_region_font_color'] = array(
-    '#title' => 'Font color for right region', 
-    '#type' => 'textfield',
-    '#default_value' => $settings['right_region_font_color'],
-    '#attributes' => array('class' => $allColorPickerClass),
-  );
-  
-  $form['right_region_settings']['right_region_link_color'] = array(
-    '#title' => 'Link color for right region', 
-    '#type' => 'textfield',
-    '#default_value' => $settings['right_region_link_color'],
-    '#attributes' => array('class' => $allColorPickerClass),
-  );
-  
-  $form['right_region_settings']['right_region_menu_link_color'] = array(
-    '#title' => 'Color for links in menus in the right region', 
-    '#type' => 'textfield',
-    '#default_value' => $settings['right_region_menu_link_color'],
-    '#attributes' => array('class' => $allColorPickerClass),
-  );
-  
-  */
   
   $form['footer_region_settings']['footer_region_font_size'] = array(
     '#title' => 'Footer Region Font Size', 
@@ -990,7 +996,7 @@ function phptemplate_settings($saved_settings) {
     '#required' => TRUE,
   );
 
-  // Return the additional form widgets
+  // Return the form widgets
   return $form;
 
 }

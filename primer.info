@@ -23,13 +23,17 @@ stylesheets[all][]   = custom/css/custom-screen.css
 stylesheets[print][] = custom/css/custom-print.css
 
 ; javascript that will run on the entire website
-scripts[] = js/base.js
-scripts[] = js/plugins/parseJson.js
-scripts[] = js/plugins/jquery.colorPicker.js
+scripts[]   = js/base.js
+scripts[]   = js/plugins/parseJson.js
 
-scripts[] = js/plugins/colorpicker/js/colorpicker.js
-stylesheets[all][]   = js/plugins/colorpicker/css/colorpicker.css
-stylesheets[all][]   = css/base/plugins/jquery.colorPicker.css
+; FILES FOR THE 'BRANDED' COLOR PICKER
+scripts[]               = js/plugins/smallColorPicker/jquery.smallColorPicker.js
+stylesheets[all][]      = css/base/plugins/smallColorPicker/smallColorPicker.css
+
+; FILES FOR THE 'ALL COLOR' COLOR PICKER
+scripts[]               = js/plugins/colorpicker/js/colorpicker.js
+stylesheets[all][]      = js/plugins/colorpicker/css/colorpicker.css
+
 
 ; set features to NULL, so none of the defaults are displayed
 features[] = favicon
