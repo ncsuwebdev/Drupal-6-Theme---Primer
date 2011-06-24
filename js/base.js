@@ -135,7 +135,40 @@ jQuery(document).ready(function() {
             }
         );
         
-        
-        
+     //
+     // Javascript for the Appalachian Sustainability Website
+     // in action here: http://sustain.appstate.edu/
+     //
+
+       // Cycles through header photos
+       $(".featured-content-slider .view-content ul")
+       .cycle({
+         fx: 'scrollRight',
+         timeout: 2000,
+         cleartype: true,
+         cleartypeNoBg: true,
+         pager: '#banner-icons',
+         pagerAnchorBuilder: function(idx, slide) {
+           return $("<li>").html(
+             $("<a></a>").attr('href', '#').html(
+               $("<img>").attr('src', $(slide).find('img').attr('src')
+                 .replace('featured-story-home', idx != 0 ? 'featured-story-home-grey' : 'featured-story-home-thumb'))));
+         },
+         before: function(currSlideElement, nextSlideElement, options, forwardFlag) {
+           $("ul#banner-icons img").each(function() {
+             $(this).attr('src', $(this).attr('src').replace('featured-story-home-thumb', 'featured-story-home-grey'));
+           });
+           return;
+         },
+         after: function(currSlideElement, nextSlideElement, options, forwardFlag) {
+           if ( $('ul#banner-icons li.activeSlide').length != 0 ) {
+             var activeImage = $('ul#banner-icons li.activeSlide img');
+             activeImage.attr('src', activeImage.attr('src').replace('featured-story-home-grey', 'featured-story-home-thumb'));
+           };
+           return;
+         }
+       });
+
+
         
 });

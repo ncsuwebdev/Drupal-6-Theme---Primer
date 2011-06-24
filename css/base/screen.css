@@ -218,7 +218,8 @@ legend {
 ----------------------------------------------------------------------------------------------------------*/
 #main-content {
     margin: 0;
-    padding: 0;
+    padding: 0 5px 0 5px;
+    position: relative;
 }
 
 #main-content #page-title {
@@ -233,7 +234,7 @@ legend {
     font-weight: normal;
 }
 
-#main-content a,#main-content a:visited {
+#main-content a, #main-content a:visited {
     text-decoration: none;
 }
 
@@ -353,6 +354,10 @@ legend {
     margin: 0;
 }
 
+#region-right-sidebar-container li {
+   line-height: 1.3em;
+}
+
 #region-left-menu-area-container h2, 
 #region-right-sidebar-container h2 {
     display: block;
@@ -434,33 +439,18 @@ legend {
     top: -35px;
 }
 
-
-#region-right-sidebar a, #region-right-sidebar a:visited {
-    text-decoration: underline;
-}
-#region-right-sidebar a:hover {
-    text-decoration: none;
-}
-
-#region-right-sidebar {
-    position: relative;
-    width: 260px;
-    left: 10px;
-    margin: 2px 0 0 0;
-    overflow: hidden;
-    line-height: 1.45em;
-}
-
 #right-above-sidebar,
 #right-center-sidebar,
 #right-below-sidebar {
-    margin: 0;
+    position: relative;
+    width: 260px;
+    left: 10px;
+    margin: 2px 0 1em 0;
+    overflow: hidden;
+    line-height: 1.45em;
+    z-index: 100;
 }
 
-/* space in between the regions in the right sidebar area */
-#right-above-sidebar, #right-center-sidebar, #right-below-sidebar {
-    margin-bottom: 1em;
-}
 
 
 /*----------------------------------------------------------------------------------------------------------
@@ -469,6 +459,7 @@ legend {
 #right-above-sidebar-content,
 #right-center-sidebar-content,
 #right-below-sidebar-content {
+    width: 260px;
     margin: 0 10px 0 0;
 }
 
@@ -485,6 +476,13 @@ legend {
 
 #right-above-sidebar-content .content p,#right-center-sidebar-content .content p,#right-below-sidebar-content .content p {
     line-height: 1.5em;
+}
+
+#region-right-sidebar a, #region-right-sidebar a:visited {
+    text-decoration: underline;
+}
+#region-right-sidebar a:hover {
+    text-decoration: none;
 }
 
 
@@ -610,16 +608,14 @@ legend {
 /*----------------------------------------------------------------------------------------------------------
     DEFAULT DRUPAL ELEMENTS
 ----------------------------------------------------------------------------------------------------------*/
-/* hide the initial json text areas that are used on the theme settings page for the branded color picker */
-.jsonColorList {
-    display: none;
+/* make the default tables created by Drupal expand to the width of the container they appear in */
+#system-themes-form, #content-display-overview-form {
+    font-size: 10px;
 }
 
-/* make the default tables created by Drupal expand to the width of the container they appear in */
 table.sticky-enabled, table.views-table {
     width: 100%;
-    margin-bottom: 1.5em;
-   
+    margin-bottom: 1.5em;   
 }
 table.sticky-enabled thead, table.views-table thead {
     border-bottom: 2px solid #CCC;
@@ -648,3 +644,6 @@ table.sticky-enabled td, table.views-table td {
 .submitted-title {
     float: left;
 }
+
+
+

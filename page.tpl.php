@@ -187,33 +187,27 @@
 							<?php if($page['region-widths']['show-right-region']): ?>
 								<a class="access" name="right-sidebar">Right Side Bar</a>    
 								<div id="region-right-sidebar-container" class="container_<?php echo $page['region-widths']['right-region-width']; ?> <?php if ($breadcrumb && theme_get_setting('show_breadcrumbs') && $page['region-widths']['show-right-region']): echo 'right-sidebar-with-breadcrumbs'; endif; ?>">
-									<div id="region-right-sidebar" class="grid_<?php echo $page['region-widths']['right-region-width']; ?>">
+										<div id="region-right-sidebar" class="grid_<?php echo $page['region-widths']['right-region-width']; ?>">
 										<?php if($right_above_sidebar): ?>
-											<div id="region-right-above-sidebar-container">
-	                                            <div id="right-above-sidebar" class="grid_<?php echo $page['region-widths']['right-region-width']; ?>">
-													<div id="right-above-sidebar-content" aria-label="Right Top Sidebar">
-														<?php print $right_above_sidebar; ?>
-													</div>
+											<div id="right-above-sidebar" class="grid_<?php echo $page['region-widths']['right-region-width']; ?>">
+												<div id="right-above-sidebar-content" aria-label="Right Top Sidebar">
+													<?php print $right_above_sidebar; ?>
 												</div>
-                                            </div>
+											</div>
 										<?php endif; ?>
 										<?php if($right_center_sidebar): ?>
-											<div id="region-right-center-sidebar-container">
-	                                            <div id="right-center-sidebar" class="grid_<?php echo $page['region-widths']['right-region-width']; ?>">
-													<div id="right-center-sidebar-content" aria-label="Right Center Sidebar">
-														<?php print $right_center_sidebar; ?>
-													</div>
+											<div id="right-center-sidebar" class="grid_<?php echo $page['region-widths']['right-region-width']; ?>">
+												<div id="right-center-sidebar-content" aria-label="Right Center Sidebar">
+													<?php print $right_center_sidebar; ?>
 												</div>
-                                            </div>
+											</div>
 										<?php endif; ?>
 										<?php if($right_below_sidebar): ?>
-	                                        <div id="region-right-below-sidebar-container">
-												<div id="right-below-sidebar" class="grid_<?php echo $page['region-widths']['right-region-width']; ?>">
-													<div id="right-below-sidebar-content" aria-label="Right Below Sidebar">
-														<?php print $right_below_sidebar; ?>
-													</div>
+											<div id="right-below-sidebar" class="grid_<?php echo $page['region-widths']['right-region-width']; ?>">
+												<div id="right-below-sidebar-content" aria-label="Right Below Sidebar">
+													<?php print $right_below_sidebar; ?>
 												</div>
-	                                        </div>
+											</div>
 										<?php endif; ?>
 									</div>
 								</div>

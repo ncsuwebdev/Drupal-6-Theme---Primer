@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+.featured-content-slider * {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.featured-content-slider .view-content li {
+    list-style: none;
+}
