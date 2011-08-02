@@ -5,8 +5,8 @@ version = 6.x
 core = 6.x
 engine = phptemplate
 
-;stylesheets[all][] = style.css
-;stylesheets[print][] = print.css
+; for updates to the theme, specify features server location
+project status url = http://oitdesign.ncsu.edu/njyoung/featureserver/fserver
 
 ;960 Grid System Styles, from http://www.gridsystemgenerator.com
 stylesheets[all][]   = css/960/reset.css
