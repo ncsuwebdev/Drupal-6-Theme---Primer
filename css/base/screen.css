@@ -645,5 +645,26 @@ table.sticky-enabled td, table.views-table td {
     float: left;
 }
 
+/*----------------------------------------------------------------------------------------------------------
+    FEATURED CONTENT SLIDER
+----------------------------------------------------------------------------------------------------------*/
 
+.nivo-controlNav {
+   position: absolute;
+   top: 5px;
+   left: 5px;
+   width: 70px;
+   height: 283px;
+}
 
+.nivo-controlNav a {
+    display:block;
+    width:70px;
+    height:50px;
+    margin: 3px;
+    float:left;
+    border: 2px solid #000;
+}
+.nivo-controlNav a.active {
+    background-position:-10px 0;
+}

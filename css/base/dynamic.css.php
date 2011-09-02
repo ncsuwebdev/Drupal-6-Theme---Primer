@@ -19,6 +19,17 @@ body {
 	<?php endif; ?>
 	background-color: <?php echo theme_get_setting('background_color'); ?>;
 }
+.messages, .warning {
+    padding: 5px;
+    background-color: <?php echo theme_get_setting('site_link_color'); ?> !important;
+    color: <?php echo theme_get_setting('site_background_color'); ?> !important;
+    border: 2px solid <?php echo theme_get_setting('site_font_color'); ?> !important;
+    margin: 1em 0 1em 0; 
+}
+.messages a, .warning a {
+    color: <?php echo theme_get_setting('site_background_color'); ?> !important;
+    text-decoration: underline !important;
+}
 
 input[type="submit"] {
     background-color: <?php echo theme_get_setting('site_font_color'); ?>;

@@ -164,7 +164,7 @@ function phptemplate_settings($saved_settings) {
   		'footer_menu_color'						=> '#000000',
   		'footer_menu_link_color'				=> '#CC0000',
 		'footer_region_font_color'  			=> '#000000',
-		'footer_contact_information'			=> 'My Group Name, Raleigh, NC 27695 Phone: (555) 555-5555',
+		'footer_contact_information'			=> 'Awesome Project, Raleigh, NC 27695 Phone: (555) 555-5555',
   	);
   	
 	// Merge the saved variables and their default values

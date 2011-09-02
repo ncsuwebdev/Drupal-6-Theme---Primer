@@ -136,15 +136,17 @@ jQuery(document).ready(function() {
         );
         
      //
-     // Javascript for the Appalachian Sustainability Website
+     // Javascript from the Appalachian Sustainability Website
      // in action here: http://sustain.appstate.edu/
      //
-
+     /*
+        if($('.featured-content-slider .view-content ul').length > 0) {
        // Cycles through header photos
        $(".featured-content-slider .view-content ul")
+       .after('<ul id="banner-icons">')
        .cycle({
-         fx: 'scrollRight',
-         timeout: 2000,
+         fx: 'scrollUp', 
+         timeout: 4000,
          cleartype: true,
          cleartypeNoBg: true,
          pager: '#banner-icons',
@@ -168,7 +170,7 @@ jQuery(document).ready(function() {
            return;
          }
        });
-
-
+     }
+*/
         
 });

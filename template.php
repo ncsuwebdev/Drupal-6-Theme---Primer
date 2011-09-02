@@ -46,7 +46,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
     	'site_title_text_color'	      			=> '#CC0000',
 		'site_title_bg_color'	      			=> '#FFFFFF',
     	'site_title_top_line'	      			=> 'My',
-		'site_title_bottom_line'      			=> 'Company Website',
+		'site_title_bottom_line'      			=> 'Project Website',
   		'header_small_menu_height' 				=> '20px',
   		'header_search_region_offset' 			=> '5px',
 		'header_small_menu_font_size' 			=> '1.0em',
@@ -101,7 +101,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
   		'footer_menu_color'						=> '#000000',
   		'footer_menu_link_color'				=> '#CC0000',
 		'footer_region_font_color'  			=> '#000000',
-		'footer_contact_information'			=> 'ACME Company Inc. Raleigh, NC 27695 Phone: (555) 555-5555',
+		'footer_contact_information'			=> 'Awesome Project, Raleigh, NC 27695 Phone: (555) 555-5555',
   	);
 
   // Get default theme settings.
