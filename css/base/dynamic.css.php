@@ -26,9 +26,16 @@ body {
     border: 2px solid <?php echo theme_get_setting('site_font_color'); ?> !important;
     margin: 1em 0 1em 0; 
 }
-.messages a, .warning a {
+
+.messages a, .warning a, {
     color: <?php echo theme_get_setting('site_background_color'); ?> !important;
     text-decoration: underline !important;
+}
+.warning td, .warning td li a {
+    color: <?php echo theme_get_setting('site_font_color'); ?> !important;
+}
+.warning .project, .warning .project a, .warning .project .version-status {
+    color: <?php echo theme_get_setting('site_background_color'); ?> !important;
 }
 
 input[type="submit"] {
