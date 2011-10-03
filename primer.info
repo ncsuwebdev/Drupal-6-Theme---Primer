@@ -1,12 +1,11 @@
-; $Id: primer.info,v 1.5 2011/06/17 23:27:32 usaussie Exp $
 name = Primer Theme (Drupal 6)
 description = Primer Theme (for use on Drupal 6 only)
-version = 6.0.1
+version = 6.0.2
 core = 6.x
 engine = phptemplate
 
 ; for updates to the theme, specify features server location
-project status url = http://oitdesign.ncsu.edu/njyoung/featureserver/fserver
+project status url = http://drupal.ncsu.edu/features/fserver
 
 ;960 Grid System Styles, from http://www.gridsystemgenerator.com
 stylesheets[all][]   = css/960/reset.css
