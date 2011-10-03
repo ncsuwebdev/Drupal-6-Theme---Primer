@@ -1,5 +1,4 @@
 <?php
-// $Id: theme-settings.php,v 1.8 2011/01/01 13:20:14 njyoung Exp $
 
 function phptemplate_settings($saved_settings) {
 	

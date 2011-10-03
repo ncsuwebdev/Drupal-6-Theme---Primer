@@ -1,5 +1,4 @@
 <?php
-// $Id: template.php,v 1.16.2.3 2011/06/17 09:51:29 usaussie Exp $
 
 	// pass variables to javascript so they can use the base path and theme path
 	$js = "var base_path = '". base_path() . "';";

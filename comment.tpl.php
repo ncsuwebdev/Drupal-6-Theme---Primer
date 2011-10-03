@@ -1,6 +1,3 @@
-<?php
-// $Id: comment.tpl.php,v 1.3 2011/04/12 08:39:36 usaussie Exp $
-?>
 <div class="comment<?php print ($comment->new) ? ' comment-new' : ''; print ' '. $status; print ' '. $zebra; ?>">
 
   <div class="clear-block">

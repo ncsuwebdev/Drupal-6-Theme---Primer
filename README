@@ -4,7 +4,7 @@ This is a primer theme, for use in Drupal 6.x.
         INSTALL INSTRUCTIONS
 /*********************************************/
 
- 1. Download the repo from github
+ 1. Download the theme from http://drupal.ncsu.edu/features
  2. Copy to directory in <drupal site root>/sites/all/themes/primer
  	(so that this readme's path is: <drupal site root>/sites/all/themes/primer/readme)
  3. Enable in Drupal and configure from the theme options page
