@@ -32,11 +32,11 @@ legend {
     padding: 0 5px 0 5px;
 }
 
-.views-hide .links {
+.views-hide {
+    top: 55px;
     padding: 3px;
     font-size: 10px;
     width: 300px;
-    float: left;
 }
 
 
