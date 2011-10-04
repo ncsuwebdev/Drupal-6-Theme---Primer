@@ -31,10 +31,10 @@ body {
     color: <?php echo theme_get_setting('site_background_color'); ?> !important;
     text-decoration: underline !important;
 }
-.warning td, .warning td li a, .error td, .error td li a {
+.warning td, .warning td li a, .error td, .error td li a, .version-details a {
     color: <?php echo theme_get_setting('site_font_color'); ?> !important;
 }
-.warning .project, .warning .project a, .warning .project .version-status {
+.warning .project, .warning .project a, .warning .project .version-status, .security-error {
     color: <?php echo theme_get_setting('site_background_color'); ?> !important;
 }
 

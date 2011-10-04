@@ -32,6 +32,13 @@ legend {
     padding: 0 5px 0 5px;
 }
 
+.views-hide .links {
+    padding: 3px;
+    font-size: 10px;
+    width: 300px;
+    float: left;
+}
+
 
 #total-page-wrapper {
     margin: auto;
