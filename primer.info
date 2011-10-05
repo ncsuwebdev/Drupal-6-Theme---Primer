@@ -1,9 +1,9 @@
 ; Customizable Drupal 6 Theme developed by Nick Young (njyoung / usaussie)
 
-name = Primer Theme (Drupal 6)
+name = Primer 6.x
 project = primer
 description = Primer Theme (for use on Drupal 6 only)
-version = 6.x-1.8
+version = 6.x-1.9
 core = 6.x
 engine = phptemplate
 
