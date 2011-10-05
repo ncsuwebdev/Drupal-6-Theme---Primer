@@ -129,7 +129,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
  *   A string containing the breadcrumb output.
  */
 
-function phptemplate_breadcrumb($breadcrumb) {
+function primer_breadcrumb($breadcrumb) {
   // Wrap separator with span element.
   if (!empty($breadcrumb)) {
     // Provide a navigational heading to give context for breadcrumb links to
@@ -143,7 +143,7 @@ function phptemplate_breadcrumb($breadcrumb) {
 /**
  * Override or insert PHPTemplate variables into the templates.
  */
-function phptemplate_preprocess_page(&$vars, $hook) {
+function primer_preprocess_page(&$vars, $hook) {
 	
 	$vars['tabs2'] = menu_secondary_local_tasks();
 	
@@ -235,14 +235,14 @@ function primer_preprocess_comment_wrapper(&$vars) {
  *
  * @ingroup themeable
  */
-function phptemplate_menu_local_tasks() {
+function primer_menu_local_tasks() {
   return menu_primary_local_tasks();
 }
 
 /**
  * Returns the themed submitted-by string for the comment.
  */
-function phptemplate_comment_submitted($comment) {
+function primer_comment_submitted($comment) {
   return t('!datetime — !username',
     array(
       '!username' => theme('username', $comment),
@@ -253,7 +253,7 @@ function phptemplate_comment_submitted($comment) {
 /**
  * Returns the themed submitted-by string for the node.
  */
-function phptemplate_node_submitted($node) {
+function primer_node_submitted($node) {
   return t('!datetime — !username',
     array(
       '!username' => theme('username', $node),

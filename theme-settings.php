@@ -1,6 +1,6 @@
 <?php
 
-function phptemplate_settings($saved_settings) {
+function primer_settings($saved_settings) {
 	
 	// use this variable to specify which form elements should use the complete color picker (full spectrum)
 	$allColorPickerClass = 'all-colorpicker';	

@@ -3,10 +3,9 @@
 name = Primer Theme (Drupal 6)
 project = primer
 description = Primer Theme (for use on Drupal 6 only)
-version = 6.x-1.7
+version = 6.x-1.8
 core = 6.x
 engine = phptemplate
-base theme = Garland
 
 ; for updates to the theme, specify features server location
 project status url = http://drupal.ncsu.edu/features/fserver
