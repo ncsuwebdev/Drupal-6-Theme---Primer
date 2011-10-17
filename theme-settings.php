@@ -6,7 +6,7 @@ function primer_settings($saved_settings) {
 	$allColorPickerClass = 'all-colorpicker';	
 	
 	// change this to true to specify whether this theme should allow the use of branded colors, or all colors
-	$brandedColorPicker = true;
+	$brandedColorPicker = false;
 		
 	// grab the color library and use it to populate the color list if using the branded option
 	
@@ -163,7 +163,7 @@ function primer_settings($saved_settings) {
   		'footer_menu_color'						=> '#000000',
   		'footer_menu_link_color'				=> '#CC0000',
 		'footer_region_font_color'  			=> '#000000',
-		'footer_contact_information'			=> 'Awesome Project, Raleigh, NC 27695 Phone: (555) 555-5555',
+		'footer_contact_information'			=> 'My Project Website, Raleigh, NC 27695 Phone: (555) 555-5555',
   	);
   	
 	// Merge the saved variables and their default values
@@ -481,14 +481,14 @@ function primer_settings($saved_settings) {
     '#title' => 'Color of Title Text in Header', 
     '#type' => 'textfield',
     '#default_value' => $settings['site_title_text_color'],
-    '#attributes' => array('class' => $brandedColorsAllClass),
+    '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['header_settings']['site_title_bg_color'] = array(
     '#title' => 'Color of Background in Header', 
     '#type' => 'textfield',
     '#default_value' => $settings['site_title_bg_color'],
-    '#attributes' => array('class' => $brandedColorsPrimaryClass),
+    '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['header_settings']['site_title_top_line'] = array(
