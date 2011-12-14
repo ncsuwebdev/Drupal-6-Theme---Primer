@@ -107,8 +107,8 @@ function primer_settings($saved_settings) {
 		'site_title_horizontal_offset'  		=> '0px',
     	'site_title_text_color'	      			=> '#CC0000',
 		'site_title_bg_color'	      			=> '#FFFFFF',
-    	'site_title_top_line'	      			=> 'My',
-		'site_title_bottom_line'      			=> 'My Project Website',
+    	'site_title_top_line'	      			=> 'My Awesome Website',
+		'site_title_bottom_line'      			=> 'Department of Even More Awesome Websites',
 		'header_small_menu_height' 				=> '20px',
 		'header_search_region_offset' 			=> '5px',
 		'header_small_menu_font_size' 			=> '1.0em',
@@ -129,13 +129,16 @@ function primer_settings($saved_settings) {
   		'horizontal_secondary_menu_link_hover_color'	=> '#000000',
 		'left_region_font_size'     			=> '1.0em',
   		'left_region_color'     				=> '#FFFFFF',
-		'left_region_font_color'  				=> '#000000',
+		'left_region_block_color'  				=> '#FFFFFF',
+		'left_region_heading_color'  			=> '#CC0000',
+  		'left_region_font_color'  				=> '#000000',
   		'left_region_menu_link_color'  			=> '#000000',
 		'left_region_link_color'  				=> '#CC0000',
 		'right_top_region_font_size'     		=> '1.0em',
   		'right_top_region_background_color'		=> '#FFFFFF',
   		'right_top_region_block_color'     		=> '#FFFFFF',
   		'right_top_region_heading_color'  		=> '#000000',
+		'right_top_region_heading_background_color'  	=> '#FFFFFF',
   		'right_top_region_font_color'  			=> '#000000',
   		'right_top_region_menu_link_color'  	=> '#CC0000',
   		'right_top_region_link_color'  			=> '#CC0000',
@@ -143,6 +146,7 @@ function primer_settings($saved_settings) {
   		'right_center_region_background_color'	=> '#FFFFFF',
   		'right_center_region_block_color'     	=> '#FFFFFF',
   		'right_center_region_heading_color'  	=> '#000000',
+		'right_center_region_heading_background_color'  	=> '#FFFFFF',
   		'right_center_region_font_color'  		=> '#000000',
   		'right_center_region_menu_link_color'  	=> '#CC0000',
   		'right_center_region_link_color'  		=> '#CC0000',
@@ -150,20 +154,22 @@ function primer_settings($saved_settings) {
   		'right_below_region_background_color'	=> '#FFFFFF',
   		'right_below_region_block_color'     	=> '#FFFFFF',
   		'right_below_region_heading_color'  	=> '#000000',
+		'right_below_region_heading_background_color'  	=> '#FFFFFF',
   		'right_below_region_font_color'  		=> '#000000',
   		'right_below_region_menu_link_color'  	=> '#CC0000',
   		'right_below_region_link_color'  		=> '#CC0000',
-		'copyright_information' 				=> '© 2011',
+		'copyright_information' 				=> '© ' . date('Y', time()),
 		'footer_region_font_size'				=> '0.85em',
   		'footer_region_menu_font_size'			=> '1em',
-		'footer_region_separator_color'			=> '#CC0000',
-		'footer_region_background_color'		=> '#FFFFFF',
-  		'footer_menu_align'						=> 'center',
+		'footer_region_separator_color'			=> '#000000',
+		'footer_region_background_color'		=> '#DEDDDB',
+  		'footer_region_link_color'				=> '#CC0000',
+		'footer_menu_align'						=> 'center',
 		'footer_menu_height'					=> '40px',
   		'footer_menu_color'						=> '#000000',
   		'footer_menu_link_color'				=> '#CC0000',
 		'footer_region_font_color'  			=> '#000000',
-		'footer_contact_information'			=> 'My Project Website, Raleigh, NC 27695 Phone: (555) 555-5555',
+		'footer_contact_information'			=> 'My Awesome Project Website, Raleigh, NC 27695 Phone: (555) 555-5555',
   	);
   	
 	// Merge the saved variables and their default values
@@ -761,6 +767,13 @@ function primer_settings($saved_settings) {
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
+  $form['right_top_region_settings']['right_top_region_heading_background_color'] = array(
+    '#title' => 'Background color for headings in the right top region', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['right_top_region_heading_background_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
   $form['right_top_region_settings']['right_top_region_font_color'] = array(
     '#title' => 'Font color for right top region', 
     '#type' => 'textfield',
@@ -813,6 +826,13 @@ function primer_settings($saved_settings) {
     '#title' => 'Font color for headings in the right center region', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_center_region_heading_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['right_center_region_settings']['right_center_region_heading_background_color'] = array(
+    '#title' => 'Background color for headings in the right center region', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['right_center_region_heading_background_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
@@ -869,6 +889,13 @@ function primer_settings($saved_settings) {
     '#title' => 'Font color for headings in the right below region', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_below_region_heading_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['right_below_region_settings']['right_below_region_heading_background_color'] = array(
+    '#title' => 'Background color for headings in the right bottom region', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['right_below_region_heading_background_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   

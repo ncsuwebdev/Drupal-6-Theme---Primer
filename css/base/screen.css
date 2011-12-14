@@ -248,12 +248,6 @@ legend {
 #main-content a:hover {
     text-decoration: underline;
 }
-#region-center-right-container .block {
-    margin-bottom: 1em;
-}
-#region-center-right-container .block h2 {
-    margin-bottom: 1em;
-}
 
 
 /*----------------------------------------------------------------------------------------------------------
@@ -371,7 +365,6 @@ legend {
     line-height: 1.3em;
     margin: 0;
     padding: 10px 0 10px 10px;
-    text-transform: uppercase;
     font-size: 1.3em;
     font-weight: bold;
 }
@@ -387,7 +380,6 @@ legend {
 #region-left-menu-area-container .content .menu li a,
 #region-right-sidebar-container .content .menu li a {
     font-size: 1.3em;
-    text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
     display: block;
@@ -458,7 +450,9 @@ legend {
     z-index: 100;
 }
 
-
+#region-center-right-container .block {
+    margin-bottom: 1em;
+}
 
 /*----------------------------------------------------------------------------------------------------------
     RIGHT REGION CONTENT STYLES
@@ -467,12 +461,19 @@ legend {
 #right-center-sidebar-content,
 #right-below-sidebar-content {
     width: 260px;
-    margin: 0 10px 0 0;
+    margin: 0;
+}
+
+#right-above-sidebar-content h2,
+#right-center-sidebar-content h2,
+#right-below-sidebar-content h2 {
+    padding: 10px 0 10px 10px;
 }
 
 #right-above-sidebar-content .content,
 #right-center-sidebar-content .content,
 #right-below-sidebar-content .content {
+    margin: 0;
     padding: 5px;
 }
 
@@ -481,8 +482,16 @@ legend {
     margin: 5px auto !important;
 }
 
-#right-above-sidebar-content .content p,#right-center-sidebar-content .content p,#right-below-sidebar-content .content p {
+#region-right-sidebar-container .block .content {
+    width: 230px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+#right-above-sidebar-content .content p, #right-center-sidebar-content .content p, #right-below-sidebar-content .content p {
     line-height: 1.5em;
+    padding: 0;
+    margin: 0;
 }
 
 #region-right-sidebar a, #region-right-sidebar a:visited {
@@ -581,7 +590,6 @@ legend {
 #footer-horizontal-menu ul li {
 	float: left;
     display: inline;
-    text-transform: uppercase;
     padding: 0 15px 0 15px;
 }
 
@@ -602,7 +610,6 @@ legend {
     text-align: center;
     font-weight: bold;
     font-size: 1.2em;
-    text-transform: uppercase;
     margin: 0 0 25px 0;
     padding-top: 10px;
 }
