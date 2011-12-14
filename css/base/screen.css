@@ -355,17 +355,13 @@ legend {
     margin: 0;
 }
 
-#region-right-sidebar-container li {
-   line-height: 1.3em;
-}
+
 
 #region-left-menu-area-container h2, 
 #region-right-sidebar-container h2 {
     display: block;
-    line-height: 1.3em;
     margin: 0;
     padding: 10px 0 10px 10px;
-    font-size: 1.3em;
     font-weight: bold;
 }
 
@@ -379,7 +375,6 @@ legend {
 
 #region-left-menu-area-container .content .menu li a,
 #region-right-sidebar-container .content .menu li a {
-    font-size: 1.3em;
     font-weight: bold;
     text-decoration: none;
     display: block;
@@ -400,7 +395,6 @@ legend {
     text-transform: none;
     padding: 5px 0 5px 15px;
     background-image: none;
-    font-size: 1.1em;
     font-weight: normal;
 }
 
@@ -411,7 +405,7 @@ legend {
     padding: 0;
     list-style: square;
     list-style-position: outside;
-    font-size: 0.9em;
+    
 }
 #region-left-menu-area-container .content .menu li ul li ul li a,
 #region-right-sidebar-container .content .menu li ul li ul li a {
@@ -446,7 +440,6 @@ legend {
     left: 10px;
     margin: 2px 0 1em 0;
     overflow: hidden;
-    line-height: 1.45em;
     z-index: 100;
 }
 
@@ -489,7 +482,6 @@ legend {
 }
 
 #right-above-sidebar-content .content p, #right-center-sidebar-content .content p, #right-below-sidebar-content .content p {
-    line-height: 1.5em;
     padding: 0;
     margin: 0;
 }

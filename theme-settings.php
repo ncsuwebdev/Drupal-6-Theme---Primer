@@ -70,7 +70,7 @@ function primer_settings($saved_settings) {
 		'1.1em' 	=> '1.1x',
 		'1.2em' 	=> '1.2x',
 		'1.3em' 	=> '1.3x',
-		'1.4em' 	=> '1.5x',
+		'1.4em' 	=> '1.4x',
       	'1.5em' 	=> '1.5x',
   		'2.0em' 	=> '2x',
 		'2.5em' 	=> '2.5x',
@@ -127,37 +127,91 @@ function primer_settings($saved_settings) {
   		'horizontal_secondary_menu_color'		=> '#CCCCCC',
   		'horizontal_secondary_menu_link_color'	=> '#000000',
   		'horizontal_secondary_menu_link_hover_color'	=> '#000000',
-		'left_region_font_size'     			=> '1.0em',
-  		'left_region_color'     				=> '#FFFFFF',
-		'left_region_block_color'  				=> '#FFFFFF',
-		'left_region_heading_color'  			=> '#CC0000',
-  		'left_region_font_color'  				=> '#000000',
-  		'left_region_menu_link_color'  			=> '#000000',
-		'left_region_link_color'  				=> '#CC0000',
+		
+		'left_above_menu_region_font_size' 		=> '1.0em',
+  		'left_above_menu_region_menu_size' 		=> '1.0em',
+  		'left_above_menu_region_menu_sub_size' 	=> '1.0em',
+  		'left_above_menu_region_heading_size'	=> '1.3em',
+  		'left_above_menu_region_background_color'	=> '#FFFFFF',
+  		'left_above_menu_region_block_color'    => '#FFFFFF',
+  		'left_above_menu_region_heading_color'  => '#000000',
+		'left_above_menu_region_heading_background_color'  	=> '#FFFFFF',
+  		'left_above_menu_region_font_color'  	=> '#000000',
+  		'left_above_menu_region_menu_link_color'=> '#CC0000',
+  		'left_above_menu_region_link_color'  	=> '#CC0000',
+  
+  		'left_main_menu_region_font_size' 		=> '1.0em',
+  		'left_main_menu_region_menu_size' 		=> '1.0em',
+  		'left_main_menu_region_menu_sub_size' 	=> '1.0em',
+  		'left_main_menu_region_heading_size'	=> '1.3em',
+  		'left_main_menu_region_background_color'	=> '#FFFFFF',
+  		'left_main_menu_region_block_color'    => '#FFFFFF',
+  		'left_main_menu_region_heading_color'  => '#000000',
+		'left_main_menu_region_heading_background_color'  	=> '#FFFFFF',
+  		'left_main_menu_region_font_color'  	=> '#000000',
+  		'left_main_menu_region_menu_link_color'=> '#CC0000',
+  		'left_main_menu_region_link_color'  	=> '#CC0000',
+  
+  		'left_sub_menu_region_font_size' 		=> '1.0em',
+  		'left_sub_menu_region_menu_size' 		=> '1.0em',
+  		'left_sub_menu_region_menu_sub_size'	=> '1.0em',
+  		'left_sub_menu_region_heading_size'		=> '1.3em',
+  		'left_sub_menu_region_background_color'	=> '#FFFFFF',
+  		'left_sub_menu_region_block_color'    => '#FFFFFF',
+  		'left_sub_menu_region_heading_color'  => '#000000',
+		'left_sub_menu_region_heading_background_color'  	=> '#FFFFFF',
+  		'left_sub_menu_region_font_color'  	=> '#000000',
+  		'left_sub_menu_region_menu_link_color'=> '#CC0000',
+  		'left_sub_menu_region_link_color'  	=> '#CC0000',
+  
+  		'left_below_menu_region_font_size' 		=> '1.0em',
+  		'left_below_menu_region_menu_size' 		=> '1.0em',
+  		'left_below_menu_region_menu_sub_size' 	=> '1.0em',
+  		'left_below_menu_region_heading_size'	=> '1.3em',
+  		'left_below_menu_region_background_color'	=> '#FFFFFF',
+  		'left_below_menu_region_block_color'    => '#FFFFFF',
+  		'left_below_menu_region_heading_color'  => '#000000',
+		'left_below_menu_region_heading_background_color'  	=> '#FFFFFF',
+  		'left_below_menu_region_font_color'  	=> '#000000',
+  		'left_below_menu_region_menu_link_color'=> '#CC0000',
+  		'left_below_menu_region_link_color'  	=> '#CC0000',
+  
 		'right_top_region_font_size'     		=> '1.0em',
+  		'right_top_region_menu_size'     		=> '1.0em',
+  		'right_top_region_menu_sub_size'     	=> '1.0em',
+  		'right_top_region_heading_size'    		=> '1.3em',
   		'right_top_region_background_color'		=> '#FFFFFF',
   		'right_top_region_block_color'     		=> '#FFFFFF',
   		'right_top_region_heading_color'  		=> '#000000',
-		'right_top_region_heading_background_color'  	=> '#FFFFFF',
+  		'right_top_region_heading_background_color'  	=> '#FFFFFF',
   		'right_top_region_font_color'  			=> '#000000',
   		'right_top_region_menu_link_color'  	=> '#CC0000',
   		'right_top_region_link_color'  			=> '#CC0000',
-		'right_center_region_font_size'     	=> '1.0em',
+		
+  		'right_center_region_font_size'     	=> '1.0em',
+  		'right_center_region_menu_size'     	=> '1.0em',
+  		'right_center_region_menu_sub_size'    	=> '1.0em',
+  		'right_center_region_heading_size'    	=> '1.3em',
   		'right_center_region_background_color'	=> '#FFFFFF',
   		'right_center_region_block_color'     	=> '#FFFFFF',
   		'right_center_region_heading_color'  	=> '#000000',
-		'right_center_region_heading_background_color'  	=> '#FFFFFF',
+  		'right_center_region_heading_background_color'  	=> '#FFFFFF',
   		'right_center_region_font_color'  		=> '#000000',
   		'right_center_region_menu_link_color'  	=> '#CC0000',
   		'right_center_region_link_color'  		=> '#CC0000',
-		'right_below_region_font_size'     		=> '1.0em',
+		
+  		'right_below_region_font_size'     		=> '1.0em',
+  		'right_below_region_menu_size'     		=> '1.0em',
+  		'right_below_region_menu_sub_size' 		=> '1.0em',
+  		'right_below_region_heading_size'  		=> '1.3em',
   		'right_below_region_background_color'	=> '#FFFFFF',
   		'right_below_region_block_color'     	=> '#FFFFFF',
   		'right_below_region_heading_color'  	=> '#000000',
-		'right_below_region_heading_background_color'  	=> '#FFFFFF',
+  		'right_below_region_heading_background_color'  	=> '#FFFFFF',
   		'right_below_region_font_color'  		=> '#000000',
   		'right_below_region_menu_link_color'  	=> '#CC0000',
   		'right_below_region_link_color'  		=> '#CC0000',
+	
 		'copyright_information' 				=> '© ' . date('Y', time()),
 		'footer_region_font_size'				=> '0.85em',
   		'footer_region_menu_font_size'			=> '1em',
@@ -239,10 +293,31 @@ function primer_settings($saved_settings) {
   	'#attributes' => array('class' => 'collapsible collapsed'),
   );
   
-  $form['left_region_settings'] = array(
+  $form['left_above_menu_region_settings'] = array(
     '#type' => 'fieldset',
-    '#title' => t('Left Region Settings'),
-    '#description' => t("Settings for the left region of the site"),
+    '#title' => t('Left Above Menu Region Settings'),
+    '#description' => t("Settings for the left above menu region of the site"),
+  	'#attributes' => array('class' => 'collapsible collapsed'),
+  );
+  
+  $form['left_main_menu_region_settings'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Left Main Menu Region Settings'),
+    '#description' => t("Settings for the left main menu region of the site"),
+  	'#attributes' => array('class' => 'collapsible collapsed'),
+  );
+  
+  $form['left_sub_menu_region_settings'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Left Sub-Menu Region Settings'),
+    '#description' => t("Settings for the left sub-menu region of the site"),
+  	'#attributes' => array('class' => 'collapsible collapsed'),
+  );
+  
+  $form['left_below_menu_region_settings'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Left Below Menu Region Settings'),
+    '#description' => t("Settings for the left-below-menu region of the site"),
   	'#attributes' => array('class' => 'collapsible collapsed'),
   );
   
@@ -289,7 +364,7 @@ function primer_settings($saved_settings) {
   );
   
   $form['main_site_settings']['center_layout'] = array(
-    '#title' => 'Website layout location',
+    '#title' => 'Site layout location',
   	'#description' => t('Align the layout on the left, or the center of the page.'), 
     '#type' => 'select',
     '#default_value' => $settings['center_layout'],
@@ -338,27 +413,27 @@ function primer_settings($saved_settings) {
   );
   
   $form['main_site_settings']['site_border_color'] = array(
-    '#title' => 'Border color for the main layout',
+    '#title' => 'Site border color',
     '#type' => 'textfield',
     '#default_value' => $settings['site_border_color'],
   	'#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['main_site_settings']['site_border_size'] = array(
-    '#title' => 'Border size for the main layout (px)',
+    '#title' => 'Site border size (px)',
     '#type' => 'textfield',
     '#default_value' => $settings['site_border_size'],
   );
   
   $form['main_site_settings']['site_background_color'] = array(
-    '#title' => 'Background color for the main layout',
+    '#title' => 'Background color for inside the main layout',
     '#type' => 'textfield',
     '#default_value' => $settings['site_background_color'],
   	'#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['main_site_settings']['site_background_image_url'] = array(
-    '#title' => 'Background Image URL for inside main layout',
+    '#title' => 'Background Image URL for inside the main layout',
   	'#description' => t('Image to be displayed inside the main layout. Full URL required (including http://)'),
     '#type' => 'textfield',
     '#default_value' => $settings['site_background_image_url'],
@@ -376,7 +451,7 @@ function primer_settings($saved_settings) {
   );
   
   $form['main_site_settings']['base_font_family'] = array(
-    '#title' => 'Base Font',
+    '#title' => 'Base font',
   	'#description' => t('The main font used on the website (unless overridden by another setting)'), 
     '#type' => 'select',
     '#default_value' => $settings['base_font_family'],
@@ -390,28 +465,28 @@ function primer_settings($saved_settings) {
   );
   
   $form['main_site_settings']['base_font_size'] = array(
-    '#title' => 'Base Font Size', 
+    '#title' => 'Base font size', 
     '#type' => 'select',
     '#default_value' => $settings['base_font_size'],
     '#options' => $fontSizeOptions
   );
   
   $form['main_site_settings']['site_heading_color'] = array(
-    '#title' => 'Font color for the main headings in layout',
+    '#title' => 'Standard headings font color',
     '#type' => 'textfield',
     '#default_value' => $settings['site_heading_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['main_site_settings']['site_font_color'] = array(
-    '#title' => 'Default color for the text in main layout',
+    '#title' => 'Default color for the text',
     '#type' => 'textfield',
     '#default_value' => $settings['site_font_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['main_site_settings']['site_link_color'] = array(
-    '#title' => 'Font color for links in the main layout',
+    '#title' => 'Default color for links',
     '#type' => 'textfield',
     '#default_value' => $settings['site_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
@@ -484,21 +559,21 @@ function primer_settings($saved_settings) {
   );
   
   $form['header_settings']['site_title_text_color'] = array(
-    '#title' => 'Color of Title Text in Header', 
+    '#title' => 'Title text color', 
     '#type' => 'textfield',
     '#default_value' => $settings['site_title_text_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['header_settings']['site_title_bg_color'] = array(
-    '#title' => 'Color of Background in Header', 
+    '#title' => 'Background color', 
     '#type' => 'textfield',
     '#default_value' => $settings['site_title_bg_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['header_settings']['site_title_top_line'] = array(
-    '#title' => 'Site Title Top Line',
+    '#title' => 'Title Text Top Line',
     '#description' => t('The text in the title on the top line (this line is regular font)'), 
     '#type' => 'textfield',
     '#default_value' => $settings['site_title_top_line'],
@@ -507,7 +582,7 @@ function primer_settings($saved_settings) {
     '#required' => FALSE,
   );
   $form['header_settings']['site_title_bottom_line'] = array(
-    '#title' => 'Site Title Bottom Line',
+    '#title' => 'Title text bottom line',
     '#description' => t('The text in the title on the bottom line (this line is bold/strong font)'), 
     '#type' => 'textfield',
     '#default_value' => $settings['site_title_bottom_line'],
@@ -568,7 +643,7 @@ function primer_settings($saved_settings) {
   );
   
   $form['breadcrumb_settings']['breadcrumb_separator'] = array(
-    '#title' => 'Breadcrumb Separator',
+    '#title' => 'Breadcrumb separator character',
     '#description' => t('The character that will go in between breadcrumb items. Include spaces if necessary'), 
     '#type' => 'textfield',
     '#default_value' => $settings['breadcrumb_separator'],
@@ -585,7 +660,7 @@ function primer_settings($saved_settings) {
    */
   
   $form['horizontal_menu_settings']['horizontal_main_menu_align'] = array(
-    '#title' => 'Alignment for horizontal main menu',
+    '#title' => 'Alignment',
     '#type' => 'select',
     '#default_value' => $settings['horizontal_main_menu_align'],
     '#options' => array(
@@ -596,21 +671,21 @@ function primer_settings($saved_settings) {
   );
   
   $form['horizontal_menu_settings']['horizontal_main_menu_height'] = array(
-    '#title' => 'Height (px) of the main horizontal menu',
+    '#title' => 'Height (px)',
   	'#description' => t('Make sure to include px'), 
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_main_menu_height'],
   );
   
   $form['horizontal_menu_settings']['horizontal_main_menu_font_size'] = array(
-    '#title' => 'Horizontal Main Menu Font Size', 
+    '#title' => 'Menu item size', 
     '#type' => 'select',
     '#default_value' => $settings['horizontal_main_menu_font_size'],
     '#options' => $fontSizeOptions,
   );
   
   $form['horizontal_menu_settings']['horizontal_main_menu_color'] = array(
-    '#title' => 'Background Color for main horizontal menu',
+    '#title' => 'Background Color',
   	'#description' => t('Select the background color'), 
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_main_menu_color'],
@@ -618,21 +693,21 @@ function primer_settings($saved_settings) {
   );
   
   $form['horizontal_menu_settings']['horizontal_main_menu_link_color'] = array(
-    '#title' => 'Main horizontal menu link color',
+    '#title' => 'Menu item link color',
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_main_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['horizontal_menu_settings']['horizontal_main_menu_link_hover_color'] = array(
-    '#title' => 'Main horizontal menu link hover color',
+    '#title' => 'Link hover color',
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_main_menu_link_hover_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['horizontal_menu_settings']['horizontal_secondary_menu_align'] = array(
-    '#title' => 'Alignment for horizontal secondary menu',
+    '#title' => 'Alignment',
     '#type' => 'select',
     '#default_value' => $settings['horizontal_secondary_menu_align'],
     '#options' => array(
@@ -643,14 +718,14 @@ function primer_settings($saved_settings) {
   );
   
   $form['horizontal_menu_settings']['horizontal_secondary_menu_height'] = array(
-    '#title' => 'Height (px) of the secondary horizontal menu',
+    '#title' => 'Height (px)',
   	'#description' => t('Make sure to include px'), 
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_secondary_menu_height'],
   );
   
   $form['horizontal_menu_settings']['horizontal_secondary_menu_font_size'] = array(
-    '#title' => 'Horizontal Secondary Menu Font Size', 
+    '#title' => 'Menu item size', 
     '#type' => 'select',
     '#default_value' => $settings['horizontal_secondary_menu_font_size'],
     '#options' => $fontSizeOptions,
@@ -658,78 +733,355 @@ function primer_settings($saved_settings) {
   
   
   $form['horizontal_menu_settings']['horizontal_secondary_menu_color'] = array(
-    '#title' => 'Background Color for secondary horizontal menu',
+    '#title' => 'Background color',
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_secondary_menu_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['horizontal_menu_settings']['horizontal_secondary_menu_link_color'] = array(
-    '#title' => 'Secondary horizontal menu link color',
+    '#title' => 'Menu item link color',
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_secondary_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['horizontal_menu_settings']['horizontal_secondary_menu_link_hover_color'] = array(
-    '#title' => 'Secondary horizontal menu link hover color',
+    '#title' => 'Link hover color',
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_secondary_menu_link_hover_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-   /*
+  /*
    * 
-   * LEFT REGION STYLES & SETTINGS
+   * LEFT ABOVE MENU REGION STYLES & SETTINGS
    * 
    */
   
-  $form['left_region_settings']['left_region_font_size'] = array(
-    '#title' => 'Left Region Font Size', 
+  $form['left_above_menu_region_settings']['left_above_menu_region_background_color'] = array(
+    '#title' => 'Background color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_above_menu_region_background_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_above_menu_region_settings']['left_above_menu_region_block_color'] = array(
+    '#title' => 'Block background color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_above_menu_region_block_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_above_menu_region_settings']['left_above_menu_region_heading_color'] = array(
+    '#title' => 'Heading text color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_above_menu_region_heading_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_above_menu_region_settings']['left_above_menu_region_heading_background_color'] = array(
+    '#title' => 'Heading background color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_above_menu_region_heading_background_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_above_menu_region_settings']['left_above_menu_region_heading_size'] = array(
+    '#title' => 'Heading size', 
     '#type' => 'select',
-    '#default_value' => $settings['left_region_font_size'],
+    '#default_value' => $settings['left_above_menu_region_heading_size'],
     '#options' => $fontSizeOptions,
   );
   
-  $form['left_region_settings']['left_region_color'] = array(
-    '#title' => 'Color of Left Region', 
+  $form['left_above_menu_region_settings']['left_above_menu_region_font_size'] = array(
+    '#title' => 'Font Size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_above_menu_region_font_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_above_menu_region_settings']['left_above_menu_region_font_color'] = array(
+    '#title' => 'Font color', 
     '#type' => 'textfield',
-    '#default_value' => $settings['left_region_color'],
+    '#default_value' => $settings['left_above_menu_region_font_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-  $form['left_region_settings']['left_region_block_color'] = array(
-    '#title' => 'Color of blocks in Left Region', 
+  $form['left_above_menu_region_settings']['left_above_menu_region_link_color'] = array(
+    '#title' => 'Link color', 
     '#type' => 'textfield',
-    '#default_value' => $settings['left_region_block_color'],
+    '#default_value' => $settings['left_above_menu_region_link_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  ); 
+  
+  $form['left_above_menu_region_settings']['left_above_menu_region_menu_size'] = array(
+    '#title' => 'Menu item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_above_menu_region_menu_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_above_menu_region_settings']['left_above_menu_region_menu_sub_size'] = array(
+    '#title' => 'Menu sub-item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_above_menu_region_menu_sub_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_above_menu_region_settings']['left_above_menu_region_menu_link_color'] = array(
+    '#title' => 'Menu item link color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_above_menu_region_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-  $form['left_region_settings']['left_region_heading_color'] = array(
-    '#title' => 'Font color for headings in the left-side region', 
+  /*
+   * 
+   * LEFT MAIN MENU REGION STYLES & SETTINGS
+   * 
+   */
+  
+  $form['left_main_menu_region_settings']['left_main_menu_region_background_color'] = array(
+    '#title' => 'Background color', 
     '#type' => 'textfield',
-    '#default_value' => $settings['left_region_heading_color'],
+    '#default_value' => $settings['left_main_menu_region_background_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-  $form['left_region_settings']['left_region_font_color'] = array(
-    '#title' => 'Font color for left region', 
+  $form['left_main_menu_region_settings']['left_main_menu_region_block_color'] = array(
+    '#title' => 'Block background color', 
     '#type' => 'textfield',
-    '#default_value' => $settings['left_region_font_color'],
+    '#default_value' => $settings['left_main_menu_region_block_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-  $form['left_region_settings']['left_region_link_color'] = array(
-    '#title' => 'Link color for left region', 
+  $form['left_main_menu_region_settings']['left_main_menu_region_heading_background_color'] = array(
+    '#title' => 'Heading background color', 
     '#type' => 'textfield',
-    '#default_value' => $settings['left_region_link_color'],
+    '#default_value' => $settings['left_main_menu_region_heading_background_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-   $form['left_region_settings']['left_region_menu_link_color'] = array(
-    '#title' => 'Color for links in menus in left region', 
+  $form['left_main_menu_region_settings']['left_main_menu_region_heading_size'] = array(
+    '#title' => 'Heading size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_main_menu_region_heading_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_main_menu_region_settings']['left_main_menu_region_heading_color'] = array(
+    '#title' => 'Heading text color', 
     '#type' => 'textfield',
-    '#default_value' => $settings['left_region_menu_link_color'],
+    '#default_value' => $settings['left_main_menu_region_heading_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_main_menu_region_settings']['left_main_menu_region_font_size'] = array(
+    '#title' => 'Font size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_main_menu_region_font_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_main_menu_region_settings']['left_main_menu_region_font_color'] = array(
+    '#title' => 'Font color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_main_menu_region_font_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_main_menu_region_settings']['left_main_menu_region_link_color'] = array(
+    '#title' => 'Link color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_main_menu_region_link_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+   $form['left_main_menu_region_settings']['left_main_menu_region_menu_size'] = array(
+    '#title' => 'Menu item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_main_menu_region_menu_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_main_menu_region_settings']['left_main_menu_region_menu_sub_size'] = array(
+    '#title' => 'Menu sub-item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_main_menu_region_menu_sub_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_main_menu_region_settings']['left_main_menu_region_menu_link_color'] = array(
+    '#title' => 'Menu item link color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_main_menu_region_menu_link_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  /*
+   * 
+   * LEFT SUB MENU REGION STYLES & SETTINGS
+   * 
+   */
+  
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_background_color'] = array(
+    '#title' => 'Background color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_sub_menu_region_background_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_block_color'] = array(
+    '#title' => 'Block background color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_sub_menu_region_block_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_heading_background_color'] = array(
+    '#title' => 'Heading background color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_sub_menu_region_heading_background_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_heading_color'] = array(
+    '#title' => 'Heading text color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_sub_menu_region_heading_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_heading_size'] = array(
+    '#title' => 'Heading size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_sub_menu_region_heading_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_font_size'] = array(
+    '#title' => 'Font size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_sub_menu_region_font_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_font_color'] = array(
+    '#title' => 'Font color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_sub_menu_region_font_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_link_color'] = array(
+    '#title' => 'Link Color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_sub_menu_region_link_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_menu_size'] = array(
+    '#title' => 'Menu item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_sub_menu_region_menu_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_menu_sub_size'] = array(
+    '#title' => 'Menu sub-item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_sub_menu_region_menu_sub_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_menu_link_color'] = array(
+    '#title' => 'Menu item link color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_sub_menu_region_menu_link_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  /*
+   * 
+   * LEFT BELOW MENU REGION STYLES & SETTINGS
+   * 
+   */
+  
+  $form['left_below_menu_region_settings']['left_below_menu_region_background_color'] = array(
+    '#title' => 'Background color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_below_menu_region_background_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_below_menu_region_settings']['left_below_menu_region_block_color'] = array(
+    '#title' => 'Block background color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_below_menu_region_block_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_below_menu_region_settings']['left_below_menu_region_heading_background_color'] = array(
+    '#title' => 'Heading background color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_below_menu_region_heading_background_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_below_menu_region_settings']['left_below_menu_region_heading_size'] = array(
+    '#title' => 'Heading text size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_below_menu_region_heading_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_below_menu_region_settings']['left_below_menu_region_heading_color'] = array(
+    '#title' => 'Heading color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_below_menu_region_heading_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_below_menu_region_settings']['left_below_menu_region_font_size'] = array(
+    '#title' => 'Font size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_below_menu_region_font_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_below_menu_region_settings']['left_below_menu_region_font_color'] = array(
+    '#title' => 'Font color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_below_menu_region_font_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_below_menu_region_settings']['left_below_menu_region_link_color'] = array(
+    '#title' => 'Link color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_below_menu_region_link_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['left_below_menu_region_settings']['left_below_menu_region_menu_size'] = array(
+    '#title' => 'Menu item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_below_menu_region_menu_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_below_menu_region_settings']['left_below_menu_region_menu_sub_size'] = array(
+    '#title' => 'Menu sub-item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_below_menu_region_menu_sub_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['left_below_menu_region_settings']['left_below_menu_region_menu_link_color'] = array(
+    '#title' => 'Menu item link color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_below_menu_region_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
@@ -739,57 +1091,78 @@ function primer_settings($saved_settings) {
    * 
    */
   
-  $form['right_top_region_settings']['right_top_region_font_size'] = array(
-    '#title' => 'Right Top Region Font Size', 
-    '#type' => 'select',
-    '#default_value' => $settings['right_top_region_font_size'],
-    '#options' => $fontSizeOptions,
-  );
-  
   $form['right_top_region_settings']['right_top_region_background_color'] = array(
-    '#title' => 'Background color of Right top Region', 
+    '#title' => 'Background color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_top_region_background_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['right_top_region_settings']['right_top_region_block_color'] = array(
-    '#title' => 'Color of blocks in Right top Region', 
+    '#title' => 'Block background color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_top_region_block_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-  $form['right_top_region_settings']['right_top_region_heading_color'] = array(
-    '#title' => 'Font color for headings in the right top region', 
-    '#type' => 'textfield',
-    '#default_value' => $settings['right_top_region_heading_color'],
-    '#attributes' => array('class' => $allColorPickerClass),
-  );
-  
   $form['right_top_region_settings']['right_top_region_heading_background_color'] = array(
-    '#title' => 'Background color for headings in the right top region', 
+    '#title' => 'Heading background color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_top_region_heading_background_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
+  $form['right_top_region_settings']['right_top_region_heading_color'] = array(
+    '#title' => 'Heading text color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['right_top_region_heading_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['right_top_region_settings']['right_top_region_heading_size'] = array(
+    '#title' => 'Heading text size', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_top_region_heading_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
   $form['right_top_region_settings']['right_top_region_font_color'] = array(
-    '#title' => 'Font color for right top region', 
+    '#title' => 'Font Color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_top_region_font_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
+  $form['right_top_region_settings']['right_top_region_font_size'] = array(
+    '#title' => 'Font size', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_top_region_font_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
   $form['right_top_region_settings']['right_top_region_link_color'] = array(
-    '#title' => 'Link color for right top region', 
+    '#title' => 'Link color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_top_region_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
+  $form['right_top_region_settings']['right_top_region_menu_size'] = array(
+    '#title' => 'Menu item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_top_region_menu_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['right_top_region_settings']['right_top_region_menu_sub_size'] = array(
+    '#title' => 'Menu sub-item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_top_region_menu_sub_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
   $form['right_top_region_settings']['right_top_region_menu_link_color'] = array(
-    '#title' => 'Color for links in menus in the right top region', 
+    '#title' => 'Menu item link color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_top_region_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
@@ -801,57 +1174,78 @@ function primer_settings($saved_settings) {
    * 
    */
   
-  $form['right_center_region_settings']['right_center_region_font_size'] = array(
-    '#title' => 'Right center Region Font Size', 
-    '#type' => 'select',
-    '#default_value' => $settings['right_center_region_font_size'],
-    '#options' => $fontSizeOptions,
-  );
-  
   $form['right_center_region_settings']['right_center_region_background_color'] = array(
-    '#title' => 'Background color of Right center Region', 
+    '#title' => 'Background color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_center_region_background_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['right_center_region_settings']['right_center_region_block_color'] = array(
-    '#title' => 'Color of blocks in Right center Region', 
+    '#title' => 'Block background color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_center_region_block_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-  $form['right_center_region_settings']['right_center_region_heading_color'] = array(
-    '#title' => 'Font color for headings in the right center region', 
-    '#type' => 'textfield',
-    '#default_value' => $settings['right_center_region_heading_color'],
-    '#attributes' => array('class' => $allColorPickerClass),
-  );
-  
   $form['right_center_region_settings']['right_center_region_heading_background_color'] = array(
-    '#title' => 'Background color for headings in the right center region', 
+    '#title' => 'Heading background color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_center_region_heading_background_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
+  $form['right_center_region_settings']['right_center_region_heading_color'] = array(
+    '#title' => 'Heading text color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['right_center_region_heading_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['right_center_region_settings']['right_center_region_heading_size'] = array(
+    '#title' => 'Heading text size', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_center_region_heading_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['right_center_region_settings']['right_center_region_font_size'] = array(
+    '#title' => 'Font size', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_center_region_font_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
   $form['right_center_region_settings']['right_center_region_font_color'] = array(
-    '#title' => 'Font color for right center region', 
+    '#title' => 'Font color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_center_region_font_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['right_center_region_settings']['right_center_region_link_color'] = array(
-    '#title' => 'Link color for right center region', 
+    '#title' => 'Link color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_center_region_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
+  $form['right_center_region_settings']['right_center_region_menu_size'] = array(
+    '#title' => 'Menu item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_center_region_menu_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['right_center_region_settings']['right_center_region_menu_sub_size'] = array(
+    '#title' => 'Menu sub-item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_center_region_menu_sub_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
   $form['right_center_region_settings']['right_center_region_menu_link_color'] = array(
-    '#title' => 'Color for links in menus in the right center region', 
+    '#title' => 'Menu item link color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_center_region_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
@@ -864,57 +1258,78 @@ function primer_settings($saved_settings) {
    * 
    */
   
-  $form['right_below_region_settings']['right_below_region_font_size'] = array(
-    '#title' => 'Right below Region Font Size', 
-    '#type' => 'select',
-    '#default_value' => $settings['right_below_region_font_size'],
-    '#options' => $fontSizeOptions,
-  );
-  
   $form['right_below_region_settings']['right_below_region_background_color'] = array(
-    '#title' => 'Background color of Right below Region', 
+    '#title' => 'Background color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_below_region_background_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['right_below_region_settings']['right_below_region_block_color'] = array(
-    '#title' => 'Color of blocks in Right below Region', 
+    '#title' => 'Block background color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_below_region_block_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-  $form['right_below_region_settings']['right_below_region_heading_color'] = array(
-    '#title' => 'Font color for headings in the right below region', 
-    '#type' => 'textfield',
-    '#default_value' => $settings['right_below_region_heading_color'],
-    '#attributes' => array('class' => $allColorPickerClass),
-  );
-  
   $form['right_below_region_settings']['right_below_region_heading_background_color'] = array(
-    '#title' => 'Background color for headings in the right bottom region', 
+    '#title' => 'Heading background color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_below_region_heading_background_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
+  $form['right_below_region_settings']['right_below_region_heading_color'] = array(
+    '#title' => 'heading text color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['right_below_region_heading_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['right_below_region_settings']['right_below_region_heading_size'] = array(
+    '#title' => 'Heading text size', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_below_region_heading_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['right_below_region_settings']['right_below_region_font_size'] = array(
+    '#title' => 'Font size', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_below_region_font_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
   $form['right_below_region_settings']['right_below_region_font_color'] = array(
-    '#title' => 'Font color for right below region', 
+    '#title' => 'Font color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_below_region_font_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['right_below_region_settings']['right_below_region_link_color'] = array(
-    '#title' => 'Link color for right below region', 
+    '#title' => 'Link color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_below_region_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
+  $form['right_below_region_settings']['right_below_region_menu_size'] = array(
+    '#title' => 'Menu item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_below_region_menu_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['right_below_region_settings']['right_below_region_menu_sub_size'] = array(
+    '#title' => 'Menu sub-item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_below_region_menu_sub_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
   $form['right_below_region_settings']['right_below_region_menu_link_color'] = array(
-    '#title' => 'Color for links in menus in the right below region', 
+    '#title' => 'Link color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_below_region_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
@@ -926,23 +1341,8 @@ function primer_settings($saved_settings) {
    * 
    */
   
-  
-  $form['footer_region_settings']['footer_region_font_size'] = array(
-    '#title' => 'Footer Region Font Size', 
-    '#type' => 'select',
-    '#default_value' => $settings['footer_region_font_size'],
-    '#options' => $fontSizeOptions,
-  );
-  
-  $form['footer_region_settings']['footer_region_menu_font_size'] = array(
-    '#title' => 'Footer Region Menu Font Size', 
-    '#type' => 'select',
-    '#default_value' => $settings['footer_region_menu_font_size'],
-    '#options' => $fontSizeOptions,
-  );
-  
   $form['footer_region_settings']['footer_region_separator_color'] = array(
-    '#title' => 'Footer region separator',
+    '#title' => 'Separator color',
     '#description' => 'Color for the line that separated the main content from the footer region', 
     '#type' => 'textfield',
     '#default_value' => $settings['footer_region_separator_color'],
@@ -950,21 +1350,62 @@ function primer_settings($saved_settings) {
   );
   
   $form['footer_region_settings']['footer_region_background_color'] = array(
-    '#title' => 'Background color for footer region', 
+    '#title' => 'Background color', 
     '#type' => 'textfield',
     '#default_value' => $settings['footer_region_background_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
   $form['footer_region_settings']['footer_region_font_color'] = array(
-    '#title' => 'Font color for footer region', 
+    '#title' => 'Font color', 
     '#type' => 'textfield',
     '#default_value' => $settings['footer_region_font_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
+  $form['footer_region_settings']['footer_region_font_size'] = array(
+    '#title' => 'Font size', 
+    '#type' => 'select',
+    '#default_value' => $settings['footer_region_font_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
+  $form['footer_region_settings']['footer_region_link_color'] = array(
+    '#title' => 'Link color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['footer_region_link_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['footer_region_settings']['footer_menu_height'] = array(
+    '#title' => 'Footer menu height (px)', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['footer_menu_height'],
+  );
+  
+  $form['footer_region_settings']['footer_menu_color'] = array(
+    '#title' => 'Menu background color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['footer_menu_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['footer_region_settings']['footer_menu_link_color'] = array(
+    '#title' => 'Menu item link color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['footer_menu_link_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['footer_region_settings']['footer_region_menu_font_size'] = array(
+    '#title' => 'Menu item size', 
+    '#type' => 'select',
+    '#default_value' => $settings['footer_region_menu_font_size'],
+    '#options' => $fontSizeOptions,
+  );
+  
   $form['footer_region_settings']['footer_menu_align'] = array(
-    '#title' => 'Alignment for horizontal menu in the footer',
+    '#title' => 'Horizontal menu alignment',
     '#type' => 'select',
     '#default_value' => $settings['footer_menu_align'],
   	'#options' => array(
@@ -974,33 +1415,7 @@ function primer_settings($saved_settings) {
 	),
   );
   
-  $form['footer_region_settings']['footer_menu_height'] = array(
-    '#title' => 'Height (px) of the footer menu', 
-    '#type' => 'textfield',
-    '#default_value' => $settings['footer_menu_height'],
-  );
   
-  $form['footer_region_settings']['footer_menu_color'] = array(
-    '#title' => 'Background color for footer menu', 
-    '#type' => 'textfield',
-    '#default_value' => $settings['footer_menu_color'],
-    '#attributes' => array('class' => $allColorPickerClass),
-  );
-  
-  $form['footer_region_settings']['footer_menu_link_color'] = array(
-    '#title' => 'Link color for footer menu', 
-    '#type' => 'textfield',
-    '#default_value' => $settings['footer_menu_link_color'],
-    '#attributes' => array('class' => $allColorPickerClass),
-  );
-  
-  
-  $form['footer_region_settings']['footer_region_link_color'] = array(
-    '#title' => 'Link color for footer region', 
-    '#type' => 'textfield',
-    '#default_value' => $settings['footer_region_link_color'],
-    '#attributes' => array('class' => $allColorPickerClass),
-  );
   
   $form['footer_region_settings']['copyright_information'] = array(
     '#title' => 'Copyright information',
@@ -1013,7 +1428,7 @@ function primer_settings($saved_settings) {
   );
   
   $form['footer_region_settings']['footer_contact_information'] = array(
-    '#title' => 'Footer Contact Information',
+    '#title' => 'Contact Information Block',
     '#description' => t('For example: My Company Name, City, State Zip Phone: (555) 555-5555'), 
     '#type' => 'textfield',
     '#default_value' => $settings['footer_contact_information'],
