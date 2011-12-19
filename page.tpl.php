@@ -31,11 +31,12 @@
 		            <?php if($page['header_search']): ?>
 		            	<li><a href="#site-search" title="Skip to search this site">Skip to search this site</a></li>
 		            <?php endif; ?>
-		            <li><a href="#footer" title="Skip to footer">Skip to footer</a></li>
+		            <li><a href="#footer" title="Skip to footer">Skip to footer region</a></li>
 				</ul>
 		</div>
 	<!-- end accessibility links -->
-	<div id="total-page-wrapper">
+    <a class="access" name="topOfPage">Top Of Page</a>
+    <div id="total-page-wrapper">
 		<div id="page-container" class="container_<?php echo $page['region-widths']['maxPageWidth']; ?>">
 			<!-- start header container region with site title, quicklinks, search box etc -->
 			<div id="header-background">
