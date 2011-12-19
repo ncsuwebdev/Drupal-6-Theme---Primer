@@ -355,8 +355,6 @@ legend {
     margin: 0;
 }
 
-
-
 #region-left-menu-area-container h2, 
 #region-right-sidebar-container h2 {
     display: block;
@@ -378,7 +376,7 @@ legend {
     font-weight: bold;
     text-decoration: none;
     display: block;
-    padding: 4px 10px 4px 5px;
+    padding: 0.2em 10px 0.2em 5px;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: 0px 0.7em;
@@ -390,32 +388,32 @@ legend {
 }
 
 /* first set of sub links underneath the main menu */
+#region-left-menu-area-container .content .menu li ul li,
+#region-right-sidebar-container .content .menu li ul li {
+    text-transform: none;
+    margin: 0.2em 0 0.2em 15px;
+    background-image: none;
+    font-weight: normal;
+}
+
 #region-left-menu-area-container .content .menu li ul li a,
 #region-right-sidebar-container .content .menu li ul li a {
-    text-transform: none;
-    padding: 5px 0 5px 15px;
-    background-image: none;
     font-weight: normal;
 }
 
 /* second set of sub links underneath the main menu */
 #region-left-menu-area-container .content .menu li ul li ul li,
 #region-right-sidebar-container .content .menu li ul li ul li {
-    margin: 0 0 0 45px;
+    margin: 0.2em 0 0.2em 45px;
     padding: 0;
     list-style: square;
     list-style-position: outside;
     
 }
-#region-left-menu-area-container .content .menu li ul li ul li a,
-#region-right-sidebar-container .content .menu li ul li ul li a {
-    padding: 0;
-    margin: 0;
-}
 
 #region-left-menu-area-container .content .menu .last,
 #region-right-sidebar-container .content .menu .last {
-    padding: 0 0 4px 0;
+    padding: 0 0 0.2em 0;
 }
 
 #region-left-menu-area-container a.active, 
@@ -481,18 +479,12 @@ legend {
     margin-bottom: 0;
 }
 
-#right-above-sidebar-content .content p, #right-center-sidebar-content .content p, #right-below-sidebar-content .content p {
-    padding: 0;
-    margin: 0;
-}
-
 #region-right-sidebar a, #region-right-sidebar a:visited {
     text-decoration: underline;
 }
 #region-right-sidebar a:hover {
     text-decoration: none;
 }
-
 
 /*----------------------------------------------------------------------------------------------------------
     CENTER AND RIGHT REGION CONTAINER (EVERYTHING TO THE RIGHT OF THE STATIC LEFT REGION

@@ -213,27 +213,35 @@ function primer_preprocess_page(&$vars, $hook) {
   	$vars['dynamic_styles'] = ob_get_contents();
   	ob_end_clean();  
 	
-	// Drupal wants us to set the indexes/custom variables ahead of time, or it will throw an error for the world to see (it will work, just with errors)
+  	// Drupal wants us to set the indexes/custom variables ahead of time, or it will throw an error for the world to see (it will work, just with errors)
 	$vars['page']['region-widths']['show-left-region'] = '';
 	$vars['page']['region-widths']['show-right-region'] = '';
-
+	
 	// detect, set and store the widths for the different regions, based on what's being displayed (left, right, center and all combinations)
 	$vars['page']['region-widths']['maxPageWidth'] = 96; // maximum number of columns in the grid system
 	
 	$vars['page']['region-widths']['breadcrumb'] = $vars['breadcrumb'];
 	
-	// check to see if there are left or right regions to make it easier to set widths of regions below
-	if($vars['left_above_menu'] || $vars['left_primary_menu'] || $vars['left_secondary_menu'] || $vars['left_below_menu']) { 
-		// there is something in the left region, so set the necessary widths here
-		$vars['page']['region-widths']['show-left-region'] = true;
-		$vars['page']['region-widths']['left-region-width'] = 23;
+	// if the page being rendered is the block config page for primer, then don't display the left or right regions
+	if ($vars['template_files'][2] == 'page-admin-build-block') {
+		$vars['page']['region-widths']['show-left-region'] = false;
+		$vars['page']['region-widths']['show-right-region'] = false;
+	} else {
+	
+		// check to see if there are left or right regions to make it easier to set widths of regions below
+		if($vars['left_above_menu'] || $vars['left_primary_menu'] || $vars['left_secondary_menu'] || $vars['left_below_menu']) { 
+			// there is something in the left region, so set the necessary widths here
+			$vars['page']['region-widths']['show-left-region'] = true;
+			$vars['page']['region-widths']['left-region-width'] = 23;
+		}
+			
+		if($vars['right_above_sidebar'] || $vars['right_center_sidebar'] || $vars['right_below_sidebar']) {
+			// there is something in the right region, so set the necessary widths here
+			$vars['page']['region-widths']['show-right-region'] = true;
+			$vars['page']['region-widths']['right-region-width'] = 27;
+		}
 	}
-		
-	if($vars['right_above_sidebar'] || $vars['right_center_sidebar'] || $vars['right_below_sidebar']) {
-		// there is something in the right region, so set the necessary widths here
-		$vars['page']['region-widths']['show-right-region'] = true;
-		$vars['page']['region-widths']['right-region-width'] = 27;
-	}
+	
 	// now check to see for combinations of the left and right showing or not, and set the width accordingly
 	// set the center/right region width (everything to the right of the left region)
 	if($vars['page']['region-widths']['show-left-region']) {
@@ -271,8 +279,6 @@ function primer_preprocess_page(&$vars, $hook) {
 		$vars['page']['region-widths']['show-right-header-region'] = false;
 		$vars['page']['region-widths']['region-header-left-width'] = 96;
 	}
-	
-	
 	
 	//set the title image appropriately based on how much room there is to use: number of grids * 10 (pixels), minus 30 (pixels) for space
 	$vars['page']['region-widths']['region-header-title-width'] = ($vars['page']['region-widths']['region-header-left-width'] * 10) - 30;

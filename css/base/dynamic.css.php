@@ -228,6 +228,8 @@ input[type="submit"] {
  ************************************************************************
 */
 
+#left-above-menu .content p { line-height: <?php echo theme_get_setting('left_above_menu_region_font_size'); ?>; }
+#left-above-menu .content p { margin-bottom: <?php echo theme_get_setting('left_above_menu_region_font_size'); ?>; }
 #left-above-menu { background-color: <?php echo theme_get_setting('left_above_menu_region_background_color'); ?>; }
 #left-above-menu .block { background-color: <?php echo theme_get_setting('left_above_menu_region_block_color'); ?>; }
 #left-above-menu { font-size: <?php echo theme_get_setting('left_above_menu_region_font_size'); ?>; line-height: <?php echo theme_get_setting('left_above_menu_region_font_size'); ?>; }
@@ -247,6 +249,8 @@ input[type="submit"] {
  ************************************************************************
 */
 
+#left-main-menu .content p { line-height: <?php echo theme_get_setting('left_main_menu_region_font_size'); ?>; }
+#left-main-menu .content p { margin-bottom: <?php echo theme_get_setting('left_main_menu_region_font_size'); ?>; }
 #left-main-menu { background-color: <?php echo theme_get_setting('left_main_menu_region_background_color'); ?>; }
 #left-main-menu .block { background-color: <?php echo theme_get_setting('left_main_menu_region_block_color'); ?>; }
 #left-main-menu { font-size: <?php echo theme_get_setting('left_main_menu_region_font_size'); ?>; line-height: <?php echo theme_get_setting('left_main_menu_region_font_size'); ?>; }
@@ -266,6 +270,8 @@ input[type="submit"] {
  ************************************************************************
 */
 
+#left-sub-menu .content p { line-height: <?php echo theme_get_setting('left_sub_menu_region_font_size'); ?>; }
+#left-sub-menu .content p { margin-bottom: <?php echo theme_get_setting('left_sub_menu_region_font_size'); ?>; }
 #left-sub-menu { background-color: <?php echo theme_get_setting('left_sub_menu_region_background_color'); ?>; }
 #left-sub-menu .block { background-color: <?php echo theme_get_setting('left_sub_menu_region_block_color'); ?>; }
 #left-sub-menu { font-size: <?php echo theme_get_setting('left_sub_menu_region_font_size'); ?>; line-height: <?php echo theme_get_setting('left_sub_menu_region_font_size'); ?>; }
@@ -285,6 +291,8 @@ input[type="submit"] {
  ************************************************************************
 */
 
+#left-below-menu .content p { line-height: <?php echo theme_get_setting('left_below_menu_region_font_size'); ?>; }
+#left-below-menu .content p { margin-bottom: <?php echo theme_get_setting('left_below_menu_region_font_size'); ?>; }
 #left-below-menu { background-color: <?php echo theme_get_setting('left_below_menu_region_background_color'); ?>; }
 #left-below-menu .block { background-color: <?php echo theme_get_setting('left_below_menu_region_block_color'); ?>; }
 #left-below-menu { font-size: <?php echo theme_get_setting('left_below_menu_region_font_size'); ?>; line-height: <?php echo theme_get_setting('left_below_menu_region_font_size'); ?>; }
@@ -305,6 +313,7 @@ input[type="submit"] {
 */
 
 #right-above-sidebar-content .content p { line-height: <?php echo theme_get_setting('right_top_region_font_size'); ?>; }
+#right-above-sidebar-content .content p { margin-bottom: <?php echo theme_get_setting('right_top_region_font_size'); ?>; }
 #right-above-sidebar { background-color: <?php echo theme_get_setting('right_top_region_background_color'); ?>; }
 #right-above-sidebar .block { background-color: <?php echo theme_get_setting('right_top_region_block_color'); ?>; }
 #right-above-sidebar { font-size: <?php echo theme_get_setting('right_top_region_font_size'); ?>; line-height: <?php echo theme_get_setting('right_top_region_font_size'); ?>; }
@@ -325,6 +334,7 @@ input[type="submit"] {
 */
 
 #right-center-sidebar-content .content p { line-height: <?php echo theme_get_setting('right_center_region_font_size'); ?>; }
+#right-center-sidebar-content .content p { margin-bottom: <?php echo theme_get_setting('right_center_region_font_size'); ?>; }
 #right-center-sidebar { background-color: <?php echo theme_get_setting('right_center_region_background_color'); ?>; }
 #right-center-sidebar .block { background-color: <?php echo theme_get_setting('right_center_region_block_color'); ?>; }
 #right-center-sidebar { font-size: <?php echo theme_get_setting('right_center_region_font_size'); ?>; line-height: <?php echo theme_get_setting('right_center_region_font_size'); ?>; }
@@ -345,6 +355,7 @@ input[type="submit"] {
 */
 
 #right-below-sidebar-content .content p { line-height: <?php echo theme_get_setting('right_below_region_font_size'); ?>; }
+#right-below-sidebar-content .content p { margin-bottom: <?php echo theme_get_setting('right_below_region_font_size'); ?>; }
 #right-below-sidebar { background-color: <?php echo theme_get_setting('right_below_region_background_color'); ?>; }
 #right-below-sidebar .block { background-color: <?php echo theme_get_setting('right_below_region_block_color'); ?>; }
 #right-below-sidebar { font-size: <?php echo theme_get_setting('right_below_region_font_size'); ?>; line-height: <?php echo theme_get_setting('right_below_region_font_size'); ?>; }
