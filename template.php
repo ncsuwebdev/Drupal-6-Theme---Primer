@@ -4,11 +4,10 @@
 	$js = "var base_path = '". base_path() . "';";
 	drupal_add_js($js, 'inline');
 	
-	$themePath = "var theme_path = '". path_to_theme() . "';";
+	$themePath = drupal_get_path('theme', 'primer');
 	drupal_add_js($themePath, 'inline');
-	
 	drupal_add_js('misc/collapse.js','core');
-	
+
 /*
 * Initialize theme settings
 */

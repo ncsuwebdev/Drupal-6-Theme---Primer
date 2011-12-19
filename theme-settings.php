@@ -2,6 +2,16 @@
 
 function primer_settings($saved_settings) {
 	
+	/*
+	 * 
+	 * force the primer settings page to render using the primer theme
+	 * admin/build/themes/settings/primer
+	 * 
+	 */
+	
+	global $custom_theme;
+    $custom_theme = 'primer';
+	
 	// use this variable to specify which form elements should use the complete color picker (full spectrum)
 	$allColorPickerClass = 'all-colorpicker';	
 	
