@@ -135,42 +135,40 @@ jQuery(document).ready(function() {
             }
         );
         
-     //
-     // Javascript from the Appalachian Sustainability Website
-     // in action here: http://sustain.appstate.edu/
-     //
-     /*
-        if($('.featured-content-slider .view-content ul').length > 0) {
-       // Cycles through header photos
-       $(".featured-content-slider .view-content ul")
-       .after('<ul id="banner-icons">')
-       .cycle({
-         fx: 'scrollUp', 
-         timeout: 4000,
-         cleartype: true,
-         cleartypeNoBg: true,
-         pager: '#banner-icons',
-         pagerAnchorBuilder: function(idx, slide) {
-           return $("<li>").html(
-             $("<a></a>").attr('href', '#').html(
-               $("<img>").attr('src', $(slide).find('img').attr('src')
-                 .replace('featured-story-home', idx != 0 ? 'featured-story-home-grey' : 'featured-story-home-thumb'))));
-         },
-         before: function(currSlideElement, nextSlideElement, options, forwardFlag) {
-           $("ul#banner-icons img").each(function() {
-             $(this).attr('src', $(this).attr('src').replace('featured-story-home-thumb', 'featured-story-home-grey'));
-           });
-           return;
-         },
-         after: function(currSlideElement, nextSlideElement, options, forwardFlag) {
-           if ( $('ul#banner-icons li.activeSlide').length != 0 ) {
-             var activeImage = $('ul#banner-icons li.activeSlide img');
-             activeImage.attr('src', activeImage.attr('src').replace('featured-story-home-grey', 'featured-story-home-thumb'));
-           };
-           return;
-         }
-       });
-     }
-*/
         
+        /*
+         * Featured Content Slider based on jquery cycle
+         * 
+         */
+        
+        $('.featured-content-slider')
+        	.after('<div id="featured-content-slider-overlay">')
+        
+        $('.featured-content-slider .view-content').each(function(index, el) { 
+        	$(this).find('.views-field-title, .views-field-view-node, .views-field-teaser ').css(
+        			{ 'text-align': 'right', 'position': 'relative', 'top': '-' + $(this).find('.views-field-image-attach-images img').attr('height') / 4 + 'px' 
+        		});
+        	});
+        
+        $('.featured-content-slider .view-content')
+        .before('<div id="featured-content-slider-nav">') 
+        .cycle({ 
+            fx:     'fade', 
+            speed:   1000, 
+            timeout: 10000, 
+            pause:   1,
+            cleartype: true,
+            cleartypeNoBg: true,
+            pager: '#featured-content-slider-nav',
+            pagerAnchorBuilder: function(idx, slide) {
+                var img = $(slide).children().eq(0).attr("src");
+                return '<li><a href="#"><img src="' + jQuery(slide).find('img').attr('src') + '" width="140" height="70" /></a></li>';
+              },
+            //after: onAfter 
+        });
+        /*
+        function onAfter() { 
+            $('#featured-content-slider-overlay').html('<p>' + this.alt + '</p>');
+        }
+        */
 });
