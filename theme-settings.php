@@ -125,13 +125,15 @@ function primer_settings($saved_settings) {
   		'header_small_menu_font_color' 			=> '#CC0000',
 		'show_breadcrumbs'      				=> 1,
 		'breadcrumb_separator'		 			=> ' > ',
+		
 		'horizontal_main_menu_align'    		=> 'left',
 		'horizontal_main_menu_height'    		=> '25px',
 		'horizontal_main_menu_font_size'    	=> '1.0em',
 		'horizontal_main_menu_color'    		=> '#666666',
   		'horizontal_main_menu_link_color'		=> '#FFFFFF',
   		'horizontal_main_menu_link_hover_color'	=> '#CCCCCC',
-		'horizontal_secondary_menu_align'    	=> 'left',
+		
+  		'horizontal_secondary_menu_align'    	=> 'left',
 		'horizontal_secondary_menu_height' 		=> '20px',
 		'horizontal_secondary_menu_font_size'   => '1.0em',
   		'horizontal_secondary_menu_color'		=> '#CCCCCC',
@@ -296,10 +298,17 @@ function primer_settings($saved_settings) {
   	'#attributes' => array('class' => 'collapsible collapsed'),
   );
   
-  $form['horizontal_menu_settings'] = array(
+  $form['horizontal_main_menu_settings'] = array(
     '#type' => 'fieldset',
-    '#title' => t('Horizontal Menu Settings'),
-    '#description' => t("Settings for the horizontal menus"),
+    '#title' => t('Horizontal Main Menu Settings'),
+    '#description' => t("Settings for the horizontal main menu"),
+  	'#attributes' => array('class' => 'collapsible collapsed'),
+  );
+  
+  $form['horizontal_secondary_menu_settings'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Horizontal Secondary Menu Settings'),
+    '#description' => t("Settings for the horizontal secondary menu"),
   	'#attributes' => array('class' => 'collapsible collapsed'),
   );
   
@@ -669,7 +678,7 @@ function primer_settings($saved_settings) {
    * 
    */
   
-  $form['horizontal_menu_settings']['horizontal_main_menu_align'] = array(
+  $form['horizontal_main_menu_settings']['horizontal_main_menu_align'] = array(
     '#title' => 'Alignment',
     '#type' => 'select',
     '#default_value' => $settings['horizontal_main_menu_align'],
@@ -680,21 +689,21 @@ function primer_settings($saved_settings) {
 	),
   );
   
-  $form['horizontal_menu_settings']['horizontal_main_menu_height'] = array(
+  $form['horizontal_main_menu_settings']['horizontal_main_menu_height'] = array(
     '#title' => 'Height (px)',
   	'#description' => t('Make sure to include px'), 
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_main_menu_height'],
   );
   
-  $form['horizontal_menu_settings']['horizontal_main_menu_font_size'] = array(
+  $form['horizontal_main_menu_settings']['horizontal_main_menu_font_size'] = array(
     '#title' => 'Menu item size', 
     '#type' => 'select',
     '#default_value' => $settings['horizontal_main_menu_font_size'],
     '#options' => $fontSizeOptions,
   );
   
-  $form['horizontal_menu_settings']['horizontal_main_menu_color'] = array(
+  $form['horizontal_main_menu_settings']['horizontal_main_menu_color'] = array(
     '#title' => 'Background Color',
   	'#description' => t('Select the background color'), 
     '#type' => 'textfield',
@@ -702,21 +711,21 @@ function primer_settings($saved_settings) {
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-  $form['horizontal_menu_settings']['horizontal_main_menu_link_color'] = array(
+  $form['horizontal_main_menu_settings']['horizontal_main_menu_link_color'] = array(
     '#title' => 'Menu item link color',
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_main_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-  $form['horizontal_menu_settings']['horizontal_main_menu_link_hover_color'] = array(
+  $form['horizontal_main_menu_settings']['horizontal_main_menu_link_hover_color'] = array(
     '#title' => 'Link hover color',
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_main_menu_link_hover_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-  $form['horizontal_menu_settings']['horizontal_secondary_menu_align'] = array(
+  $form['horizontal_seconday_menu_settings']['horizontal_secondary_menu_align'] = array(
     '#title' => 'Alignment',
     '#type' => 'select',
     '#default_value' => $settings['horizontal_secondary_menu_align'],
@@ -727,14 +736,14 @@ function primer_settings($saved_settings) {
 	),
   );
   
-  $form['horizontal_menu_settings']['horizontal_secondary_menu_height'] = array(
+  $form['horizontal_seconday_menu_settings']['horizontal_secondary_menu_height'] = array(
     '#title' => 'Height (px)',
   	'#description' => t('Make sure to include px'), 
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_secondary_menu_height'],
   );
   
-  $form['horizontal_menu_settings']['horizontal_secondary_menu_font_size'] = array(
+  $form['horizontal_seconday_menu_settings']['horizontal_secondary_menu_font_size'] = array(
     '#title' => 'Menu item size', 
     '#type' => 'select',
     '#default_value' => $settings['horizontal_secondary_menu_font_size'],
@@ -742,21 +751,21 @@ function primer_settings($saved_settings) {
   );
   
   
-  $form['horizontal_menu_settings']['horizontal_secondary_menu_color'] = array(
+  $form['horizontal_seconday_menu_settings']['horizontal_secondary_menu_color'] = array(
     '#title' => 'Background color',
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_secondary_menu_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-  $form['horizontal_menu_settings']['horizontal_secondary_menu_link_color'] = array(
+  $form['horizontal_seconday_menu_settings']['horizontal_secondary_menu_link_color'] = array(
     '#title' => 'Menu item link color',
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_secondary_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-  $form['horizontal_menu_settings']['horizontal_secondary_menu_link_hover_color'] = array(
+  $form['horizontal_seconday_menu_settings']['horizontal_secondary_menu_link_hover_color'] = array(
     '#title' => 'Link hover color',
     '#type' => 'textfield',
     '#default_value' => $settings['horizontal_secondary_menu_link_hover_color'],
