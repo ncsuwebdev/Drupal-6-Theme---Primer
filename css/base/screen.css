@@ -643,10 +643,30 @@ table.sticky-enabled td, table.views-table td {
     float: left;
 }
 
+div.view div.views-hide-hover,
+div.view:hover div.views-hide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+    background-color: #000;
+    opacity: 0.9;
+    border: 1px solid #000;
+    height: 80px;
+    width: 50px;
+}
+div.views-admin-links li {
+    display: block;
+    text-align: left;
+}
+
+
 /*----------------------------------------------------------------------------------------------------------
     FEATURED CONTENT SLIDER
 ----------------------------------------------------------------------------------------------------------*/
-
+/*
 .nivo-controlNav {
    position: absolute;
    top: 5px;
@@ -666,3 +686,4 @@ table.sticky-enabled td, table.views-table td {
 .nivo-controlNav a.active {
     background-position:-10px 0;
 }
+*/
