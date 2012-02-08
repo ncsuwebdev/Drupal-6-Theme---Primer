@@ -230,7 +230,7 @@ function primer_settings($saved_settings) {
 		'footer_region_separator_color'			=> '#CC0000',
 		'footer_region_background_color'		=> '#FFFFFF',
   		'footer_region_link_color'				=> '#CC0000',
-		'footer_menu_align'						=> 'center',
+  		'footer_menu_align'						=> 'center',
 		'footer_menu_height'					=> '40px',
   		'footer_menu_color'						=> '#666666',
   		'footer_menu_link_color'				=> '#FFFFFF',
@@ -1432,9 +1432,7 @@ function primer_settings($saved_settings) {
       'center' => 'Center',
   	  'right' => 'Right',
 	),
-  );
-  
-  
+  );  
   
   $form['footer_region_settings']['copyright_information'] = array(
     '#title' => 'Copyright information',

@@ -425,7 +425,7 @@ input[type="submit"] {
 #footer-horizontal-menu {
 	background-color: <?php echo theme_get_setting('footer_menu_color'); ?>;
 }
-#footer-horizontal-menu a {
+#footer-horizontal-menu a, #footer-horizontal-menu a:visited {
 	color: <?php echo theme_get_setting('footer_menu_link_color'); ?>;
 }
 

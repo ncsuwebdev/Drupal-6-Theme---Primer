@@ -5,6 +5,11 @@
     display: none;
 }
 
+/* administration menu built into drupal or enabled via module */
+#admin-menu {
+    z-index: 10000 !important;
+}
+
 /*
  ***********************************************************************
  * MAIN MENU STYLES  
