@@ -3,7 +3,7 @@
 name = Primer 6.x
 project = primer
 description = Primer Theme (for use on Drupal 6 only)
-version = 6.x-2.7
+version = 6.x-2.8
 core = 6.x
 engine = phptemplate
 
