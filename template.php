@@ -151,13 +151,13 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
   		'copyright_information' 				=> '© ' . date('Y', time()),
 		'footer_region_font_size'				=> '0.85em',
   		'footer_region_menu_font_size'			=> '1em',
-		'footer_region_separator_color'			=> '#000000',
-		'footer_region_background_color'		=> '#DEDDDB',
+		'footer_region_separator_color'			=> '#CC0000',
+		'footer_region_background_color'		=> '#FFFFFF',
   		'footer_region_link_color'				=> '#CC0000',
 		'footer_menu_align'						=> 'center',
 		'footer_menu_height'					=> '40px',
-  		'footer_menu_color'						=> '#000000',
-  		'footer_menu_link_color'				=> '#CC0000',
+  		'footer_menu_color'						=> '#666666',
+  		'footer_menu_link_color'				=> '#FFFFFF',
 		'footer_region_font_color'  			=> '#000000',
 		'footer_contact_information'			=> 'My Awesome Project Website, Raleigh, NC 27695 Phone: (555) 555-5555',
   	);
@@ -337,3 +337,4 @@ function primer_system_settings_form($form) {
   }
   return drupal_render($form);
 }
+
