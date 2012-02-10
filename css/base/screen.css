@@ -346,6 +346,21 @@ legend {
     margin: 0 0 10px 0;
 }
 
+#region-left-menu-area-container .block .content li, 
+#region-right-sidebar-container .block .content li {
+    margin: 10px;
+}
+
+#region-left-menu-area-container .block .content li a, 
+#region-right-sidebar-container .block .content li a {
+    text-decoration: none;
+}
+
+#region-left-menu-area-container .block .content li a:hover, 
+#region-right-sidebar-container .block .content li a:hover {
+    text-decoration: underline;
+}
+
 /*----------------------------------------------------------------------------------------------------------
     LEFT & RIGHT MENU LIST/LINK STYLES 
 ----------------------------------------------------------------------------------------------------------*/
