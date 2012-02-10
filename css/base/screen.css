@@ -677,28 +677,20 @@ div.views-admin-links li {
     text-align: left;
 }
 
-
 /*----------------------------------------------------------------------------------------------------------
-    FEATURED CONTENT SLIDER
+    GCAL_EVENTS MODULE BLOCKS (DEFAULT SETTINGS)
 ----------------------------------------------------------------------------------------------------------*/
-/*
-.nivo-controlNav {
-   position: absolute;
-   top: 5px;
-   left: 5px;
-   width: 70px;
-   height: 283px;
+
+.gcal_block_event {
+    border-bottom: 1px solid #CCC;
+    margin: 0;
+    padding: 0;
+}
+.gcal_block_event .element {
+    display: block;
+    padding: 0 0 5px 0;
+}
+.gcal_block_event .date {
+    font-weight: bold;
 }
 
-.nivo-controlNav a {
-    display:block;
-    width:70px;
-    height:50px;
-    margin: 3px;
-    float:left;
-    border: 2px solid #000;
-}
-.nivo-controlNav a.active {
-    background-position:-10px 0;
-}
-*/
