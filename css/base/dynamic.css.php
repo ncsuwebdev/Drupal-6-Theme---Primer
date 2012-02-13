@@ -228,14 +228,13 @@ input[type="submit"] {
  ************************************************************************
 */
 
-#left-above-menu .content p { line-height: <?php echo theme_get_setting('left_above_menu_region_font_size'); ?>; }
 #left-above-menu .content p { margin-bottom: <?php echo theme_get_setting('left_above_menu_region_font_size'); ?>; }
 #left-above-menu { background-color: <?php echo theme_get_setting('left_above_menu_region_background_color'); ?>; }
 #left-above-menu .block { background-color: <?php echo theme_get_setting('left_above_menu_region_block_color'); ?>; }
-#left-above-menu { font-size: <?php echo theme_get_setting('left_above_menu_region_font_size'); ?>; line-height: <?php echo theme_get_setting('left_above_menu_region_font_size'); ?>; }
-#left-above-menu .content .menu li a { font-size: <?php echo theme_get_setting('left_above_menu_region_menu_size'); ?>; line-height: <?php echo theme_get_setting('left_above_menu_region_menu_size'); ?>; }
-#left-above-menu .content .menu li li a { font-size: <?php echo theme_get_setting('left_above_menu_region_menu_sub_size'); ?>; line-height: <?php echo theme_get_setting('left_above_menu_region_menu_sub_size'); ?>; }
-#left-above-menu h2 { font-size: <?php echo theme_get_setting('left_above_menu_region_heading_size'); ?>; line-height: <?php echo theme_get_setting('left_above_menu_region_heading_size'); ?>; }
+#left-above-menu { font-size: <?php echo theme_get_setting('left_above_menu_region_font_size'); ?>; }
+#left-above-menu .content .menu li a { font-size: <?php echo theme_get_setting('left_above_menu_region_menu_size'); ?>;  }
+#left-above-menu .content .menu li li a { font-size: <?php echo theme_get_setting('left_above_menu_region_menu_sub_size'); ?>; }
+#left-above-menu h2 { font-size: <?php echo theme_get_setting('left_above_menu_region_heading_size'); ?>; }
 #left-above-menu h2 { color: <?php echo theme_get_setting('left_above_menu_region_heading_color'); ?>; } 
 #left-above-menu .content .menu li a { color: <?php echo theme_get_setting('left_above_menu_region_menu_link_color'); ?>; }
 #left-above-menu .content .menu li a:hover { color: <?php echo theme_get_setting('left_above_menu_region_menu_link_color'); ?>; } 
@@ -249,14 +248,13 @@ input[type="submit"] {
  ************************************************************************
 */
 
-#left-main-menu .content p { line-height: <?php echo theme_get_setting('left_main_menu_region_font_size'); ?>; }
 #left-main-menu .content p { margin-bottom: <?php echo theme_get_setting('left_main_menu_region_font_size'); ?>; }
 #left-main-menu { background-color: <?php echo theme_get_setting('left_main_menu_region_background_color'); ?>; }
 #left-main-menu .block { background-color: <?php echo theme_get_setting('left_main_menu_region_block_color'); ?>; }
-#left-main-menu { font-size: <?php echo theme_get_setting('left_main_menu_region_font_size'); ?>; line-height: <?php echo theme_get_setting('left_main_menu_region_font_size'); ?>; }
-#left-main-menu .content .menu li a { font-size: <?php echo theme_get_setting('left_main_menu_region_menu_size'); ?>; line-height: <?php echo theme_get_setting('left_main_menu_region_menu_size'); ?>; }
-#left-main-menu .content .menu li li a { font-size: <?php echo theme_get_setting('left_main_menu_region_menu_sub_size'); ?>; line-height: <?php echo theme_get_setting('left_main_menu_region_menu_sub_size'); ?>; }
-#left-main-menu h2 { font-size: <?php echo theme_get_setting('left_main_menu_region_heading_size'); ?>; line-height: <?php echo theme_get_setting('left_main_menu_region_heading_size'); ?>; }
+#left-main-menu { font-size: <?php echo theme_get_setting('left_main_menu_region_font_size'); ?>;  }
+#left-main-menu .content .menu li a { font-size: <?php echo theme_get_setting('left_main_menu_region_menu_size'); ?>; }
+#left-main-menu .content .menu li li a { font-size: <?php echo theme_get_setting('left_main_menu_region_menu_sub_size'); ?>;  }
+#left-main-menu h2 { font-size: <?php echo theme_get_setting('left_main_menu_region_heading_size'); ?>;  }
 #left-main-menu h2 { color: <?php echo theme_get_setting('left_main_menu_region_heading_color'); ?>; } 
 #left-main-menu .content .menu li a { color: <?php echo theme_get_setting('left_main_menu_region_menu_link_color'); ?>; }
 #left-main-menu .content .menu li a:hover { color: <?php echo theme_get_setting('left_main_menu_region_menu_link_color'); ?>; } 
@@ -270,14 +268,13 @@ input[type="submit"] {
  ************************************************************************
 */
 
-#left-sub-menu .content p { line-height: <?php echo theme_get_setting('left_sub_menu_region_font_size'); ?>; }
 #left-sub-menu .content p { margin-bottom: <?php echo theme_get_setting('left_sub_menu_region_font_size'); ?>; }
 #left-sub-menu { background-color: <?php echo theme_get_setting('left_sub_menu_region_background_color'); ?>; }
 #left-sub-menu .block { background-color: <?php echo theme_get_setting('left_sub_menu_region_block_color'); ?>; }
-#left-sub-menu { font-size: <?php echo theme_get_setting('left_sub_menu_region_font_size'); ?>; line-height: <?php echo theme_get_setting('left_sub_menu_region_font_size'); ?>; }
-#left-sub-menu .content .menu li a { font-size: <?php echo theme_get_setting('left_sub_menu_region_menu_size'); ?>; line-height: <?php echo theme_get_setting('left_sub_menu_region_menu_size'); ?>; }
-#left-sub-menu .content .menu li li a { font-size: <?php echo theme_get_setting('left_sub_menu_region_menu_sub_size'); ?>; line-height: <?php echo theme_get_setting('left_sub_menu_region_menu_sub_size'); ?>; }
-#left-sub-menu h2 { font-size: <?php echo theme_get_setting('left_sub_menu_region_heading_size'); ?>; line-height: <?php echo theme_get_setting('left_sub_menu_region_heading_size'); ?>; }
+#left-sub-menu { font-size: <?php echo theme_get_setting('left_sub_menu_region_font_size'); ?>;  }
+#left-sub-menu .content .menu li a { font-size: <?php echo theme_get_setting('left_sub_menu_region_menu_size'); ?>;  }
+#left-sub-menu .content .menu li li a { font-size: <?php echo theme_get_setting('left_sub_menu_region_menu_sub_size'); ?>;  }
+#left-sub-menu h2 { font-size: <?php echo theme_get_setting('left_sub_menu_region_heading_size'); ?>;  }
 #left-sub-menu h2 { color: <?php echo theme_get_setting('left_sub_menu_region_heading_color'); ?>; } 
 #left-sub-menu .content .menu li a { color: <?php echo theme_get_setting('left_sub_menu_region_menu_link_color'); ?>; }
 #left-sub-menu .content .menu li a:hover { color: <?php echo theme_get_setting('left_sub_menu_region_menu_link_color'); ?>; } 
@@ -291,14 +288,13 @@ input[type="submit"] {
  ************************************************************************
 */
 
-#left-below-menu .content p { line-height: <?php echo theme_get_setting('left_below_menu_region_font_size'); ?>; }
 #left-below-menu .content p { margin-bottom: <?php echo theme_get_setting('left_below_menu_region_font_size'); ?>; }
 #left-below-menu { background-color: <?php echo theme_get_setting('left_below_menu_region_background_color'); ?>; }
 #left-below-menu .block { background-color: <?php echo theme_get_setting('left_below_menu_region_block_color'); ?>; }
-#left-below-menu { font-size: <?php echo theme_get_setting('left_below_menu_region_font_size'); ?>; line-height: <?php echo theme_get_setting('left_below_menu_region_font_size'); ?>; }
-#left-below-menu .content .menu li a { font-size: <?php echo theme_get_setting('left_below_menu_region_menu_size'); ?>; line-height: <?php echo theme_get_setting('left_below_menu_region_menu_size'); ?>; }
-#left-below-menu .content .menu li li a { font-size: <?php echo theme_get_setting('left_below_menu_region_menu_sub_size'); ?>; line-height: <?php echo theme_get_setting('left_below_menu_region_menu_sub_size'); ?>; }
-#left-below-menu h2 { font-size: <?php echo theme_get_setting('left_below_menu_region_heading_size'); ?>; line-height: <?php echo theme_get_setting('left_below_menu_region_heading_size'); ?>; }
+#left-below-menu { font-size: <?php echo theme_get_setting('left_below_menu_region_font_size'); ?>;  }
+#left-below-menu .content .menu li a { font-size: <?php echo theme_get_setting('left_below_menu_region_menu_size'); ?>;  }
+#left-below-menu .content .menu li li a { font-size: <?php echo theme_get_setting('left_below_menu_region_menu_sub_size'); ?>;  }
+#left-below-menu h2 { font-size: <?php echo theme_get_setting('left_below_menu_region_heading_size'); ?>;  }
 #left-below-menu h2 { color: <?php echo theme_get_setting('left_below_menu_region_heading_color'); ?>; } 
 #left-below-menu .content .menu li a { color: <?php echo theme_get_setting('left_below_menu_region_menu_link_color'); ?>; }
 #left-below-menu .content .menu li a:hover { color: <?php echo theme_get_setting('left_below_menu_region_menu_link_color'); ?>; } 
@@ -312,14 +308,13 @@ input[type="submit"] {
  ************************************************************************
 */
 
-#right-above-sidebar-content .content p { line-height: <?php echo theme_get_setting('right_top_region_font_size'); ?>; }
 #right-above-sidebar-content .content p { margin-bottom: <?php echo theme_get_setting('right_top_region_font_size'); ?>; }
 #right-above-sidebar { background-color: <?php echo theme_get_setting('right_top_region_background_color'); ?>; }
 #right-above-sidebar .block { background-color: <?php echo theme_get_setting('right_top_region_block_color'); ?>; }
-#right-above-sidebar { font-size: <?php echo theme_get_setting('right_top_region_font_size'); ?>; line-height: <?php echo theme_get_setting('right_top_region_font_size'); ?>; }
-#right-above-sidebar .content .menu li a { font-size: <?php echo theme_get_setting('right_top_region_menu_size'); ?>; line-height: <?php echo theme_get_setting('right_top_region_menu_size'); ?>; }
-#right-above-sidebar .content .menu li li a { font-size: <?php echo theme_get_setting('right_top_region_menu_sub_size'); ?>; line-height: <?php echo theme_get_setting('right_top_region_menu_sub_size'); ?>; }
-#right-above-sidebar h2 { font-size: <?php echo theme_get_setting('right_top_region_heading_size'); ?>; line-height: <?php echo theme_get_setting('right_top_region_heading_size'); ?>; }
+#right-above-sidebar { font-size: <?php echo theme_get_setting('right_top_region_font_size'); ?>;  }
+#right-above-sidebar .content .menu li a { font-size: <?php echo theme_get_setting('right_top_region_menu_size'); ?>;  }
+#right-above-sidebar .content .menu li li a { font-size: <?php echo theme_get_setting('right_top_region_menu_sub_size'); ?>;  }
+#right-above-sidebar h2 { font-size: <?php echo theme_get_setting('right_top_region_heading_size'); ?>;  }
 #right-above-sidebar h2 { color: <?php echo theme_get_setting('right_top_region_heading_color'); ?>; } 
 #right-above-sidebar .content .menu li a { color: <?php echo theme_get_setting('right_top_region_menu_link_color'); ?>; }
 #right-above-sidebar .content .menu li a:hover { color: <?php echo theme_get_setting('right_top_region_menu_link_color'); ?>; } 
@@ -333,14 +328,13 @@ input[type="submit"] {
  ************************************************************************
 */
 
-#right-center-sidebar-content .content p { line-height: <?php echo theme_get_setting('right_center_region_font_size'); ?>; }
 #right-center-sidebar-content .content p { margin-bottom: <?php echo theme_get_setting('right_center_region_font_size'); ?>; }
 #right-center-sidebar { background-color: <?php echo theme_get_setting('right_center_region_background_color'); ?>; }
 #right-center-sidebar .block { background-color: <?php echo theme_get_setting('right_center_region_block_color'); ?>; }
-#right-center-sidebar { font-size: <?php echo theme_get_setting('right_center_region_font_size'); ?>; line-height: <?php echo theme_get_setting('right_center_region_font_size'); ?>; }
-#right-center-sidebar .content .menu li a { font-size: <?php echo theme_get_setting('right_center_region_menu_size'); ?>; line-height: <?php echo theme_get_setting('right_center_region_menu_size'); ?>; }
-#right-center-sidebar .content .menu li li a { font-size: <?php echo theme_get_setting('right_center_region_menu_sub_size'); ?>; line-height: <?php echo theme_get_setting('right_center_region_menu_sub_size'); ?>; }
-#right-center-sidebar h2 { font-size: <?php echo theme_get_setting('right_center_region_heading_size'); ?>; line-height: <?php echo theme_get_setting('right_center_region_heading_size'); ?>; }
+#right-center-sidebar { font-size: <?php echo theme_get_setting('right_center_region_font_size'); ?>;  }
+#right-center-sidebar .content .menu li a { font-size: <?php echo theme_get_setting('right_center_region_menu_size'); ?>;  }
+#right-center-sidebar .content .menu li li a { font-size: <?php echo theme_get_setting('right_center_region_menu_sub_size'); ?>;  }
+#right-center-sidebar h2 { font-size: <?php echo theme_get_setting('right_center_region_heading_size'); ?>;  }
 #right-center-sidebar h2 { color: <?php echo theme_get_setting('right_center_region_heading_color'); ?>; } 
 #right-center-sidebar .content .menu li a { color: <?php echo theme_get_setting('right_center_region_menu_link_color'); ?>; }
 #right-center-sidebar .content .menu li a:hover { color: <?php echo theme_get_setting('right_center_region_menu_link_color'); ?>; } 
@@ -354,14 +348,13 @@ input[type="submit"] {
  ************************************************************************
 */
 
-#right-below-sidebar-content .content p { line-height: <?php echo theme_get_setting('right_below_region_font_size'); ?>; }
 #right-below-sidebar-content .content p { margin-bottom: <?php echo theme_get_setting('right_below_region_font_size'); ?>; }
 #right-below-sidebar { background-color: <?php echo theme_get_setting('right_below_region_background_color'); ?>; }
 #right-below-sidebar .block { background-color: <?php echo theme_get_setting('right_below_region_block_color'); ?>; }
-#right-below-sidebar { font-size: <?php echo theme_get_setting('right_below_region_font_size'); ?>; line-height: <?php echo theme_get_setting('right_below_region_font_size'); ?>; }
-#right-below-sidebar .content .menu li a { font-size: <?php echo theme_get_setting('right_below_region_menu_size'); ?>; line-height: <?php echo theme_get_setting('right_below_region_menu_size'); ?>; }
-#right-below-sidebar .content .menu li li a { font-size: <?php echo theme_get_setting('right_below_region_menu_sub_size'); ?>; line-height: <?php echo theme_get_setting('right_below_region_menu_sub_size'); ?>; }
-#right-below-sidebar h2 { font-size: <?php echo theme_get_setting('right_below_region_heading_size'); ?>; line-height: <?php echo theme_get_setting('right_below_region_heading_size'); ?>; }
+#right-below-sidebar { font-size: <?php echo theme_get_setting('right_below_region_font_size'); ?>;  }
+#right-below-sidebar .content .menu li a { font-size: <?php echo theme_get_setting('right_below_region_menu_size'); ?>;  }
+#right-below-sidebar .content .menu li li a { font-size: <?php echo theme_get_setting('right_below_region_menu_sub_size'); ?>;  }
+#right-below-sidebar h2 { font-size: <?php echo theme_get_setting('right_below_region_heading_size'); ?>;  }
 #right-below-sidebar h2 { color: <?php echo theme_get_setting('right_below_region_heading_color'); ?>; } 
 #right-below-sidebar .content .menu li a { color: <?php echo theme_get_setting('right_below_region_menu_link_color'); ?>; }
 #right-below-sidebar .content .menu li a:hover { color: <?php echo theme_get_setting('right_below_region_menu_link_color'); ?>; } 

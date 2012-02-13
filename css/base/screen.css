@@ -4,7 +4,7 @@
 *
 */
 body {
-
+    line-height: normal;
 }
 
 p,fieldset,table {
@@ -217,7 +217,7 @@ legend {
     margin: 15px 0 15px 0;
 }
 #region-center-content-container {
-      line-height: 1.55em;
+      line-height: normal;
 }
 
 /*----------------------------------------------------------------------------------------------------------
@@ -300,7 +300,7 @@ legend {
     LEFT REGION LAYOUT 
 ----------------------------------------------------------------------------------------------------------*/
 #region-left-menu-area-container {
-    line-height: 1.55em;
+    line-height: normal;
     width: 230px;
     position: relative;
     left: -8px;
@@ -436,6 +436,19 @@ legend {
     text-decoration: underline !important;
 }
 
+#region-left-menu-area-container a, 
+#region-right-sidebar-container a {
+    text-decoration: none;
+}
+
+
+#region-left-menu-area-container a:hover, 
+#region-right-sidebar-container a:hover {
+    text-decoration: underline;
+}
+
+
+
 /*----------------------------------------------------------------------------------------------------------
     RIGHT REGION LAYOUT
 ----------------------------------------------------------------------------------------------------------*/
@@ -495,10 +508,10 @@ legend {
 }
 
 #region-right-sidebar a, #region-right-sidebar a:visited {
-    text-decoration: underline;
+    text-decoration: none;
 }
 #region-right-sidebar a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /*----------------------------------------------------------------------------------------------------------
@@ -523,7 +536,7 @@ legend {
 #breadcrumb {
     padding: 4px 13px 2px 0px;
     margin: 4px 0 4px 3px;
-    line-height: 1.0em;
+    line-height: normal;
 }
 
 #breadcrumb a {
@@ -688,9 +701,11 @@ div.views-admin-links li {
 }
 .gcal_block_event .element {
     display: block;
-    padding: 0 0 5px 0;
+    padding: 5px 0 5px 0;
 }
 .gcal_block_event .date {
     font-weight: bold;
 }
-
+.block-gcal_events br {
+    display:none; /* to hide the bug that inserts two breaks after each event for no reason*/
+}
