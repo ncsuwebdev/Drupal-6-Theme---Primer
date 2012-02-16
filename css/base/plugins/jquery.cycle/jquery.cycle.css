@@ -14,6 +14,13 @@
     z-index: 80;
     list-style: none;
 }
+#featured-content-slider-nav li {
+    width: 140px;
+    height: 70px;
+}
+.featured-content-slider-thumbnail  {
+
+}
 /*
 #featured-content-slider-nav img {
     border: 2px solid #000;

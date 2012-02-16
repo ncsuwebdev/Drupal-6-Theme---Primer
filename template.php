@@ -149,8 +149,8 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
   		'right_below_region_link_color'  		=> '#CC0000',
 		
   		'copyright_information' 				=> '© ' . date('Y', time()),
-		'footer_region_font_size'				=> '0.85em',
-  		'footer_region_menu_font_size'			=> '1em',
+		'footer_region_font_size'				=> '1em',
+  		'footer_region_menu_font_size'			=> '0.9em',
 		'footer_region_separator_color'			=> '#CC0000',
 		'footer_region_background_color'		=> '#FFFFFF',
   		'footer_region_link_color'				=> '#CC0000',
