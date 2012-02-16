@@ -164,7 +164,7 @@ jQuery(document).ready(function() {
             pager: '#featured-content-slider-nav',
             pagerAnchorBuilder: function(idx, slide) {
                 var img = $(slide).children().eq(0).attr("src");
-                return '<li><a href="#"><img src="' + jQuery(slide).find('img').attr('src') + '" width="140" height="70" /></a></li>';
+                return '<li><a href="#"><img class="featured-content-slider-thumbnail" src="' + jQuery(slide).find('img').attr('src') + '" width="140" height="70" /></a></li>';
               },
             //after: onAfter 
         });
