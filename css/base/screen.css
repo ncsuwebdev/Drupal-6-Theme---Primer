@@ -708,3 +708,22 @@ div.views-admin-links li {
 .block-gcal_events br {
     display:none; /* to hide the bug that inserts two breaks after each event for no reason*/
 }
+
+/*
+ * style for /photos page (lists all photo galleries, with thumbnail and title of each)
+ */
+
+.primer-photo-gallery-feature-view table {
+    border-collapse:separate;
+    border-spacing: 10px 10px;
+}
+.primer-photo-gallery-feature-view td {
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.primer-photo-gallery-feature-view td img {
+    margin-bottom: 10px;
+    border: 1px solid #000;
+}
