@@ -7,7 +7,7 @@
 
 /* administration menu built into drupal or enabled via module */
 #admin-menu {
-    z-index: 10000 !important;
+    z-index: 100 !important;
 }
 
 /*
@@ -19,7 +19,7 @@
 #horizontal-menu-container {
     position: relative;
     top: -1px;
-    z-index: 10000;
+    z-index: 90;
 }
 
 /* remove any previously set margins and paddings */
@@ -39,11 +39,11 @@
     left: -10px;
     border-bottom: 1px solid #cfcdc8;
     padding: 0 0 20px 0;
-    z-index: 1000;
+    z-index: 89;
 }
 #horizontal-main-menu ul.menu {
     padding: 10px 10px 10px 0;
-    z-index: 1000;
+    z-index: 89;
     display: inline-block;
 }
 
@@ -121,11 +121,11 @@
     left: -10px;
     border-bottom: 1px solid #cfcdc8;
     padding: 0 0 15px 0;
-    z-index: 900;
+    z-index: 85;
 }
 #horizontal-secondary-menu ul.menu {
     padding: 7px 7px 7px 0;
-    z-index: 900;
+    z-index: 85;
     display: inline-block;
 }
 #horizontal-secondary-menu ul ul {

@@ -116,7 +116,7 @@ legend {
 }
 
 #site-title {
-	margin: 0;
+    margin: 0;
 }
 
 #site-title-top-line {
@@ -160,13 +160,13 @@ legend {
 }
 
 #region-header-right #header-small-right-menu {
-	text-align: right;
-	float: right;
-	text-align: right;
-	position: relative;
-	top: -10px;
-	width: 900px;
-	overflow: hidden;
+    text-align: right;
+    float: right;
+    text-align: right;
+    position: relative;
+    top: -10px;
+    width: 900px;
+    overflow: hidden;
 }
 
 #region-header-right #header-small-right-menu li {
@@ -179,10 +179,10 @@ legend {
     display: inline-block; 
 }
 #region-header-right #header-small-right-menu ul.menu a {
-	text-decoration: none;
+    text-decoration: none;
 }
 #region-header-right #header-small-right-menu ul.menu a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 #region-header-right #header-small-right-menu li li { 
@@ -466,7 +466,6 @@ legend {
     left: 10px;
     margin: 2px 0 1em 0;
     overflow: hidden;
-    z-index: 100;
 }
 
 #region-center-right-container .block {
@@ -595,12 +594,12 @@ legend {
 }
 /* only one level of links displayed in the footer menu (so hide the second level) */
 #footer-horizontal-menu ul ul {
-	display: none;
+    display: none;
 }
 
 
 #footer-horizontal-menu ul li {
-	float: left;
+    float: left;
     display: inline;
     padding: 0 15px 0 15px;
 }

@@ -11,7 +11,7 @@
 
 #featured-content-slider-nav {
     position: absolute;
-    z-index: 10000;
+    z-index: 80;
     list-style: none;
 }
 /*
@@ -21,7 +21,7 @@
 */
 
 .featured-content-slider-overlay {
-    z-index.: 50000;
+    z-index.: 81;
     position: absolute;
     top: -200px;
 }

@@ -117,7 +117,7 @@ jQuery(document).ready(function() {
 	}
 	
 	// hide all 2nd level lists, until the user hovers over (then display the sub-list)
-		$('#horizontal-menu-container li ul').hide();
+	$('#horizontal-menu-container li ul').hide();
 	
 		$('#horizontal-menu-container li').hover(
 	        function(){
@@ -132,7 +132,8 @@ jQuery(document).ready(function() {
         $('#horizontal-menu-container li li').hover(
             function(){
             	$('#horizontal-menu-container ul ul ul').hide();
-            }
+            },
+            function() {}
         );
         
         
@@ -142,9 +143,10 @@ jQuery(document).ready(function() {
          */
         
         $('.featured-content-slider')
-        	.after('<div id="featured-content-slider-overlay">')
+        	.after('<div id="featured-content-slider-overlay">');
         
         $('.featured-content-slider .view-content').each(function(index, el) { 
+        	
         	$(this).find('.views-field-title, .views-field-view-node, .views-field-teaser ').css(
         			{ 'text-align': 'right', 'position': 'relative', 'top': '-' + $(this).find('.views-field-image-attach-images img').attr('height') / 4 + 'px' 
         		});
@@ -155,7 +157,7 @@ jQuery(document).ready(function() {
         .cycle({ 
             fx:     'fade', 
             speed:   1000, 
-            timeout: 10000, 
+            timeout: 5000, 
             pause:   1,
             cleartype: true,
             cleartypeNoBg: true,
