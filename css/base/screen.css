@@ -227,6 +227,7 @@ legend {
     margin: 0;
     padding: 0 5px 0 5px;
     position: relative;
+    overflow: hidden; /* to help with table bug when they are too long to fit in the specified region */
 }
 
 #main-content #page-title {
