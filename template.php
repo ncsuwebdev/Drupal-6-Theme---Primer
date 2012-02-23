@@ -147,19 +147,23 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
   		'right_below_region_font_color'  		=> '#000000',
   		'right_below_region_menu_link_color'  	=> '#CC0000',
   		'right_below_region_link_color'  		=> '#CC0000',
-		
-  		'copyright_information' 				=> '© ' . date('Y', time()),
-		'footer_region_font_size'				=> '1em',
-  		'footer_region_menu_font_size'			=> '0.9em',
-		'footer_region_separator_color'			=> '#CC0000',
-		'footer_region_background_color'		=> '#FFFFFF',
-  		'footer_region_link_color'				=> '#CC0000',
-		'footer_menu_align'						=> 'center',
+  		
+  		'footer_region_separator_color'			=> '#CC0000',
+  		'footer_region_background_color'		=> '#FFFFFF',
+  		'footer_region_background_image_url'	=> '',
+  		'footer_region_font_color'  			=> '#000000',
+		'footer_region_link_color'				=> '#CC0000',
+  		'footer_region_font_size'				=> '1em',
+		'footer_contact_information'			=> 'My Awesome Project Website, Raleigh, NC 27695 Phone: (555) 555-5555',
+  		'copyright_information' 				=> '© ' . date('Y', time()),		
+  
+  		'footer_menu_align'						=> 'center',
 		'footer_menu_height'					=> '40px',
   		'footer_menu_color'						=> '#666666',
   		'footer_menu_link_color'				=> '#FFFFFF',
-		'footer_region_font_color'  			=> '#000000',
-		'footer_contact_information'			=> 'My Awesome Project Website, Raleigh, NC 27695 Phone: (555) 555-5555',
+		'footer_region_menu_font_size'			=> '0.9em',
+  		
+		
   	);
 
   // Get default theme settings.
@@ -283,6 +287,8 @@ function primer_preprocess_page(&$vars, $hook) {
 	//set the title image appropriately based on how much room there is to use: number of grids * 10 (pixels), minus 30 (pixels) for space
 	$vars['page']['region-widths']['region-header-title-width'] = ($vars['page']['region-widths']['region-header-left-width'] * 10) - 30;
 	
+	// set 4 footer region widths
+	$vars['page']['region-widths']['footer_four_regions'] = $vars['page']['region-widths']['maxPageWidth'] /4;
 }
 
 /**

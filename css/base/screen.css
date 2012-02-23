@@ -631,6 +631,20 @@ legend {
     font-size: 1.1em;
     margin: 15px 0 25px 0;
 }
+
+.footer_four_regions .block {
+    margin: 0;
+    padding: 10px;
+}
+.footer_four_regions a {
+    text-decoration: none;
+}
+.footer_four_regions a:hover {
+    text-decoration: underline;
+}
+
+
+
 /*----------------------------------------------------------------------------------------------------------
     DEFAULT DRUPAL ELEMENTS
 ----------------------------------------------------------------------------------------------------------*/

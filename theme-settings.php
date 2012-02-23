@@ -224,18 +224,20 @@ function primer_settings($saved_settings) {
   		'right_below_region_menu_link_color'  	=> '#CC0000',
   		'right_below_region_link_color'  		=> '#CC0000',
 	
-		'copyright_information' 				=> '© ' . date('Y', time()),
-		'footer_region_font_size'				=> '1em',
-  		'footer_region_menu_font_size'			=> '0.9em',
 		'footer_region_separator_color'			=> '#CC0000',
-		'footer_region_background_color'		=> '#FFFFFF',
-  		'footer_region_link_color'				=> '#CC0000',
+  		'footer_region_background_color'		=> '#FFFFFF',
+		'footer_region_background_image_url'	=> '',
+  		'footer_region_font_color'  			=> '#000000',
+		'footer_region_link_color'				=> '#CC0000',
+  		'footer_region_font_size'				=> '1em',
+		'footer_contact_information'			=> 'My Awesome Project Website, Raleigh, NC 27695 Phone: (555) 555-5555',
+  		'copyright_information' 				=> '© ' . date('Y', time()),		
+  
   		'footer_menu_align'						=> 'center',
 		'footer_menu_height'					=> '40px',
   		'footer_menu_color'						=> '#666666',
   		'footer_menu_link_color'				=> '#FFFFFF',
-		'footer_region_font_color'  			=> '#000000',
-		'footer_contact_information'			=> 'My Awesome Project Website, Raleigh, NC 27695 Phone: (555) 555-5555',
+		'footer_region_menu_font_size'			=> '0.9em',
   	);
   	
 	// Merge the saved variables and their default values
@@ -1368,6 +1370,13 @@ function primer_settings($saved_settings) {
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
+  $form['footer_region_settings']['footer_region_background_image_url'] = array(
+    '#title' => 'Background Image URL', 
+  	'#description' => 'Image to be used as the background for the footer region. Maximum Width: 980px. Full URL required (including http://)',
+    '#type' => 'textfield',
+    '#default_value' => $settings['footer_region_background_image_url'],
+  );
+  
   $form['footer_region_settings']['footer_region_background_color'] = array(
     '#title' => 'Background color', 
     '#type' => 'textfield',
@@ -1451,7 +1460,7 @@ function primer_settings($saved_settings) {
     '#default_value' => $settings['footer_contact_information'],
     '#size' => 60, 
     '#maxlength' => 128, 
-    '#required' => TRUE,
+    '#required' => FALSE,
   );
 
   // Return the form widgets

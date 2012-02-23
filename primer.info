@@ -59,3 +59,7 @@ regions[right_above_sidebar]    	= Top Right Sidebar Region
 regions[right_center_sidebar]   	= Center Right Sidebar Region
 regions[right_below_sidebar]    	= Bottom Right Sidebar Region
 regions[footer_menu]    			= Footer Menu
+regions[footer_one]                 = Footer 1st Region
+regions[footer_two]                 = Footer 2nd Region
+regions[footer_three]               = Footer 3rd Region
+regions[footer_four]                = Footer 4th Region

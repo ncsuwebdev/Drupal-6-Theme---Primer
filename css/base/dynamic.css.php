@@ -371,6 +371,9 @@ input[type="submit"] {
 	color: <?php echo theme_get_setting('footer_region_font_color'); ?>;
 	background-color: <?php echo theme_get_setting('footer_region_background_color'); ?>;
 	font-size: <?php echo theme_get_setting('footer_region_font_size'); ?>;
+    <?php if(theme_get_setting('footer_region_background_image_url') != ''): ?>
+    background: url('<?php echo theme_get_setting('footer_region_background_image_url'); ?>');
+    <?php endif; ?>
 }
   
 
