@@ -228,25 +228,30 @@
 					<?php print $footer_menu; ?>
 				</div>
 			<?php endif; ?>
-            <?php if($footer_one): ?>
-                <div id="footer_one" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
-                    <?php print $footer_one; ?>
-                </div>
-            <?php endif; ?>
-            <?php if($footer_two): ?>
-                <div id="footer_two" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
+            <div id="footer_one" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
+            	<?php if($footer_one): ?>
+                    	<?php print $footer_one; ?>
+				<?php else: echo '&nbsp;'; endif; // echo empty space to make divs correct width @todo fix this the right way later ?>
+            </div>           
+            <div id="footer_two" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
+            	<?php if($footer_two): ?>
                     <?php print $footer_two; ?>
-                </div>
-            <?php endif; ?>
-            <?php if($footer_three): ?>
-                <div id="footer_three" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
-                    <?php print $footer_three; ?>
-                </div>
-            <?php endif; ?>
-            <?php if($footer_four): ?>
-                <div id="footer_four" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
+                <?php else: echo '&nbsp;'; endif; // echo empty space to make divs correct width @todo fix this the right way later?>
+            </div>
+            <div id="footer_three" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
+                <?php if($footer_three): ?>
+					<?php print $footer_three; ?>
+                <?php else: echo '&nbsp;'; endif; // echo empty space to make divs correct width @todo fix this the right way later?>
+            </div>
+            <div id="footer_four" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
+            	<?php if($footer_four): ?>
                     <?php print $footer_four; ?>
-                </div>
+            	<?php else: echo '&nbsp;'; endif; // echo empty space to make divs correct width @todo fix this the right way later?>
+            </div>
+             <?php if($footer_full): ?>           
+            <div id="footer_full" class="grid_<?php echo $page['region-widths']['maxPageWidth']; ?> footer_full" role="contentinfo" aria-label="Footer">
+                    <?php print $footer_full; ?>
+            </div>
             <?php endif; ?>
 			<div id="footer-address-contact-info" class="grid_<?php echo $page['region-widths']['maxPageWidth']; ?>">
 				<?php echo theme_get_setting('footer_contact_information'); ?>

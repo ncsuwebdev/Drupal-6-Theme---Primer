@@ -63,3 +63,4 @@ regions[footer_one]                 = Footer 1st Region
 regions[footer_two]                 = Footer 2nd Region
 regions[footer_three]               = Footer 3rd Region
 regions[footer_four]                = Footer 4th Region
+regions[footer_full]                = Footer Full Width Region
