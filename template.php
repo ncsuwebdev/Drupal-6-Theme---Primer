@@ -289,6 +289,12 @@ function primer_preprocess_page(&$vars, $hook) {
 	
 	// set 4 footer region widths
 	$vars['page']['region-widths']['footer_four_regions'] = $vars['page']['region-widths']['maxPageWidth'] /4;
+	
+	// check to see if any of the 4 footer regions are available
+	if($vars['footer_one'] || $vars['footer_two'] || $vars['footer_three'] || $vars['footer_four']) { 
+			// there is something in the 4 columns region, so set variable accordingly
+			$vars['page']['region-widths']['show-footer-four-regions'] = true;
+		}
 }
 
 /**

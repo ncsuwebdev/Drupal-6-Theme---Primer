@@ -228,26 +228,28 @@
 					<?php print $footer_menu; ?>
 				</div>
 			<?php endif; ?>
-            <div id="footer_one" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
-            	<?php if($footer_one): ?>
-                    	<?php print $footer_one; ?>
-				<?php else: echo '&nbsp;'; endif; // echo empty space to make divs correct width @todo fix this the right way later ?>
-            </div>           
-            <div id="footer_two" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
-            	<?php if($footer_two): ?>
-                    <?php print $footer_two; ?>
-                <?php else: echo '&nbsp;'; endif; // echo empty space to make divs correct width @todo fix this the right way later?>
-            </div>
-            <div id="footer_three" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
-                <?php if($footer_three): ?>
-					<?php print $footer_three; ?>
-                <?php else: echo '&nbsp;'; endif; // echo empty space to make divs correct width @todo fix this the right way later?>
-            </div>
-            <div id="footer_four" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
-            	<?php if($footer_four): ?>
-                    <?php print $footer_four; ?>
-            	<?php else: echo '&nbsp;'; endif; // echo empty space to make divs correct width @todo fix this the right way later?>
-            </div>
+            <?php if($page['region-widths']['show-footer-four-regions']):?>
+	            <div id="footer_one" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
+	            	<?php if($footer_one): ?>
+	                    	<?php print $footer_one; ?>
+					<?php else: echo '&nbsp;'; endif; // echo empty space to make divs correct width @todo fix this the right way later ?>
+	            </div>           
+	            <div id="footer_two" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
+	            	<?php if($footer_two): ?>
+	                    <?php print $footer_two; ?>
+	                <?php else: echo '&nbsp;'; endif; // echo empty space to make divs correct width @todo fix this the right way later?>
+	            </div>
+	            <div id="footer_three" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
+	                <?php if($footer_three): ?>
+						<?php print $footer_three; ?>
+	                <?php else: echo '&nbsp;'; endif; // echo empty space to make divs correct width @todo fix this the right way later?>
+	            </div>
+	            <div id="footer_four" class="grid_<?php echo $page['region-widths']['footer_four_regions']; ?> footer_four_regions" role="contentinfo" aria-label="Footer">
+	            	<?php if($footer_four): ?>
+	                    <?php print $footer_four; ?>
+	            	<?php else: echo '&nbsp;'; endif; // echo empty space to make divs correct width @todo fix this the right way later?>
+	            </div>
+             <?php endif; ?>   
              <?php if($footer_full): ?>           
             <div id="footer_full" class="grid_<?php echo $page['region-widths']['maxPageWidth']; ?> footer_full" role="contentinfo" aria-label="Footer">
                     <?php print $footer_full; ?>

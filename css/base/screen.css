@@ -632,14 +632,14 @@ legend {
     margin: 15px 0 25px 0;
 }
 
-.footer_four_regions .block {
+.footer_four_regions .block, .footer_full .block {
     margin: 0;
     padding: 10px;
 }
-.footer_four_regions a {
+.footer_four_regions a, .footer_full a {
     text-decoration: none;
 }
-.footer_four_regions a:hover {
+.footer_four_regions a:hover, .footer_full a:hover {
     text-decoration: underline;
 }
 
