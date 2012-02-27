@@ -1419,17 +1419,6 @@ function primer_settings($saved_settings) {
     '#attributes' => array('class' => $allColorPickerClass),
   );
   
-  $form['footer_region_settings']['footer_menu_color_stretch'] = array(
-    '#title' => 'Use Full Window Width', 
-   	'#description' => t('Make background color stretch to full width of window'),
-    '#type' => 'select',
-    '#default_value' => $settings['footer_menu_color_stretch'],
-    '#options' => array(
-      0 => 'False',
-      1 => 'True',
-    ),
-  );
-  
   $form['footer_region_settings']['footer_menu_link_color'] = array(
     '#title' => 'Menu item link color', 
     '#type' => 'textfield',
