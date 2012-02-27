@@ -38,7 +38,11 @@ legend {
     font-size: 10px;
     width: 300px;
 }
-
+#full-width-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
 #total-page-wrapper {
     margin: auto;

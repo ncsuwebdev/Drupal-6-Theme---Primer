@@ -220,7 +220,7 @@
 		</div>
 		<!-- End 3 column layout area -->
 		<!-- Start footer area (everything underneath the main content area) -->
-		<div id="footer-separator" class="grid_<?php echo ($page['region-widths']['maxPageWidth']); ?>"></div>
+        <div id="footer-separator" class="grid_<?php echo ($page['region-widths']['maxPageWidth']); ?>"></div>
 		<div id="region-footer-container" class="container_<?php echo $page['region-widths']['maxPageWidth']; ?>">
 			<a class="access" name="footer">Footer</a>    
 			<?php if($footer_menu): ?>

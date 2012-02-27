@@ -224,7 +224,8 @@ function primer_settings($saved_settings) {
   		'right_below_region_menu_link_color'  	=> '#CC0000',
   		'right_below_region_link_color'  		=> '#CC0000',
 	
-		'footer_region_separator_color'			=> '#CC0000',
+		
+  		'footer_region_separator_color'			=> '#CC0000',
   		'footer_region_background_color'		=> '#FFFFFF',
 		'footer_region_background_image_url'	=> '',
   		'footer_region_font_color'  			=> '#000000',
@@ -1416,6 +1417,17 @@ function primer_settings($saved_settings) {
     '#type' => 'textfield',
     '#default_value' => $settings['footer_menu_color'],
     '#attributes' => array('class' => $allColorPickerClass),
+  );
+  
+  $form['footer_region_settings']['footer_menu_color_stretch'] = array(
+    '#title' => 'Use Full Window Width', 
+   	'#description' => t('Make background color stretch to full width of window'),
+    '#type' => 'select',
+    '#default_value' => $settings['footer_menu_color_stretch'],
+    '#options' => array(
+      0 => 'False',
+      1 => 'True',
+    ),
   );
   
   $form['footer_region_settings']['footer_menu_link_color'] = array(
