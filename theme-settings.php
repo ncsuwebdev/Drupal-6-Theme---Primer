@@ -238,7 +238,7 @@ function primer_settings($saved_settings) {
 		'footer_menu_height'					=> '40px',
   		'footer_menu_color'						=> '#666666',
   		'footer_menu_link_color'				=> '#FFFFFF',
-		'footer_region_menu_font_size'			=> '0.9em',
+		'footer_region_menu_font_size'			=> '1.0em',
   	);
   	
 	// Merge the saved variables and their default values

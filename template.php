@@ -161,7 +161,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
 		'footer_menu_height'					=> '40px',
 		'footer_menu_color'						=> '#666666',
 		'footer_menu_link_color'				=> '#FFFFFF',
-		'footer_region_menu_font_size'			=> '0.9em',
+		'footer_region_menu_font_size'			=> '1.0em',
   		
 		
   	);
