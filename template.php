@@ -19,6 +19,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
    * matches the $defaults in the theme-settings.php file.
    */
   $defaults = array(
+		'primermanager_selected_configuration'	=> 'no-preset',
 		'total_page_wrapper_top_offset'			=> '5px',
 		'center_layout' 						=> 1,
 		'background_image_url' 					=> '',
@@ -153,7 +154,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
   		'footer_region_background_image_url'	=> '',
   		'footer_region_font_color'  			=> '#000000',
 		'footer_region_link_color'				=> '#CC0000',
-  		'footer_region_font_size'				=> '1em',
+  		'footer_region_font_size'				=> '1.0em',
 		'footer_contact_information'			=> 'My Awesome Project Website, Raleigh, NC 27695 Phone: (555) 555-5555',
   		'copyright_information' 				=> '© ' . date('Y', time()),		
   
@@ -166,22 +167,27 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
 		
   	);
 
-  // Get default theme settings.
-  $settings = theme_get_settings($theme_key);
-  // Don't save the toggle_node_info_ variables.
-  if (module_exists('node')) {
-    foreach (node_get_types() as $type => $name) {
-      unset($settings['toggle_node_info_' . $type]);
-    }
-  }
-  // Save default theme settings.
-  variable_set(
-    str_replace('/', '_', 'theme_'. $theme_key .'_settings'),
-    array_merge($defaults, $settings)
-  );
-  // Force refresh of Drupal internals.
-  theme_get_setting('', TRUE);
+  	  // Get default theme settings.
+	  $settings = theme_get_settings($theme_key);
+	  // Don't save the toggle_node_info_ variables.
+	  if (module_exists('node')) {
+	    foreach (node_get_types() as $type => $name) {
+	      unset($settings['toggle_node_info_' . $type]);
+	    }
+	  }
+	  // Save default theme settings.
+	  variable_set(
+	    str_replace('/', '_', 'theme_'. $theme_key .'_settings'),
+	    array_merge($defaults, $settings)
+	  );
+	  // Force refresh of Drupal internals.
+	  theme_get_setting('', TRUE);
+	
 }
+
+
+
+
 
 /**
  * Return a themed breadcrumb trail.
@@ -191,6 +197,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
  * @return
  *   A string containing the breadcrumb output.
  */
+
 
 function primer_breadcrumb($breadcrumb) {
   // Wrap separator with span element.
@@ -338,6 +345,11 @@ function primer_node_submitted($node) {
     ));
 }
 
+/*
+ * potentially obsolete function
+ * 
+*/
+/*
 function primer_system_settings_form($form) {
   // Collapse fieldsets
   $form_elements = element_children($form);
@@ -347,6 +359,7 @@ function primer_system_settings_form($form) {
       $form[$element]['#collapsed'] = TRUE;
     }
   }
+  
   return drupal_render($form);
 }
-
+*/

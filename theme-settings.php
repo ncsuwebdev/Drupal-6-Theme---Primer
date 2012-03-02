@@ -1,5 +1,69 @@
 <?php
 
+/*
+ * Custom function
+ * Get all configurations (local and global) and return array for admin form to use
+ */
+
+function primer_getAllConfigurations() {
+	
+	include_once('presets/presets.inc');	
+	
+	if(primer_getLocalConfigurations()) {
+		return array_merge(primer_listGlobalConfigurations(), primer_getLocalConfigurations());
+	} else {
+		return primer_listGlobalConfigurations();
+	}
+	
+}
+/*
+ * get all the local configurations saved by the primermanager module
+ * 
+ * 
+ */
+function primer_getLocalConfigurations() {
+	
+	if(!module_exists('primermanager')) {
+		return false; 
+	} else {
+		
+	    $result = db_query("SELECT * FROM {primermanager}");
+		$returnArray = array();
+		
+		while ($c = db_fetch_array($result)) {
+			
+			$returnArray[$c['configKey']]['configKey'] = $c['configKey'];
+			$returnArray[$c['configKey']]['name'] = $c['name'];
+			$returnArray[$c['configKey']]['date'] = $c['date'];
+			$returnArray[$c['configKey']]['settings'] = unserialize($c['settings']);
+	  	
+		}
+	    
+	}
+	
+	return $returnArray;	
+	
+}
+
+/*
+ * return single configuration
+ * 
+ */
+
+function primer_getConfiguration($configKey) {
+	
+	$configurations = primer_getAllConfigurations();
+	
+	/*
+	echo  '<pre>';
+	print_r($configurations[$configKey]['settings']);
+	die('function primer_getConfiguration($configKey)');
+	*/
+	
+	return $configurations[$configKey]['settings'];
+	
+}
+
 function primer_settings($saved_settings) {
 	
 	/*
@@ -32,6 +96,7 @@ function primer_settings($saved_settings) {
 		foreach(array_values($allColors) as $key => $value) {
 			$returnArray[$key] = '#' . $value;
 		}
+		
 		$jsonEncodedColorsAll = json_encode(array_values($returnArray));
 		$brandedColorsAllClass = 'branded-colorpicker-all';
 		
@@ -64,6 +129,8 @@ function primer_settings($saved_settings) {
 		
 	}
 	
+	$allPresetConfigurations = json_encode(primer_getAllConfigurations());
+	
    // SET FONT SIZE OPTIONS FOR USE IN MULTIPLE PLACES
    
 	$fontSizeOptions = array(
@@ -93,6 +160,7 @@ function primer_settings($saved_settings) {
   	
 	
 	$defaults = array(
+		'primermanager_selected_configuration'	=> 'no-preset',
 		'total_page_wrapper_top_offset'			=> '5px',
 		'center_layout' 						=> 1,
 		'background_image_url' 					=> '',
@@ -230,7 +298,7 @@ function primer_settings($saved_settings) {
 		'footer_region_background_image_url'	=> '',
   		'footer_region_font_color'  			=> '#000000',
 		'footer_region_link_color'				=> '#CC0000',
-  		'footer_region_font_size'				=> '1em',
+  		'footer_region_font_size'				=> '1.0em',
 		'footer_contact_information'			=> 'My Awesome Project Website, Raleigh, NC 27695 Phone: (555) 555-5555',
   		'copyright_information' 				=> '© ' . date('Y', time()),		
   
@@ -241,13 +309,12 @@ function primer_settings($saved_settings) {
 		'footer_region_menu_font_size'			=> '1.0em',
   	);
   	
-	// Merge the saved variables and their default values
-  $settings = array_merge($defaults, $saved_settings);
-
+	$settings = array_merge($defaults, $saved_settings);
+	
   // Create the form widgets using Forms API
   
   // hidden form fields for use with the branded color picker (hidden from user view by jquery/css)
-  
+	
   $form['hidden']['initialcolorsAll'] = array(
     '#title' => 'Initial Branded Colors for Form Elements',
     '#type' => 'textarea',
@@ -274,11 +341,24 @@ function primer_settings($saved_settings) {
   	'#attributes' => array('class' => 'jsonColorList'),
   );
   
+  $form['hidden']['allPresetConfigurations'] = array(
+    '#title' => 'Hidden field containing json encoded array of preset configurations',
+    '#type' => 'textarea',
+    '#default_value' => $allPresetConfigurations,
+  	'#attributes' => array('class' => 'allPresetConfigurations'),
+  );
+  
    /*
    * 
    * SET UP FORM FIELDS FOR EACH AREA OF THE THEME CONFIG PAGE
    * 
    */
+  $form['preset'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Preset Configurations'),
+    '#description' => t("Predefined configurations"),
+  	'#attributes' => array('class' => 'collapsible'),
+  );
   
   $form['main_site_settings'] = array(
     '#type' => 'fieldset',
@@ -370,6 +450,29 @@ function primer_settings($saved_settings) {
     '#description' => t("Settings for the footer region of the site"),
   	'#attributes' => array('class' => 'collapsible collapsed'),
   );
+  
+  /*
+   * 
+   * PRESET OPTION
+   * 
+   * 
+   */
+  
+   $form['preset']['primermanager_selected_configuration'] = array(
+        '#type'          => 'select',
+        '#title'         => t('Select a Configuration to apply'),
+        '#default_value' => 'no-preset',
+        '#description'   => t("<p>IMPORTANT: This will OVERRIDE ALL CHOICES below.</p>"),
+        '#required'      => TRUE,
+        '#options'       => array(),
+    );
+
+    $configurations = primer_getAllConfigurations();
+	$form['preset']['primermanager_selected_configuration']['#options']['no-preset'] = 'Do Not Apply Preset - Use Values Below';
+    foreach ($configurations as $c) {
+        $form['preset']['primermanager_selected_configuration']['#options'][$c['configKey']] = $c['name'];
+    }
+  
   
    /*
    * 
@@ -1463,8 +1566,9 @@ function primer_settings($saved_settings) {
     '#maxlength' => 128, 
     '#required' => FALSE,
   );
-
+  
   // Return the form widgets
   return $form;
 
 }
+

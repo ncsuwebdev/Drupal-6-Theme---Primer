@@ -51,7 +51,13 @@ jQuery(document).ready(function() {
 		
 		// hide the text areas that contain the color values for the branded form fields.
 		$(".jsonColorList").parent().parent().parent().hide();
+		$(".allPresetConfigurations").parent().parent().parent().hide();
 		
+		
+		// make the preset configurations available from the hidden textarea
+		if($('.allPresetConfigurations').length > 0) {
+			var presetConfigurations = json_parse($('textarea#edit-allPresetConfigurations').val());			
+		}
 		
 		// set the colors for each of the different types of form fields
 		if($('.branded-colorpicker-all').length > 0) {
@@ -116,27 +122,30 @@ jQuery(document).ready(function() {
 		
 	}
 	
-	// hide all 2nd level lists, until the user hovers over (then display the sub-list)
-	$('#horizontal-menu-container li ul').hide();
+	if($('#horizontal-menu-container').length > 0) {
 	
-		$('#horizontal-menu-container li').hover(
-	        function(){
-	          $('ul:first', $(this)).show();
-	        },
-	        function(){
-	          $('ul', $(this)).hide();
-	        }
-	    );
-	    
-	// hide any 3rd level lists, even if the administrator has checked the "expand" box in the menu option
-        $('#horizontal-menu-container li li').hover(
-            function(){
-            	$('#horizontal-menu-container ul ul ul').hide();
-            },
-            function() {}
-        );
+		// hide all 2nd level lists, until the user hovers over (then display the sub-list)
+		$('#horizontal-menu-container li ul').hide();
+		
+			$('#horizontal-menu-container li').hover(
+		        function(){
+		          $('ul:first', $(this)).show();
+		        },
+		        function(){
+		          $('ul', $(this)).hide();
+		        }
+		    );
+		    
+		// hide any 3rd level lists, even if the administrator has checked the "expand" box in the menu option
+	        $('#horizontal-menu-container li li').hover(
+	            function(){
+	            	$('#horizontal-menu-container ul ul ul').hide();
+	            },
+	            function() {}
+	        );
+	}
         
-        
+	if($('.featured-content-slider').length > 0) {    
         /*
          * Featured Content Slider based on jquery cycle
          * 
@@ -173,4 +182,34 @@ jQuery(document).ready(function() {
             $('#featured-content-slider-overlay').html('<p>' + this.alt + '</p>');
         }
         */
+	}
+	
+	if($('#edit-primermanager-selected-configuration').length > 0) {
+		
+		$('#edit-primermanager-selected-configuration').change(function() {
+			  /*alert('Handler for .change() called.');*/
+			
+			if($('#edit-primermanager-selected-configuration').val() != 'no-preset') {
+				
+				var selectedConfigKey = $('#edit-primermanager-selected-configuration').val();
+				var selectedConfiguration = presetConfigurations[selectedConfigKey].settings;
+				
+				$.each(selectedConfiguration, function(key, value) { 
+										
+					/* 
+					 * need to convert underscores from keys to hyphens to match the format of the form fields AND prepend with "edit-"
+					 * ie: key: "total_page_wrapper_top_offset" maps to form field: "edit-total-page-wrapper-top-offset"
+					*/
+					
+					$("#edit-" + key.replace(/_/g,"-")).val(value);
+					
+				});
+				
+			}
+			
+			
+		});
+		
+	}
+	
 });
