@@ -33,7 +33,7 @@ function primer_getLocalConfigurations() {
 		while ($c = db_fetch_array($result)) {
 			
 			$returnArray[$c['configKey']]['configKey'] = $c['configKey'];
-			$returnArray[$c['configKey']]['name'] = $c['name'];
+			$returnArray[$c['configKey']]['name'] = 'Local - ' . $c['name'];
 			$returnArray[$c['configKey']]['date'] = $c['date'];
 			$returnArray[$c['configKey']]['settings'] = unserialize($c['settings']);
 	  	
