@@ -50,8 +50,13 @@ jQuery(document).ready(function() {
 	if($('form#system-theme-settings').length > 0) {
 		
 		// hide the text areas that contain the color values for the branded form fields.
-		$(".jsonColorList").parent().parent().parent().hide();
-		$(".allPresetConfigurations").parent().parent().parent().hide();
+		$("#edit-initialcolorsAll-wrapper").hide();
+		$("#edit-initialcolorsPrimary-wrapper").hide();
+		$("#edit-initialcolorsSecondary-wrapper").hide();
+		$("#edit-initialcolorsSupport-wrapper").hide();
+		
+		// hide the preset textarea too
+		$("#edit-allPresetConfigurations-wrapper").hide();
 		
 		
 		// make the preset configurations available from the hidden textarea

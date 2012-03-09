@@ -281,8 +281,8 @@ function primer_preprocess_page(&$vars, $hook) {
 		$vars['page']['region-widths']['site-title-two-lines'] = true;
 	}
 	
-	// detect if the search bar is displayed, and set the header region widths accordingly
-	if ($vars['header_search']) {
+	// detect if the search bar or header region menu is displayed, and set the header region widths accordingly
+	if ($vars['header_search'] || $vars['header_small_right_menu']) {
 		$vars['page']['region-widths']['show-right-header-region'] = true;
 		$vars['page']['region-widths']['region-header-left-width'] = 68;
 		
