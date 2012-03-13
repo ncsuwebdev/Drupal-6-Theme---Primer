@@ -217,6 +217,31 @@ function primer_preprocess_page(&$vars, $hook) {
 	
 	$vars['tabs2'] = menu_secondary_local_tasks();
 	
+	
+	/*
+	  echo '<pre><hr /><hr /><hr /><hr /><hr /><hr />';
+	  print_r($vars);
+	  die();
+	  */
+  
+  	// check to see if this is an admin or another known protected page. If it is, then do not show the left or right regions (to maximize space for those awesome drupal tables that overlap the divs so nicely ;-)
+  	$forceHideLeftRightRegions = false;
+  	
+  	// these are the paths on which to hide the left/right regions
+  	$matchPaths = array(
+  		'page-admin',
+  		'page-node-webform',
+  		'page-node-webform-results',
+  		'page-node-edit'
+  	);
+  	
+  	foreach($vars['template_files'] as $key => $value) {
+  		if(in_array($value, $matchPaths)) {
+  			$forceHideLeftRightRegions = true;
+  		}
+  	}
+	
+	
 	/* Add dynamic stylesheet */
   	ob_start();
   	//include('dynamic.css.php');
@@ -234,7 +259,7 @@ function primer_preprocess_page(&$vars, $hook) {
 	$vars['page']['region-widths']['breadcrumb'] = $vars['breadcrumb'];
 	
 	// if the page being rendered is the block config page for primer, then don't display the left or right regions
-	if ($vars['template_files'][2] == 'page-admin-build-block') {
+	if($forceHideLeftRightRegions) {
 		$vars['page']['region-widths']['show-left-region'] = false;
 		$vars['page']['region-widths']['show-right-region'] = false;
 	} else {
