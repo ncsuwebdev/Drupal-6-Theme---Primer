@@ -741,3 +741,11 @@ div.views-admin-links li {
     margin-bottom: 10px;
     border: 1px solid #000;
 }
+
+/*----------------------------------------------------------------------------------------------------------
+    TINYMCE CLASS PRESETS
+----------------------------------------------------------------------------------------------------------*/
+.greyWhiteTable { width: 100%; }
+.greyWhiteTable tr:first-child  { border-bottom: 1px solid #000; }
+.greyWhiteTable tr:nth-child(odd)    { background-color:#fff; }
+.greyWhiteTable tr:nth-child(even)    { background-color:#eee; }
