@@ -59,8 +59,6 @@ input[type="submit"] {
 	border: <?php echo theme_get_setting('site_border_size'); ?> solid <?php echo theme_get_setting('site_border_color'); ?>;
 	-moz-border-radius: <?php echo theme_get_setting('header_rc'); ?>;
     border-radius: <?php echo theme_get_setting('header_rc'); ?>;
-    -moz-border-radius: <?php echo theme_get_setting('footer_rc'); ?>;
-    border-radius: <?php echo theme_get_setting('footer_rc'); ?>;
     margin-bottom: 4em;
 }
 
@@ -68,15 +66,11 @@ input[type="submit"] {
 	background-color:  <?php echo theme_get_setting('site_background_color'); ?>;
 	-moz-border-radius: <?php echo theme_get_setting('header_rc'); ?>;
     border-radius: <?php echo theme_get_setting('header_rc'); ?>;
-    -moz-border-radius: <?php echo theme_get_setting('footer_rc'); ?>;
-    border-radius: <?php echo theme_get_setting('footer_rc'); ?>;
 }
 
 #header-background {
 	-moz-border-radius: <?php echo theme_get_setting('header_rc'); ?>;
-    border-radius: <?php echo theme_get_setting('header_rc'); ?>;
-    -moz-border-radius: <?php echo theme_get_setting('footer_rc'); ?>;
-    border-radius: <?php echo theme_get_setting('footer_rc'); ?>;	
+    border-radius: <?php echo theme_get_setting('header_rc'); ?>;    	
 }
 
 #region-center-right-container a,
@@ -481,8 +475,6 @@ input[type="submit"] {
     <?php if(theme_get_setting('footer_region_background_image_url') != ''): ?>
     background: url('<?php echo theme_get_setting('footer_region_background_image_url'); ?>');
     <?php endif; ?>
-    -moz-border-radius: <?php echo theme_get_setting('footer_rc'); ?>;
-    border-radius: <?php echo theme_get_setting('footer_rc'); ?>;
 }
   
 
