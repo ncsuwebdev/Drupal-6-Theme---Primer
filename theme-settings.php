@@ -164,6 +164,7 @@ function primer_settings($saved_settings) {
       '5px'     => '5px',
       '10px'    => '10px',
       '15px'    => '15px',
+      '30px'    => '30px',
       '3px 3px 0px 0px' => 'Top 3 Bottom 0',
       '0px 0px 3px 3px' => 'Top 0 Bottom 3',
       '5px 5px 0px 0px' => 'Top 5 Bottom 0',
@@ -229,13 +230,15 @@ function primer_settings($saved_settings) {
 		'horizontal_main_menu_color'    		=> '#666666',
   		'horizontal_main_menu_link_color'		=> '#FFFFFF',
   		'horizontal_main_menu_link_hover_color'	=> '#CCCCCC',
-		
+		  'horizontal_main_menu_rc_region'          => '0px',
+
   		'horizontal_secondary_menu_align'    	=> 'left',
 		'horizontal_secondary_menu_height' 		=> '20px',
 		'horizontal_secondary_menu_font_size'   => '1.0em',
   		'horizontal_secondary_menu_color'		=> '#CCCCCC',
   		'horizontal_secondary_menu_link_color'	=> '#000000',
   		'horizontal_secondary_menu_link_hover_color'	=> '#000000',
+      'horizontal_secondary_menu_rc_region'          => '0px',
 		
 		'left_above_menu_region_font_size' 		=> '1.0em',
   		'left_above_menu_region_menu_size' 		=> '1.0em',
@@ -844,6 +847,12 @@ function primer_settings($saved_settings) {
   	  'right' => 'Right',
 	),
   );
+  $form['horizontal_main_menu_settings']['horizontal_main_menu_rc_region'] = array(
+    '#title' => 'Rounded Corners?', 
+    '#type' => 'select',
+    '#default_value' => $settings['horizontal_main_menu_rc_region'],
+    '#options' => $roundedCornerOptions,
+  );
   
   $form['horizontal_main_menu_settings']['horizontal_main_menu_height'] = array(
     '#title' => 'Height (px)',
@@ -890,6 +899,13 @@ function primer_settings($saved_settings) {
       'center' => 'Center',
   	  'right' => 'Right',
 	),
+  );
+
+  $form['horizontal_secondary_menu_settings']['horizontal_secondary_menu_rc_region'] = array(
+    '#title' => 'Rounded Corners?', 
+    '#type' => 'select',
+    '#default_value' => $settings['horizontal_secondary_menu_rc_region'],
+    '#options' => $roundedCornerOptions,
   );
   
   $form['horizontal_secondary_menu_settings']['horizontal_secondary_menu_height'] = array(

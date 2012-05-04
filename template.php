@@ -58,12 +58,15 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
 		'horizontal_main_menu_color'    		=> '#666666',
   		'horizontal_main_menu_link_color'		=> '#FFFFFF',
   		'horizontal_main_menu_link_hover_color'	=> '#CCCCCC',
+  		'horizontal_main_menu_rc_region'          => '0px',
+		
 		'horizontal_secondary_menu_align'    	=> 'left',
 		'horizontal_secondary_menu_height' 		=> '20px',
 		'horizontal_secondary_menu_font_size'   => '1.0em',
   		'horizontal_secondary_menu_color'		=> '#CCCCCC',
   		'horizontal_secondary_menu_link_color'	=> '#000000',
   		'horizontal_secondary_menu_link_hover_color'	=> '#000000',
+  		'horizontal_secondary_menu_rc_region'   => '0px',
 		
 		'left_above_menu_region_font_size' 		=> '1.0em',
   		'left_above_menu_region_menu_size' 		=> '1.0em',

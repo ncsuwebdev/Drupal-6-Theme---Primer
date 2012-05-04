@@ -759,8 +759,16 @@ div.views-admin-links li {
 
 
 /*----------------------------------------------------------------------------------------------------------
-    ROUNDED CORNER SETTINGS
+    ROUNDED CORNER SETTINGS - RESET ALL 2ND LEVEL MENUS
 ----------------------------------------------------------------------------------------------------------*/
 
+#horizontal-main-menu ul.menu ul.menu {
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
 
+#horizontal-secondary-menu ul.menu ul.menu {
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
 

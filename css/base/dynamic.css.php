@@ -221,6 +221,14 @@ input[type="submit"] {
 #horizontal-secondary-menu a:hover {
 	color: <?php echo theme_get_setting('horizontal_secondary_menu_link_hover_color'); ?>;
 }
+#horizontal-main-menu, #horizontal-main-menu ul.menu {
+   -moz-border-radius: <?php echo theme_get_setting('horizontal_main_menu_rc_region'); ?>;
+    border-radius: <?php echo theme_get_setting('horizontal_main_menu_rc_region'); ?>;
+}
+#horizontal-secondary-menu, #horizontal-secondary-menu ul.menu {
+   -moz-border-radius: <?php echo theme_get_setting('horizontal_secondary_menu_rc_region'); ?>;
+    border-radius: <?php echo theme_get_setting('horizontal_secondary_menu_rc_region'); ?>;
+}
 
 /*
  ***********************************************************************
