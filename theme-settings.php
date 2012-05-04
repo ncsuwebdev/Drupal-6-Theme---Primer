@@ -158,6 +158,35 @@ function primer_settings($saved_settings) {
   		'5.0em' 	=> '5.0x',
     );
   	
+    $roundedCornerOptions = array(
+      '0px'     => 'Square Corners',
+      '3px'     => '3x',
+      '5px'     => '5px',
+      '10px'    => '10px',
+      '15px'    => '15px',
+      '3px 3px 0px 0px' => 'Top 3 Bottom 0',
+      '0px 0px 3px 3px' => 'Top 0 Bottom 3',
+      '5px 5px 0px 0px' => 'Top 5 Bottom 0',
+      '0px 0px 5px 5px' => 'Top 0 Bottom 5',
+      '10px 10px 0px 0px' => 'Top 10 Bottom 0',
+      '0px 0px 10px 10px' => 'Top 0 Bottom 10',
+      '15px 15px 0px 0px' => 'Top 15 Bottom 0',
+      '0px 0px 15px 15px' => 'Top 0 Bottom 15',
+      '3px 0px 3px 0px' => 'Diagonal Left 3',
+      '0px 3px 0px 3px' => 'Diagonal Right 3',
+      '5px 0px 5px 0px' => 'Diagonal Left 5',
+      '0px 5px 0px 5px' => 'Diagonal Right 5',
+      '10px 0px 10px 0px' => 'Diagonal Left 10',
+      '0px 10px 0px 10px' => 'Diagonal Right 10',
+      '15px 0px 15px 0px' => 'Diagonal Left 15',
+      '0px 15px 0px 15px' => 'Diagonal Right 15',
+      '15px 5px / 5px 15px' => 'Right Wobble (15)',
+      '25px 10px / 10px 25px' => 'Right Wobble (25)',
+      '50px 25px / 25px 50px' => 'Right Wobble (50)',
+      '5px 15px / 15px 5px' => 'Left Wobble (15)',
+      '10px 25px / 25px 10px' => 'Left Wobble (25)',
+      '25px 50px / 50px 25px' => 'Left Wobble (50)',
+    );
 	
 	$defaults = array(
 		'primermanager_selected_configuration'	=> 'no-preset',
@@ -267,6 +296,8 @@ function primer_settings($saved_settings) {
   		'right_top_region_font_color'  			=> '#000000',
   		'right_top_region_menu_link_color'  	=> '#CC0000',
   		'right_top_region_link_color'  			=> '#CC0000',
+      'right_top_region_rc_head'        => '0px',
+      'right_top_region_rc_content'        => '0px',
 		
   		'right_center_region_font_size'     	=> '1.0em',
   		'right_center_region_menu_size'     	=> '1.0em',
@@ -279,6 +310,8 @@ function primer_settings($saved_settings) {
   		'right_center_region_font_color'  		=> '#000000',
   		'right_center_region_menu_link_color'  	=> '#CC0000',
   		'right_center_region_link_color'  		=> '#CC0000',
+      'right_center_region_rc_head'        => '0px',
+      'right_center_region_rc_content'        => '0px',
 		
   		'right_below_region_font_size'     		=> '1.0em',
   		'right_below_region_menu_size'     		=> '1.0em',
@@ -291,6 +324,8 @@ function primer_settings($saved_settings) {
   		'right_below_region_font_color'  		=> '#000000',
   		'right_below_region_menu_link_color'  	=> '#CC0000',
   		'right_below_region_link_color'  		=> '#CC0000',
+      'right_below_region_rc_head'        => '0px',
+      'right_below_region_rc_content'        => '0px',
 	
 		
   		'footer_region_separator_color'			=> '#CC0000',
@@ -1292,6 +1327,19 @@ function primer_settings($saved_settings) {
     '#default_value' => $settings['right_top_region_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
+
+  $form['right_top_region_settings']['right_top_region_rc_head'] = array(
+    '#title' => 'Rounded Corners: Header', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_top_region_rc_head'],
+    '#options' => $roundedCornerOptions,
+  );
+  $form['right_top_region_settings']['right_top_region_rc_content'] = array(
+    '#title' => 'Rounded Corners: Content Area', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_top_region_rc_content'],
+    '#options' => $roundedCornerOptions,
+  );
   
   /*
    * 
@@ -1374,6 +1422,19 @@ function primer_settings($saved_settings) {
     '#type' => 'textfield',
     '#default_value' => $settings['right_center_region_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['right_center_region_settings']['right_center_region_rc_head'] = array(
+    '#title' => 'Rounded Corners: Header', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_center_region_rc_head'],
+    '#options' => $roundedCornerOptions,
+  );
+  $form['right_center_region_settings']['right_center_region_rc_content'] = array(
+    '#title' => 'Rounded Corners: Content Area', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_center_region_rc_content'],
+    '#options' => $roundedCornerOptions,
   );
   
   
@@ -1459,6 +1520,20 @@ function primer_settings($saved_settings) {
     '#default_value' => $settings['right_below_region_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
+
+  $form['right_below_region_settings']['right_below_region_rc_head'] = array(
+    '#title' => 'Rounded Corners: Header', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_below_region_rc_head'],
+    '#options' => $roundedCornerOptions,
+  );
+  $form['right_below_region_settings']['right_below_region_rc_content'] = array(
+    '#title' => 'Rounded Corners: Content Area', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_below_region_rc_content'],
+    '#options' => $roundedCornerOptions,
+  );
+  
   
   /*
    * 

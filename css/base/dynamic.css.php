@@ -310,7 +310,11 @@ input[type="submit"] {
 
 #right-above-sidebar-content .content p { margin-bottom: <?php echo theme_get_setting('right_top_region_font_size'); ?>; }
 #right-above-sidebar { background-color: <?php echo theme_get_setting('right_top_region_background_color'); ?>; }
-#right-above-sidebar .block { background-color: <?php echo theme_get_setting('right_top_region_block_color'); ?>; }
+#right-above-sidebar .block { 
+	background-color: <?php echo theme_get_setting('right_top_region_block_color'); ?>; 
+	-moz-border-radius: <?php echo theme_get_setting('right_top_region_rc_content'); ?>;
+    border-radius: <?php echo theme_get_setting('right_top_region_rc_content'); ?>;
+}
 #right-above-sidebar { font-size: <?php echo theme_get_setting('right_top_region_font_size'); ?>;  }
 #right-above-sidebar .content .menu li a { font-size: <?php echo theme_get_setting('right_top_region_menu_size'); ?>;  }
 #right-above-sidebar .content .menu li li a { font-size: <?php echo theme_get_setting('right_top_region_menu_sub_size'); ?>;  }
@@ -320,7 +324,11 @@ input[type="submit"] {
 #right-above-sidebar .content .menu li a:hover { color: <?php echo theme_get_setting('right_top_region_menu_link_color'); ?>; } 
 #right-above-sidebar a, #right-above-sidebar a:visited {color: <?php echo theme_get_setting('right_top_region_link_color'); ?>; } 
 #right-above-sidebar-content { color: <?php echo theme_get_setting('right_top_region_font_color'); ?>; } 
-#right-above-sidebar-content h2 { background-color: <?php echo theme_get_setting('right_top_region_heading_background_color'); ?>; }
+#right-above-sidebar-content h2 { 
+	background-color: <?php echo theme_get_setting('right_top_region_heading_background_color'); ?>; 
+	-moz-border-radius: <?php echo theme_get_setting('right_top_region_rc_head'); ?>;
+    border-radius: <?php echo theme_get_setting('right_top_region_rc_head'); ?>;
+}
 
 /*
  ***********************************************************************
@@ -330,7 +338,11 @@ input[type="submit"] {
 
 #right-center-sidebar-content .content p { margin-bottom: <?php echo theme_get_setting('right_center_region_font_size'); ?>; }
 #right-center-sidebar { background-color: <?php echo theme_get_setting('right_center_region_background_color'); ?>; }
-#right-center-sidebar .block { background-color: <?php echo theme_get_setting('right_center_region_block_color'); ?>; }
+#right-center-sidebar .block { 
+	background-color: <?php echo theme_get_setting('right_center_region_block_color'); ?>; 
+	-moz-border-radius: <?php echo theme_get_setting('right_center_region_rc_content'); ?>;
+    border-radius: <?php echo theme_get_setting('right_center_region_rc_content'); ?>;
+}
 #right-center-sidebar { font-size: <?php echo theme_get_setting('right_center_region_font_size'); ?>;  }
 #right-center-sidebar .content .menu li a { font-size: <?php echo theme_get_setting('right_center_region_menu_size'); ?>;  }
 #right-center-sidebar .content .menu li li a { font-size: <?php echo theme_get_setting('right_center_region_menu_sub_size'); ?>;  }
@@ -340,7 +352,11 @@ input[type="submit"] {
 #right-center-sidebar .content .menu li a:hover { color: <?php echo theme_get_setting('right_center_region_menu_link_color'); ?>; } 
 #right-center-sidebar a, #right-center-sidebar a:visited {color: <?php echo theme_get_setting('right_center_region_link_color'); ?>; } 
 #right-center-sidebar-content { color: <?php echo theme_get_setting('right_center_region_font_color'); ?>; } 
-#right-center-sidebar-content h2 { background-color: <?php echo theme_get_setting('right_center_region_heading_background_color'); ?>; }
+#right-center-sidebar-content h2 { 
+	background-color: <?php echo theme_get_setting('right_center_region_heading_background_color'); ?>; 
+	-moz-border-radius: <?php echo theme_get_setting('right_center_region_rc_head'); ?>;
+    border-radius: <?php echo theme_get_setting('right_center_region_rc_head'); ?>;
+}
 
 /*
  ***********************************************************************
@@ -350,7 +366,11 @@ input[type="submit"] {
 
 #right-below-sidebar-content .content p { margin-bottom: <?php echo theme_get_setting('right_below_region_font_size'); ?>; }
 #right-below-sidebar { background-color: <?php echo theme_get_setting('right_below_region_background_color'); ?>; }
-#right-below-sidebar .block { background-color: <?php echo theme_get_setting('right_below_region_block_color'); ?>; }
+#right-below-sidebar .block { 
+	background-color: <?php echo theme_get_setting('right_below_region_block_color'); ?>; 
+	-moz-border-radius: <?php echo theme_get_setting('right_below_region_rc_content'); ?>;
+    border-radius: <?php echo theme_get_setting('right_below_region_rc_content'); ?>;
+}
 #right-below-sidebar { font-size: <?php echo theme_get_setting('right_below_region_font_size'); ?>;  }
 #right-below-sidebar .content .menu li a { font-size: <?php echo theme_get_setting('right_below_region_menu_size'); ?>;  }
 #right-below-sidebar .content .menu li li a { font-size: <?php echo theme_get_setting('right_below_region_menu_sub_size'); ?>;  }
@@ -360,7 +380,11 @@ input[type="submit"] {
 #right-below-sidebar .content .menu li a:hover { color: <?php echo theme_get_setting('right_below_region_menu_link_color'); ?>; } 
 #right-below-sidebar a, #region-right-above-sidebar-container a:visited {color: <?php echo theme_get_setting('right_below_region_link_color'); ?>; } 
 #right-below-sidebar-content { color: <?php echo theme_get_setting('right_below_region_font_color'); ?>; } 
-#right-below-sidebar-content h2 { background-color: <?php echo theme_get_setting('right_below_region_heading_background_color'); ?>; }
+#right-below-sidebar-content h2 { 
+	background-color: <?php echo theme_get_setting('right_below_region_heading_background_color'); ?>; 
+	-moz-border-radius: <?php echo theme_get_setting('right_below_region_rc_head'); ?>;
+    border-radius: <?php echo theme_get_setting('right_below_region_rc_head'); ?>;
+}
 
 /*
  ***********************************************************************

@@ -124,6 +124,8 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
   		'right_top_region_font_color'  			=> '#000000',
   		'right_top_region_menu_link_color'  	=> '#CC0000',
   		'right_top_region_link_color'  			=> '#CC0000',
+  		'right_top_region_rc_head'        		=> '0px',
+      	'right_top_region_rc_content'        	=> '0px',
 		
   		'right_center_region_font_size'     	=> '1.0em',
   		'right_center_region_menu_size'     	=> '1.0em',
@@ -136,6 +138,8 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
   		'right_center_region_font_color'  		=> '#000000',
   		'right_center_region_menu_link_color'  	=> '#CC0000',
   		'right_center_region_link_color'  		=> '#CC0000',
+  		'right_center_region_rc_head'        	=> '0px',
+      	'right_center_region_rc_content'        	=> '0px',
 		
   		'right_below_region_font_size'     		=> '1.0em',
   		'right_below_region_menu_size'     		=> '1.0em',
@@ -148,6 +152,8 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
   		'right_below_region_font_color'  		=> '#000000',
   		'right_below_region_menu_link_color'  	=> '#CC0000',
   		'right_below_region_link_color'  		=> '#CC0000',
+  		'right_below_region_rc_head'        	=> '0px',
+      	'right_below_region_rc_content'        	=> '0px',
   		
   		'footer_region_separator_color'			=> '#CC0000',
   		'footer_region_background_color'		=> '#FFFFFF',
