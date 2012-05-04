@@ -37,6 +37,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
 		'base_font_size'	      				=> '0.75em',
 		'base_font_family'						=> 'Verdana',
 		'header_background_image_url' 			=> '',
+		'header_rc'  							=> '0px',
 		'site_title_font_family'				=> 'Arial',
 		'site_title_font_size'     				=> '2.5em',
 		'site_title_height'  					=> '105px',
@@ -187,6 +188,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
 		'footer_menu_color'						=> '#666666',
 		'footer_menu_link_color'				=> '#FFFFFF',
 		'footer_region_menu_font_size'			=> '1.0em',
+		'footer_region_menu_rc_region'   		=> '0px',
   		
 		
   	);

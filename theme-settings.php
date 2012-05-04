@@ -158,6 +158,15 @@ function primer_settings($saved_settings) {
   		'5.0em' 	=> '5.0x',
     );
   	
+    $topOnlyCornerOptions = array(
+      '0px'               => 'Square Corners',
+      '3px 3px 0px 0px'   => '3x',
+      '5px 5px 0px 0px'   => '5px',
+      '10px 10px 0px 0px' => '10px',
+      '15px 15px 0px 0px' => '15px',
+      '30px 30px 0px 0px' => '30px',
+    );
+
     $roundedCornerOptions = array(
       '0px'     => 'Square Corners',
       '3px'     => '3x',
@@ -208,7 +217,8 @@ function primer_settings($saved_settings) {
 		'base_font_size'	      				=> '0.75em',
 		'base_font_family'						=> 'Verdana',
 		'header_background_image_url' 			=> '',
-		'site_title_font_family'				=> 'Arial',
+		'header_rc'               => '0px',
+    'site_title_font_family'				=> 'Arial',
 		'site_title_font_size'     				=> '2.5em',
 		'site_title_height'  					=> '105px',
 		'site_title_vertical_offset'    		=> '10px',
@@ -345,7 +355,6 @@ function primer_settings($saved_settings) {
       'right_below_region_rc_head'        => '0px',
       'right_below_region_rc_content'        => '0px',
 	
-		
   		'footer_region_separator_color'			=> '#CC0000',
   		'footer_region_background_color'		=> '#FFFFFF',
 		'footer_region_background_image_url'	=> '',
@@ -360,6 +369,7 @@ function primer_settings($saved_settings) {
   		'footer_menu_color'						=> '#666666',
   		'footer_menu_link_color'				=> '#FFFFFF',
 		'footer_region_menu_font_size'			=> '1.0em',
+    'footer_region_menu_rc_region'      => '0px',
   	);
   	
 	$settings = array_merge($defaults, $saved_settings);
@@ -602,7 +612,7 @@ function primer_settings($saved_settings) {
     '#type' => 'textfield',
     '#default_value' => $settings['site_border_size'],
   );
-  
+
   $form['main_site_settings']['site_background_color'] = array(
     '#title' => 'Background color for inside the main layout',
     '#type' => 'textfield',
@@ -676,6 +686,15 @@ function primer_settings($saved_settings) {
    * 
    */
   
+
+  $form['header_settings']['header_rc'] = array(
+    '#title' => 'Rounded Corners for top of header region?', 
+    '#type' => 'select',
+    '#default_value' => $settings['header_rc'],
+    '#options' => $topOnlyCornerOptions,
+  );
+  
+
   $form['header_settings']['site_title_height'] = array(
     '#title' => 'Height (px) of the Site Title Area',
     '#description' => t('Make sure to include the "px" on the end of your height number.'), 
@@ -1692,7 +1711,7 @@ function primer_settings($saved_settings) {
     '#default_value' => $settings['footer_region_separator_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
-  
+
   $form['footer_region_settings']['footer_region_background_image_url'] = array(
     '#title' => 'Background Image URL', 
   	'#description' => 'Image to be used as the background for the footer region. Maximum Width: 980px. Full URL required (including http://)',
@@ -1765,6 +1784,13 @@ function primer_settings($saved_settings) {
   	  'right' => 'Right',
 	),
   );  
+
+  $form['footer_region_settings']['footer_region_menu_rc_region'] = array(
+    '#title' => 'Rounded Corners for Menu?', 
+    '#type' => 'select',
+    '#default_value' => $settings['footer_region_menu_rc_region'],
+    '#options' => $roundedCornerOptions,
+  );
   
   $form['footer_region_settings']['copyright_information'] = array(
     '#title' => 'Copyright information',

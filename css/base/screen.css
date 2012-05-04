@@ -202,6 +202,21 @@ legend {
 
 
 /*----------------------------------------------------------------------------------------------------------
+    ROUNDED CORNER SETTINGS - RESET ALL 2ND LEVEL MENUS
+----------------------------------------------------------------------------------------------------------*/
+
+#horizontal-main-menu ul.menu ul.menu {
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+#horizontal-secondary-menu ul.menu ul.menu {
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------
     CONTENT AREA CONTAINER (EVERYTHING UNDERNEATH THE HEADER AND ABOVE THE FOOTER)
 ----------------------------------------------------------------------------------------------------------*/
 #page-container {
@@ -749,26 +764,4 @@ div.views-admin-links li {
 .greyWhiteTable tr:first-child  { border-bottom: 1px solid #000; }
 .greyWhiteTable tr:nth-child(odd)    { background-color:#fff; }
 .greyWhiteTable tr:nth-child(even)    { background-color:#eee; }
-
-
-
-
-
-
-
-
-
-/*----------------------------------------------------------------------------------------------------------
-    ROUNDED CORNER SETTINGS - RESET ALL 2ND LEVEL MENUS
-----------------------------------------------------------------------------------------------------------*/
-
-#horizontal-main-menu ul.menu ul.menu {
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-}
-
-#horizontal-secondary-menu ul.menu ul.menu {
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-}
 
