@@ -202,7 +202,7 @@ function primer_settings($saved_settings) {
       'none'        => 'No Underline',
       'underline'   => 'Underline',
     );
-	
+
 	$defaults = array(
 		'primermanager_selected_configuration'	=> 'no-preset',
 		'total_page_wrapper_top_offset'			=> '5px',
@@ -272,6 +272,12 @@ function primer_settings($saved_settings) {
       'left_above_menu_region_rc_region'          => '0px',
       'left_above_menu_region_rc_head'        => '0px',
       'left_above_menu_region_rc_content'        => '0px',
+      'left_above_menu_region_link_ul'   => 'none',
+      'left_above_menu_region_link_hover_color'   => '#CC0000',
+      'left_above_menu_region_link_hover_ul'   => 'underline',
+      'left_above_menu_region_menu_link_ul'=> 'none',
+      'left_above_menu_region_menu_link_hover_color'=> '#A20000',
+      'left_above_menu_region_menu_link_hover_ul'=> 'underline',
   
   		'left_main_menu_region_font_size' 		=> '1.0em',
   		'left_main_menu_region_menu_size' 		=> '1.0em',
@@ -287,6 +293,12 @@ function primer_settings($saved_settings) {
       'left_main_menu_region_rc_region'          => '0px',
       'left_main_menu_region_rc_head'        => '0px',
       'left_main_menu_region_rc_content'        => '0px',
+      'left_main_menu_region_link_ul'   => 'none',
+      'left_main_menu_region_link_hover_color'   => '#CC0000',
+      'left_main_menu_region_link_hover_ul'   => 'underline',
+      'left_main_menu_region_menu_link_ul'=> 'none',
+      'left_main_menu_region_menu_link_hover_color'=> '#A20000',
+      'left_main_menu_region_menu_link_hover_ul'=> 'underline',
   
   		'left_sub_menu_region_font_size' 		=> '1.0em',
   		'left_sub_menu_region_menu_size' 		=> '1.0em',
@@ -302,6 +314,12 @@ function primer_settings($saved_settings) {
       'left_sub_menu_region_rc_region'          => '0px',
       'left_sub_menu_region_rc_head'        => '0px',
       'left_sub_menu_region_rc_content'        => '0px',
+      'left_sub_menu_region_link_ul'   => 'none',
+      'left_sub_menu_region_link_hover_color'   => '#CC0000',
+      'left_sub_menu_region_link_hover_ul'   => 'underline',
+      'left_sub_menu_region_menu_link_ul'=> 'none',
+      'left_sub_menu_region_menu_link_hover_color'=> '#A20000',
+      'left_sub_menu_region_menu_link_hover_ul'=> 'underline',
   
   		'left_below_menu_region_font_size' 		=> '1.0em',
   		'left_below_menu_region_menu_size' 		=> '1.0em',
@@ -310,13 +328,19 @@ function primer_settings($saved_settings) {
   		'left_below_menu_region_background_color'	=> '#FFFFFF',
   		'left_below_menu_region_block_color'    => '#FFFFFF',
   		'left_below_menu_region_heading_color'  => '#000000',
-		'left_below_menu_region_heading_background_color'  	=> '#FFFFFF',
+		  'left_below_menu_region_heading_background_color'  	=> '#FFFFFF',
   		'left_below_menu_region_font_color'  	=> '#000000',
   		'left_below_menu_region_menu_link_color'=> '#CC0000',
   		'left_below_menu_region_link_color'  	=> '#CC0000',
       'left_below_menu_region_rc_region'          => '0px',
       'left_below_menu_region_rc_head'        => '0px',
       'left_below_menu_region_rc_content'        => '0px',
+      'left_below_menu_region_link_ul'   => 'none',
+      'left_below_menu_region_link_hover_color'   => '#CC0000',
+      'left_below_menu_region_link_hover_ul'   => 'underline',
+      'left_below_menu_region_menu_link_ul'=> 'none',
+      'left_below_menu_region_menu_link_hover_color'=> '#A20000',
+      'left_below_menu_region_menu_link_hover_ul'=> 'underline',
   
 		  'right_top_region_font_size'        => '1.0em',
       'right_top_region_menu_size'        => '1.0em',
@@ -1068,7 +1092,28 @@ function primer_settings($saved_settings) {
     '#default_value' => $settings['left_above_menu_region_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   ); 
-  
+
+  $form['left_above_menu_region_settings']['left_above_menu_region_link_ul'] = array(
+    '#title' => 'Link Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_above_menu_region_link_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
+  $form['left_above_menu_region_settings']['left_above_menu_region_link_hover_color'] = array(
+    '#title' => 'Link hover color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_above_menu_region_link_hover_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['left_above_menu_region_settings']['left_above_menu_region_link_hover_ul'] = array(
+    '#title' => 'Link Hover Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_above_menu_region_link_hover_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
   $form['left_above_menu_region_settings']['left_above_menu_region_menu_size'] = array(
     '#title' => 'Menu item size', 
     '#type' => 'select',
@@ -1088,6 +1133,27 @@ function primer_settings($saved_settings) {
     '#type' => 'textfield',
     '#default_value' => $settings['left_above_menu_region_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['left_above_menu_region_settings']['left_above_menu_region_menu_link_ul'] = array(
+    '#title' => 'Menu Link Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_above_menu_region_menu_link_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
+  $form['left_above_menu_region_settings']['left_above_menu_region_menu_link_hover_color'] = array(
+    '#title' => 'Menu item link hover color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_above_menu_region_menu_link_hover_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['left_above_menu_region_settings']['left_above_menu_region_menu_hover_ul'] = array(
+    '#title' => 'Menu Link Hover Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_above_menu_region_menu_hover_ul'],
+    '#options' => $underlineStyleOptions,
   );
 
   $form['left_above_menu_region_settings']['left_above_menu_region_rc_region'] = array(
@@ -1172,7 +1238,28 @@ function primer_settings($saved_settings) {
     '#default_value' => $settings['left_main_menu_region_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
-  
+
+  $form['left_main_menu_region_settings']['left_main_menu_region_link_ul'] = array(
+    '#title' => 'Link Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_main_menu_region_link_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
+  $form['left_main_menu_region_settings']['left_main_menu_region_link_hover_color'] = array(
+    '#title' => 'Link hover color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_main_menu_region_link_hover_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['left_main_menu_region_settings']['left_main_menu_region_link_hover_ul'] = array(
+    '#title' => 'Link Hover Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_main_menu_region_link_hover_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
    $form['left_main_menu_region_settings']['left_main_menu_region_menu_size'] = array(
     '#title' => 'Menu item size', 
     '#type' => 'select',
@@ -1194,6 +1281,26 @@ function primer_settings($saved_settings) {
     '#attributes' => array('class' => $allColorPickerClass),
   );
 
+  $form['left_main_menu_region_settings']['left_main_menu_region_menu_link_ul'] = array(
+    '#title' => 'Menu Link Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_main_menu_region_menu_link_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
+  $form['left_main_menu_region_settings']['left_main_menu_region_menu_link_hover_color'] = array(
+    '#title' => 'Menu item link hover color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_main_menu_region_menu_link_hover_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['left_main_menu_region_settings']['left_main_menu_region_menu_link_hover_ul'] = array(
+    '#title' => 'Menu Link Hover Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_main_menu_region_menu_link_hover_ul'],
+    '#options' => $underlineStyleOptions,
+  );
 
   $form['left_main_menu_region_settings']['left_main_menu_region_rc_region'] = array(
     '#title' => 'Rounded Corners: Background', 
@@ -1277,7 +1384,28 @@ function primer_settings($saved_settings) {
     '#default_value' => $settings['left_sub_menu_region_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
-  
+
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_link_ul'] = array(
+    '#title' => 'Link Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_sub_menu_region_link_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_link_hover_color'] = array(
+    '#title' => 'Link hover color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_sub_menu_region_link_hover_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_link_hover_ul'] = array(
+    '#title' => 'Link Hover Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_sub_menu_region_link_hover_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
   $form['left_sub_menu_region_settings']['left_sub_menu_region_menu_size'] = array(
     '#title' => 'Menu item size', 
     '#type' => 'select',
@@ -1297,6 +1425,27 @@ function primer_settings($saved_settings) {
     '#type' => 'textfield',
     '#default_value' => $settings['left_sub_menu_region_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_menu_link_ul'] = array(
+    '#title' => 'Menu Link Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_sub_menu_region_menu_link_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_menu_link_hover_color'] = array(
+    '#title' => 'Menu item link hover color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_sub_menu_region_menu_link_hover_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['left_sub_menu_region_settings']['left_sub_menu_region_menu_link_hover_ul'] = array(
+    '#title' => 'Menu Link Hover Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_sub_menu_region_menu_link_hover_ul'],
+    '#options' => $underlineStyleOptions,
   );
 
   $form['left_sub_menu_region_settings']['left_sub_menu_region_rc_region'] = array(
@@ -1381,7 +1530,28 @@ function primer_settings($saved_settings) {
     '#default_value' => $settings['left_below_menu_region_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
-  
+
+  $form['left_below_menu_region_settings']['left_below_menu_region_link_ul'] = array(
+    '#title' => 'Link Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_below_menu_region_link_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
+  $form['left_below_menu_region_settings']['left_below_menu_region_link_hover_color'] = array(
+    '#title' => 'Link hover color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_below_menu_region_link_hover_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['left_below_menu_region_settings']['left_below_menu_region_link_hover_ul'] = array(
+    '#title' => 'Link Hover Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_below_menu_region_link_hover_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
   $form['left_below_menu_region_settings']['left_below_menu_region_menu_size'] = array(
     '#title' => 'Menu item size', 
     '#type' => 'select',
@@ -1401,6 +1571,27 @@ function primer_settings($saved_settings) {
     '#type' => 'textfield',
     '#default_value' => $settings['left_below_menu_region_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['left_below_menu_region_settings']['left_below_menu_region_menu_link_ul'] = array(
+    '#title' => 'Menu Link Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_below_menu_region_menu_link_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
+  $form['left_below_menu_region_settings']['left_below_menu_region_menu_link_hover_color'] = array(
+    '#title' => 'Menu item link hover color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['left_below_menu_region_menu_link_hover_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['left_below_menu_region_settings']['left_below_menu_region_menu_link_hover_ul'] = array(
+    '#title' => 'Menu Link Hover Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['left_below_menu_region_menu_link_hover_ul'],
+    '#options' => $underlineStyleOptions,
   );
 
   $form['left_below_menu_region_settings']['left_below_menu_region_rc_region'] = array(
