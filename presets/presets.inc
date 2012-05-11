@@ -183,6 +183,12 @@ function primer_listGlobalConfigurations() {
       		'site_link_ul'             => 'none',
       		'site_link_hover_color'             => '#A20000',
       		'site_link_hover_ul'             => 'underline',
+			'footer_region_link_ul'        => 'none',
+      		'footer_region_link_hover_color'  => '#A20000',
+      		'footer_region_link_hover_ul'        => 'none',
+      		'footer_menu_link_hover_color'    => '#CCCCCC',
+      		'footer_menu_link_hover_ul'    => 'underline',
+
 ),
 ),
 		'global_ncsublackampred_1330821341' => array( 
@@ -359,6 +365,11 @@ function primer_listGlobalConfigurations() {
       		'site_link_ul'             => 'none',
       		'site_link_hover_color'             => '#A20000',
       		'site_link_hover_ul'             => 'underline',
+      		'footer_region_link_ul'        => 'none',
+      		'footer_region_link_hover_color'  => '#A20000',
+      		'footer_region_link_hover_ul'        => 'none',
+      		'footer_menu_link_hover_color'    => '#CCCCCC',
+      		'footer_menu_link_hover_ul'    => 'underline',
 ),
 ),
 'global_oitdefault_1330961782' => array( 
@@ -535,6 +546,11 @@ function primer_listGlobalConfigurations() {
       		'site_link_ul'             => 'none',
       		'site_link_hover_color'             => '#A20000',
       		'site_link_hover_ul'             => 'underline',
+      		'footer_region_link_ul'        => 'none',
+      		'footer_region_link_hover_color'  => '#A20000',
+      		'footer_region_link_hover_ul'        => 'none',
+      		'footer_menu_link_hover_color'    => '#CCCCCC',
+      		'footer_menu_link_hover_ul'    => 'underline',
 ),
 ),
 	);

@@ -188,19 +188,25 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
   		
   		'footer_region_separator_color'			=> '#CC0000',
   		'footer_region_background_color'		=> '#FFFFFF',
-  		'footer_region_background_image_url'	=> '',
+		'footer_region_background_image_url'	=> '',
   		'footer_region_font_color'  			=> '#000000',
 		'footer_region_link_color'				=> '#CC0000',
+    	'footer_region_link_ul'        			=> 'none',
+    	'footer_region_link_hover_color'  		=> '#A20000',
+    	'footer_region_link_hover_ul'  			=> 'underline',
   		'footer_region_font_size'				=> '1.0em',
 		'footer_contact_information'			=> 'My Awesome Project Website, Raleigh, NC 27695 Phone: (555) 555-5555',
   		'copyright_information' 				=> '© ' . date('Y', time()),		
   
   		'footer_menu_align'						=> 'center',
 		'footer_menu_height'					=> '40px',
-		'footer_menu_color'						=> '#666666',
-		'footer_menu_link_color'				=> '#FFFFFF',
+  		'footer_menu_color'						=> '#666666',
+  		'footer_menu_link_color'				=> '#FFFFFF',
+  		'footer_menu_link_ul'					=> 'none',
+      	'footer_menu_link_hover_color'   		=> '#CCCCCC',
+      	'footer_menu_link_hover_ul'    			=> 'underline',
 		'footer_region_menu_font_size'			=> '1.0em',
-		'footer_region_menu_rc_region'   		=> '0px',
+    	'footer_region_menu_rc_region'      	=> '0px',
   		
 		
   	);

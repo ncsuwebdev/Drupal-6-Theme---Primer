@@ -372,21 +372,27 @@ function primer_settings($saved_settings) {
         'right_below_region_rc_head'        => '0px',
         'right_below_region_rc_content'        => '0px',
 	
-  		'footer_region_separator_color'			=> '#CC0000',
-  		'footer_region_background_color'		=> '#FFFFFF',
-		'footer_region_background_image_url'	=> '',
-  		'footer_region_font_color'  			=> '#000000',
-		'footer_region_link_color'				=> '#CC0000',
-  		'footer_region_font_size'				=> '1.0em',
-		'footer_contact_information'			=> 'My Awesome Project Website, Raleigh, NC 27695 Phone: (555) 555-5555',
-  		'copyright_information' 				=> '© ' . date('Y', time()),		
+  		'footer_region_separator_color'     => '#CC0000',
+      'footer_region_background_color'    => '#FFFFFF',
+    'footer_region_background_image_url'  => '',
+      'footer_region_font_color'        => '#000000',
+    'footer_region_link_color'        => '#CC0000',
+      'footer_region_link_ul'             => 'none',
+      'footer_region_link_hover_color'      => '#A20000',
+      'footer_region_link_hover_ul'       => 'underline',
+      'footer_region_font_size'       => '1.0em',
+    'footer_contact_information'      => 'My Awesome Project Website, Raleigh, NC 27695 Phone: (555) 555-5555',
+      'copyright_information'         => '© ' . date('Y', time()),    
   
-  		'footer_menu_align'						=> 'center',
-		'footer_menu_height'					=> '40px',
-  		'footer_menu_color'						=> '#666666',
-  		'footer_menu_link_color'				=> '#FFFFFF',
-		'footer_region_menu_font_size'			=> '1.0em',
-    'footer_region_menu_rc_region'      => '0px',
+      'footer_menu_align'           => 'center',
+    'footer_menu_height'          => '40px',
+      'footer_menu_color'           => '#666666',
+      'footer_menu_link_color'        => '#FFFFFF',
+      'footer_menu_link_ul'         => 'none',
+        'footer_menu_link_hover_color'      => '#CCCCCC',
+        'footer_menu_link_hover_ul'         => 'underline',
+    'footer_region_menu_font_size'      => '1.0em',
+      'footer_region_menu_rc_region'        => '0px',
   	);
   	
 	$settings = array_merge($defaults, $saved_settings);
@@ -1849,6 +1855,24 @@ function primer_settings($saved_settings) {
     '#default_value' => $settings['footer_region_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
+  $form['footer_region_settings']['footer_region_link_ul'] = array(
+    '#title' => 'Link Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['footer_region_link_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+  $form['footer_region_settings']['footer_region_link_hover_color'] = array(
+    '#title' => 'Link hover color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['footer_region_link_hover_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+  $form['footer_region_settings']['footer_region_link_hover_ul'] = array(
+    '#title' => 'Link Hover Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['footer_region_link_hover_ul'],
+    '#options' => $underlineStyleOptions,
+  );
   
   $form['footer_region_settings']['footer_menu_height'] = array(
     '#title' => 'Footer menu height (px)', 
@@ -1868,6 +1892,26 @@ function primer_settings($saved_settings) {
     '#type' => 'textfield',
     '#default_value' => $settings['footer_menu_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
+  );
+  $form['footer_region_settings']['footer_menu_link_ul'] = array(
+    '#title' => 'Menu Link Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['footer_menu_link_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+  
+  $form['footer_region_settings']['footer_menu_link_hover_color'] = array(
+    '#title' => 'Menu item link hover color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['footer_menu_link_hover_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['footer_region_settings']['footer_menu_link_hover_ul'] = array(
+    '#title' => 'Menu Link Hover Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['footer_menu_link_hover_ul'],
+    '#options' => $underlineStyleOptions,
   );
   
   $form['footer_region_settings']['footer_region_menu_font_size'] = array(
