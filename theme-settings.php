@@ -197,6 +197,11 @@ function primer_settings($saved_settings) {
       '10px 25px / 25px 10px' => 'Left Wobble (25)',
       '25px 50px / 50px 25px' => 'Left Wobble (50)',
     );
+
+    $underlineStyleOptions = array(
+      'none'        => 'No Underline',
+      'underline'   => 'Underline',
+    );
 	
 	$defaults = array(
 		'primermanager_selected_configuration'	=> 'no-preset',
@@ -213,6 +218,9 @@ function primer_settings($saved_settings) {
 		'site_background_image_tile' 			=> 1,
 		'site_font_color'  						=> '#000000',
   		'site_link_color'  						=> '#CC0000',
+      'site_link_ul'             => 'none',
+      'site_link_hover_color'             => '#A20000',
+      'site_link_hover_ul'             => 'underline',
   		'site_heading_color'  					=> '#CC0000',
 		'base_font_size'	      				=> '0.75em',
 		'base_font_family'						=> 'Verdana',
@@ -310,50 +318,59 @@ function primer_settings($saved_settings) {
       'left_below_menu_region_rc_head'        => '0px',
       'left_below_menu_region_rc_content'        => '0px',
   
-		'right_top_region_font_size'     		=> '1.0em',
-  		'right_top_region_menu_size'     		=> '1.0em',
-  		'right_top_region_menu_sub_size'     	=> '1.0em',
-  		'right_top_region_heading_size'    		=> '1.3em',
-  		'right_top_region_background_color'		=> '#FFFFFF',
-  		'right_top_region_block_color'     		=> '#FFFFFF',
-  		'right_top_region_heading_color'  		=> '#000000',
-  		'right_top_region_heading_background_color'  	=> '#FFFFFF',
-  		'right_top_region_font_color'  			=> '#000000',
-  		'right_top_region_menu_link_color'  	=> '#CC0000',
-  		'right_top_region_link_color'  			=> '#CC0000',
-      'right_top_region_rc_region'          => '0px',
-      'right_top_region_rc_head'        => '0px',
-      'right_top_region_rc_content'        => '0px',
-		
-  		'right_center_region_font_size'     	=> '1.0em',
-  		'right_center_region_menu_size'     	=> '1.0em',
-  		'right_center_region_menu_sub_size'    	=> '1.0em',
-  		'right_center_region_heading_size'    	=> '1.3em',
-  		'right_center_region_background_color'	=> '#FFFFFF',
-  		'right_center_region_block_color'     	=> '#FFFFFF',
-  		'right_center_region_heading_color'  	=> '#000000',
-  		'right_center_region_heading_background_color'  	=> '#FFFFFF',
-  		'right_center_region_font_color'  		=> '#000000',
-  		'right_center_region_menu_link_color'  	=> '#CC0000',
-  		'right_center_region_link_color'  		=> '#CC0000',
-      'right_center_region_rc_region'          => '0px',
-      'right_center_region_rc_head'        => '0px',
-      'right_center_region_rc_content'        => '0px',
-		
-  		'right_below_region_font_size'     		=> '1.0em',
-  		'right_below_region_menu_size'     		=> '1.0em',
-  		'right_below_region_menu_sub_size' 		=> '1.0em',
-  		'right_below_region_heading_size'  		=> '1.3em',
-  		'right_below_region_background_color'	=> '#FFFFFF',
-  		'right_below_region_block_color'     	=> '#FFFFFF',
-  		'right_below_region_heading_color'  	=> '#000000',
-  		'right_below_region_heading_background_color'  	=> '#FFFFFF',
-  		'right_below_region_font_color'  		=> '#000000',
-  		'right_below_region_menu_link_color'  	=> '#CC0000',
-  		'right_below_region_link_color'  		=> '#CC0000',
-      'right_below_region_rc_region'          => '0px',
-      'right_below_region_rc_head'        => '0px',
-      'right_below_region_rc_content'        => '0px',
+		  'right_top_region_font_size'        => '1.0em',
+      'right_top_region_menu_size'        => '1.0em',
+      'right_top_region_menu_sub_size'      => '1.0em',
+      'right_top_region_heading_size'       => '1.3em',
+      'right_top_region_background_color'   => '#FFFFFF',
+      'right_top_region_block_color'        => '#FFFFFF',
+      'right_top_region_heading_color'      => '#000000',
+      'right_top_region_heading_background_color'   => '#FFFFFF',
+      'right_top_region_font_color'       => '#000000',
+      'right_top_region_menu_link_color'    => '#CC0000',
+      'right_top_region_link_color'       => '#CC0000',
+      'right_top_region_link_ul'        => 'none',
+      'right_top_region_link_hover_color'   => '#CC0000',
+      'right_top_region_link_hover_ul'    => 'underline',
+        'right_top_region_rc_region'          => '0px',
+        'right_top_region_rc_head'        => '0px',
+        'right_top_region_rc_content'        => '0px',
+    
+      'right_center_region_font_size'       => '1.0em',
+      'right_center_region_menu_size'       => '1.0em',
+      'right_center_region_menu_sub_size'     => '1.0em',
+      'right_center_region_heading_size'      => '1.3em',
+      'right_center_region_background_color'  => '#FFFFFF',
+      'right_center_region_block_color'       => '#FFFFFF',
+      'right_center_region_heading_color'   => '#000000',
+      'right_center_region_heading_background_color'    => '#FFFFFF',
+      'right_center_region_font_color'      => '#000000',
+      'right_center_region_menu_link_color'   => '#CC0000',
+      'right_center_region_link_color'      => '#CC0000',
+      'right_center_region_link_ul'       => 'none',
+      'right_center_region_link_hover_color'  => '#A20000',
+      'right_center_region_link_hover_ul'   => 'underline',
+        'right_center_region_rc_region'          => '0px',
+        'right_center_region_rc_head'        => '0px',
+        'right_center_region_rc_content'        => '0px',
+    
+      'right_below_region_font_size'        => '1.0em',
+      'right_below_region_menu_size'        => '1.0em',
+      'right_below_region_menu_sub_size'    => '1.0em',
+      'right_below_region_heading_size'     => '1.3em',
+      'right_below_region_background_color' => '#FFFFFF',
+      'right_below_region_block_color'      => '#FFFFFF',
+      'right_below_region_heading_color'    => '#000000',
+      'right_below_region_heading_background_color'   => '#FFFFFF',
+      'right_below_region_font_color'     => '#000000',
+      'right_below_region_menu_link_color'    => '#CC0000',
+      'right_below_region_link_color'     => '#CC0000',
+    'right_below_region_link_ul'        => 'none',
+      'right_below_region_link_hover_color'   => '#CC0000',
+      'right_below_region_link_hover_ul'    => 'underline',
+        'right_below_region_rc_region'          => '0px',
+        'right_below_region_rc_head'        => '0px',
+        'right_below_region_rc_content'        => '0px',
 	
   		'footer_region_separator_color'			=> '#CC0000',
   		'footer_region_background_color'		=> '#FFFFFF',
@@ -678,6 +695,27 @@ function primer_settings($saved_settings) {
     '#type' => 'textfield',
     '#default_value' => $settings['site_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['main_site_settings']['site_link_ul'] = array(
+    '#title' => 'Link Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['site_link_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
+  $form['main_site_settings']['site_link_hover_color'] = array(
+    '#title' => 'Default hover color for links',
+    '#type' => 'textfield',
+    '#default_value' => $settings['site_link_hover_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['main_site_settings']['site_link_hover_ul'] = array(
+    '#title' => 'Link Hover Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['site_link_hover_ul'],
+    '#options' => $underlineStyleOptions,
   );
   
    /*
@@ -1459,11 +1497,33 @@ function primer_settings($saved_settings) {
   );
   
   $form['right_top_region_settings']['right_top_region_link_color'] = array(
-    '#title' => 'Link color', 
+    '#title' => 'Link Color', 
     '#type' => 'textfield',
     '#default_value' => $settings['right_top_region_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
+
+  $form['right_top_region_settings']['right_top_region_link_ul'] = array(
+    '#title' => 'Link Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_top_region_link_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
+  $form['right_top_region_settings']['right_top_region_link_hover_color'] = array(
+    '#title' => 'Link Hover Color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['right_top_region_link_hover_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['right_top_region_settings']['right_top_region_link_hover_ul'] = array(
+    '#title' => 'Link Hover Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_top_region_link_hover_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
   
   $form['right_top_region_settings']['right_top_region_menu_size'] = array(
     '#title' => 'Menu item size', 
@@ -1569,6 +1629,27 @@ function primer_settings($saved_settings) {
     '#type' => 'textfield',
     '#default_value' => $settings['right_center_region_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['right_center_region_settings']['right_center_region_link_ul'] = array(
+    '#title' => 'Link Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_center_region_link_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
+  $form['right_center_region_settings']['right_center_region_link_hover_color'] = array(
+    '#title' => 'Link Hover Color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['right_center_region_link_hover_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['right_center_region_settings']['right_center_region_link_hover_ul'] = array(
+    '#title' => 'Link Hover Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_center_region_link_hover_ul'],
+    '#options' => $underlineStyleOptions,
   );
   
   $form['right_center_region_settings']['right_center_region_menu_size'] = array(
@@ -1676,6 +1757,28 @@ function primer_settings($saved_settings) {
     '#default_value' => $settings['right_below_region_link_color'],
     '#attributes' => array('class' => $allColorPickerClass),
   );
+
+  $form['right_below_region_settings']['right_below_region_link_ul'] = array(
+    '#title' => 'Link Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_below_region_link_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
+  $form['right_below_region_settings']['right_below_region_link_hover_color'] = array(
+    '#title' => 'Link Hover Color', 
+    '#type' => 'textfield',
+    '#default_value' => $settings['right_below_region_link_hover_color'],
+    '#attributes' => array('class' => $allColorPickerClass),
+  );
+
+  $form['right_below_region_settings']['right_below_region_link_hover_ul'] = array(
+    '#title' => 'Link Hover Style', 
+    '#type' => 'select',
+    '#default_value' => $settings['right_below_region_link_hover_ul'],
+    '#options' => $underlineStyleOptions,
+  );
+
   
   $form['right_below_region_settings']['right_below_region_menu_size'] = array(
     '#title' => 'Menu item size', 
