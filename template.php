@@ -300,7 +300,8 @@ function primer_preprocess_page(&$vars, $hook) {
   		'page-admin',
   		'page-node-webform',
   		'page-node-webform-results',
-  		'page-node-edit'
+  		'page-node-edit',
+      'admin-build-views-edit',
   	);
   	
   	foreach($vars['template_files'] as $key => $value) {
