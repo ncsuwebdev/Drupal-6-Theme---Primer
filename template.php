@@ -3,7 +3,7 @@
 	// pass variables to javascript so they can use the base path and theme path
 	$js = "var base_path = '". base_path() . "';";
 	drupal_add_js($js, 'inline');
-	
+
 	$themePath = drupal_get_path('theme', 'primer');
 	drupal_add_js($themePath, 'inline');
 	drupal_add_js('misc/collapse.js','core');
@@ -11,7 +11,7 @@
 /*
 * Initialize theme settings
 */
-if (is_null(theme_get_setting('primer_center_layout'))) {  
+if (is_null(theme_get_setting('primer_center_layout'))) {
   global $theme_key;
 
   /*
@@ -63,7 +63,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
   		'horizontal_main_menu_link_color'		=> '#FFFFFF',
   		'horizontal_main_menu_link_hover_color'	=> '#CCCCCC',
   		'horizontal_main_menu_rc_region'          => '0px',
-		
+
 		'horizontal_secondary_menu_align'    	=> 'left',
 		'horizontal_secondary_menu_height' 		=> '20px',
 		'horizontal_secondary_menu_font_size'   => '1.0em',
@@ -71,7 +71,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
   		'horizontal_secondary_menu_link_color'	=> '#000000',
   		'horizontal_secondary_menu_link_hover_color'	=> '#000000',
   		'horizontal_secondary_menu_rc_region'   => '0px',
-		
+
 		'left_above_menu_region_font_size' 		=> '1.0em',
   		'left_above_menu_region_menu_size' 		=> '1.0em',
   		'left_above_menu_region_menu_sub_size' 	=> '1.0em',
@@ -92,7 +92,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
       'left_above_menu_region_menu_link_ul'=> 'none',
       'left_above_menu_region_menu_link_hover_color'=> '#A20000',
       'left_above_menu_region_menu_link_hover_ul'=> 'underline',
-  
+
   		'left_main_menu_region_font_size' 		=> '1.0em',
   		'left_main_menu_region_menu_size' 		=> '1.0em',
   		'left_main_menu_region_menu_sub_size' 	=> '1.0em',
@@ -113,7 +113,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
       'left_main_menu_region_menu_link_ul'=> 'none',
       'left_main_menu_region_menu_link_hover_color'=> '#A20000',
       'left_main_menu_region_menu_link_hover_ul'=> 'underline',
-  
+
   		'left_sub_menu_region_font_size' 		=> '1.0em',
   		'left_sub_menu_region_menu_size' 		=> '1.0em',
   		'left_sub_menu_region_menu_sub_size'	=> '1.0em',
@@ -134,7 +134,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
       'left_sub_menu_region_menu_link_ul'=> 'none',
       'left_sub_menu_region_menu_link_hover_color'=> '#A20000',
       'left_sub_menu_region_menu_link_hover_ul'=> 'underline',
-  
+
   		'left_below_menu_region_font_size' 		=> '1.0em',
   		'left_below_menu_region_menu_size' 		=> '1.0em',
   		'left_below_menu_region_menu_sub_size' 	=> '1.0em',
@@ -155,7 +155,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
       'left_below_menu_region_menu_link_ul'=> 'none',
       'left_below_menu_region_menu_link_hover_color'=> '#A20000',
       'left_below_menu_region_menu_link_hover_ul'=> 'underline',
-  
+
 		'right_top_region_font_size'     		=> '1.0em',
   		'right_top_region_menu_size'     		=> '1.0em',
   		'right_top_region_menu_sub_size'     	=> '1.0em',
@@ -173,7 +173,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
       	'right_top_region_rc_region'          => '0px',
       	'right_top_region_rc_head'        => '0px',
       	'right_top_region_rc_content'        => '0px',
-		
+
   		'right_center_region_font_size'     	=> '1.0em',
   		'right_center_region_menu_size'     	=> '1.0em',
   		'right_center_region_menu_sub_size'    	=> '1.0em',
@@ -191,7 +191,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
       	'right_center_region_rc_region'          => '0px',
       	'right_center_region_rc_head'        => '0px',
       	'right_center_region_rc_content'        => '0px',
-		
+
   		'right_below_region_font_size'     		=> '1.0em',
   		'right_below_region_menu_size'     		=> '1.0em',
   		'right_below_region_menu_sub_size' 		=> '1.0em',
@@ -209,7 +209,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
       	'right_below_region_rc_region'          => '0px',
       	'right_below_region_rc_head'        => '0px',
       	'right_below_region_rc_content'        => '0px',
-  		
+
   		'footer_region_separator_color'			=> '#CC0000',
   		'footer_region_background_color'		=> '#FFFFFF',
 		'footer_region_background_image_url'	=> '',
@@ -220,8 +220,8 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
     	'footer_region_link_hover_ul'  			=> 'underline',
   		'footer_region_font_size'				=> '1.0em',
 		'footer_contact_information'			=> 'My Awesome Project Website, Raleigh, NC 27695 Phone: (555) 555-5555',
-  		'copyright_information' 				=> '© ' . date('Y', time()),		
-  
+  		'copyright_information' 				=> '© ' . date('Y', time()),
+
   		'footer_menu_align'						=> 'center',
 		'footer_menu_height'					=> '40px',
   		'footer_menu_color'						=> '#666666',
@@ -231,8 +231,8 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
       	'footer_menu_link_hover_ul'    			=> 'underline',
 		'footer_region_menu_font_size'			=> '1.0em',
     	'footer_region_menu_rc_region'      	=> '0px',
-  		
-		
+
+
   	);
 
   	  // Get default theme settings.
@@ -250,7 +250,7 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
 	  );
 	  // Force refresh of Drupal internals.
 	  theme_get_setting('', TRUE);
-	
+
 }
 
 
@@ -282,70 +282,71 @@ function primer_breadcrumb($breadcrumb) {
  * Override or insert PHPTemplate variables into the templates.
  */
 function primer_preprocess_page(&$vars, $hook) {
-	
+
 	$vars['tabs2'] = menu_secondary_local_tasks();
-	
-	
+
+
 	/*
 	  echo '<pre><hr /><hr /><hr /><hr /><hr /><hr />';
 	  print_r($vars);
 	  die();
 	  */
-  
+
   	// check to see if this is an admin or another known protected page. If it is, then do not show the left or right regions (to maximize space for those awesome drupal tables that overlap the divs so nicely ;-)
   	$forceHideLeftRightRegions = false;
-  	
+
   	// these are the paths on which to hide the left/right regions
   	$matchPaths = array(
   		'page-admin',
   		'page-node-webform',
   		'page-node-webform-results',
-  		'page-node-edit',
+  		'page-node-add',
+      'page-node-edit',
   	);
-  	
+
   	foreach($vars['template_files'] as $key => $value) {
   		if(in_array($value, $matchPaths)) {
   			$forceHideLeftRightRegions = true;
   		}
   	}
-	
-	
+
+
 	/* Add dynamic stylesheet */
   	ob_start();
   	//include('dynamic.css.php');
   	include(drupal_get_path('theme', 'primer') . '/css/base/dynamic.css.php');
   	$vars['dynamic_styles'] = ob_get_contents();
-  	ob_end_clean();  
-	
+  	ob_end_clean();
+
   	// Drupal wants us to set the indexes/custom variables ahead of time, or it will throw an error for the world to see (it will work, just with errors)
 	$vars['page']['region-widths']['show-left-region'] = '';
 	$vars['page']['region-widths']['show-right-region'] = '';
-	
+
 	// detect, set and store the widths for the different regions, based on what's being displayed (left, right, center and all combinations)
 	$vars['page']['region-widths']['maxPageWidth'] = 96; // maximum number of columns in the grid system
-	
+
 	$vars['page']['region-widths']['breadcrumb'] = $vars['breadcrumb'];
-	
+
 	// if the page being rendered is the block config page for primer, then don't display the left or right regions
 	if($forceHideLeftRightRegions) {
 		$vars['page']['region-widths']['show-left-region'] = false;
 		$vars['page']['region-widths']['show-right-region'] = false;
 	} else {
-	
+
 		// check to see if there are left or right regions to make it easier to set widths of regions below
-		if($vars['left_above_menu'] || $vars['left_primary_menu'] || $vars['left_secondary_menu'] || $vars['left_below_menu']) { 
+		if($vars['left_above_menu'] || $vars['left_primary_menu'] || $vars['left_secondary_menu'] || $vars['left_below_menu']) {
 			// there is something in the left region, so set the necessary widths here
 			$vars['page']['region-widths']['show-left-region'] = true;
 			$vars['page']['region-widths']['left-region-width'] = 23;
 		}
-			
+
 		if($vars['right_above_sidebar'] || $vars['right_center_sidebar'] || $vars['right_below_sidebar']) {
 			// there is something in the right region, so set the necessary widths here
 			$vars['page']['region-widths']['show-right-region'] = true;
 			$vars['page']['region-widths']['right-region-width'] = 27;
 		}
 	}
-	
+
 	// now check to see for combinations of the left and right showing or not, and set the width accordingly
 	// set the center/right region width (everything to the right of the left region)
 	if($vars['page']['region-widths']['show-left-region']) {
@@ -353,7 +354,7 @@ function primer_preprocess_page(&$vars, $hook) {
 	} else {
 		$vars['page']['region-widths']['center-right-region-width'] = $vars['page']['region-widths']['maxPageWidth'];
 	}
-	
+
 	// set the center region width (not including the right region)
 	if($vars['page']['region-widths']['show-left-region'] && $vars['page']['region-widths']['show-right-region']) {
 		$vars['page']['region-widths']['center-region-width'] = 46; //if both left and right regions are showing
@@ -368,30 +369,30 @@ function primer_preprocess_page(&$vars, $hook) {
 		$vars['page']['region-widths']['center-region-width'] = $vars['page']['region-widths']['maxPageWidth']; // if neither left or right regions are showing
 		$vars['page']['region-widths']['main-image-width'] = $vars['page']['region-widths']['maxPageWidth']; // set the main image width too
 	}
-	
+
 	// detect if both the top and bottom site-title lines have values, and if not, set a variable for the css to center the single line in the header region
 	if(theme_get_setting('title_top_line') && theme_get_setting('title_bottom_line')) {
 		$vars['page']['region-widths']['site-title-two-lines'] = true;
 	}
-	
+
 	// detect if the search bar or header region menu is displayed, and set the header region widths accordingly
 	if ($vars['header_search'] || $vars['header_small_right_menu']) {
 		$vars['page']['region-widths']['show-right-header-region'] = true;
 		$vars['page']['region-widths']['region-header-left-width'] = 68;
-		
+
 	} else {
 		$vars['page']['region-widths']['show-right-header-region'] = false;
 		$vars['page']['region-widths']['region-header-left-width'] = 96;
 	}
-	
+
 	//set the title image appropriately based on how much room there is to use: number of grids * 10 (pixels), minus 30 (pixels) for space
 	$vars['page']['region-widths']['region-header-title-width'] = ($vars['page']['region-widths']['region-header-left-width'] * 10) - 30;
-	
+
 	// set 4 footer region widths
 	$vars['page']['region-widths']['footer_four_regions'] = $vars['page']['region-widths']['maxPageWidth'] /4;
-	
+
 	// check to see if any of the 4 footer regions are available
-	if($vars['footer_one'] || $vars['footer_two'] || $vars['footer_three'] || $vars['footer_four']) { 
+	if($vars['footer_one'] || $vars['footer_two'] || $vars['footer_three'] || $vars['footer_four']) {
 			// there is something in the 4 columns region, so set variable accordingly
 			$vars['page']['region-widths']['show-footer-four-regions'] = true;
 		}
@@ -440,7 +441,7 @@ function primer_node_submitted($node) {
 
 /*
  * potentially obsolete function
- * 
+ *
 */
 /*
 function primer_system_settings_form($form) {
@@ -452,7 +453,7 @@ function primer_system_settings_form($form) {
       $form[$element]['#collapsed'] = TRUE;
     }
   }
-  
+
   return drupal_render($form);
 }
 */
