@@ -171,7 +171,8 @@ jQuery(document).ready(function() {
         .cycle({
             fx:     'fade',
             speed:   1000,
-            timeout: 5000,
+            //delay:   Drupal.settings.primer.slider_delay_time,
+            timeout: Drupal.settings.primer.slider_transition_time,
             pause:   1,
             cleartype: true,
             cleartypeNoBg: true,

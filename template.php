@@ -2,7 +2,7 @@
 
 	// pass variables to javascript so they can use the base path and theme path
 	$js = "var base_path = '". base_path() . "';";
-	drupal_add_js($js, 'inline');
+  drupal_add_js($js, 'inline');
 
 	$themePath = drupal_get_path('theme', 'primer');
 	drupal_add_js($themePath, 'inline');
@@ -20,7 +20,8 @@ if (is_null(theme_get_setting('primer_center_layout'))) {
    */
   $defaults = array(
 		'primermanager_selected_configuration'	=> 'no-preset',
-		'total_page_wrapper_top_offset'			=> '5px',
+		'slider_transition_time'  => 5000,
+    'total_page_wrapper_top_offset'			=> '5px',
 		'center_layout' 						=> 1,
 		'background_image_url' 					=> '',
 		'background_image_tile' 				=> 1,
@@ -396,6 +397,10 @@ function primer_preprocess_page(&$vars, $hook) {
 			// there is something in the 4 columns region, so set variable accordingly
 			$vars['page']['region-widths']['show-footer-four-regions'] = true;
 		}
+
+    drupal_add_js(array('primer' => array(
+      'slider_transition_time' => theme_get_setting('slider_transition_time'),
+    )), 'setting');
 }
 
 /**
