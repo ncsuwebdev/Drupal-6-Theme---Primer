@@ -1,5 +1,4 @@
-<div class="comment<?php print ($comment->new) ? ' comment-new' : ''; print ' '. $
-status; print ' '. $zebra; ?>">
+<div class="comment<?php print ($comment->new) ? ' comment-new' : ''; print ' '. $status; print ' '. $zebra; ?>">
 
   <div class="clear-block">
   <?php if ($submitted): ?>

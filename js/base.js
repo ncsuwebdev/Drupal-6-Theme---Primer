@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
 	if (jQuery('#header-site-search .form-submit').length > 0) {
 		//var search = jQuery('#header-site-search :input');
 		var search = $('#header-site-search input[type="text"]');
-	
+
 		search.focus(function(){
 	        if (search.val() == 'Search this site...') {
 	            search.val("");
@@ -39,44 +39,44 @@ jQuery(document).ready(function() {
 	            search.val('Search this site...');
 	        }
 	    });
-		
+
 		search.val('Search this site...');
-		
+
 		var $searchButton = jQuery(':submit', jQuery('#header-site-search'));
 		$searchButton.addClass('site-search-button');
-		
+
 	}
-	
+
 	if($('form#system-theme-settings').length > 0) {
-		
+
 		// hide the text areas that contain the color values for the branded form fields.
 		$("#edit-initialcolorsAll-wrapper").hide();
 		$("#edit-initialcolorsPrimary-wrapper").hide();
 		$("#edit-initialcolorsSecondary-wrapper").hide();
 		$("#edit-initialcolorsSupport-wrapper").hide();
-		
+
 		// hide the preset textarea too
 		$("#edit-allPresetConfigurations-wrapper").hide();
-		
-		
+
+
 		// make the preset configurations available from the hidden textarea
 		if($('.allPresetConfigurations').length > 0) {
-			var presetConfigurations = json_parse($('textarea#edit-allPresetConfigurations').val());			
+			var presetConfigurations = json_parse($('textarea#edit-allPresetConfigurations').val());
 		}
-		
+
 		// set the colors for each of the different types of form fields
 		if($('.branded-colorpicker-all').length > 0) {
 			$('.branded-colorpicker-all').smallColorPicker({
 				colorValues: json_parse($('textarea#edit-initialcolorsAll').val())
 			});
-			
+
 		}
 		if($('.branded-colorpicker-primary').length > 0) {
 			$('.branded-colorpicker-primary').smallColorPicker({
 				colorValues: json_parse($('textarea#edit-initialcolorsPrimary').val())
 			});
 		}
-		
+
 		if($('.branded-colorpicker-secondary').length > 0) {
 			$('.branded-colorpicker-secondary').smallColorPicker({
 				colorValues: json_parse($('textarea#edit-initialcolorsSecondary').val())
@@ -87,12 +87,12 @@ jQuery(document).ready(function() {
 				colorValues: json_parse($('textarea#edit-initialcolorsSupport').val())
 			});
 		}
-		
-		
+
+
 		// configure the color picker for form fields that allow all/any color to be selected (different plugin)
 		$(".all-colorpicker").each(function(el) {
 			// set background color of field element so the user can see which color has been selected
-			$(this).css("background-color", $(this).val()); 
+			$(this).css("background-color", $(this).val());
 			// detect the brightness of the color selected, and set the text color to white or black accordingly
 			var element = $(this).get(0),
 		    rgb = window.getComputedStyle(element, null).backgroundColor;
@@ -110,7 +110,7 @@ jQuery(document).ready(function() {
 				$(this).css("color", '#FFFFFF');
 			}
 		});
-		
+
 		$('.all-colorpicker').ColorPicker({
 			onSubmit: function(hsb, hex, rgb, el) {
 				$(el).val('#' + hex);
@@ -124,14 +124,14 @@ jQuery(document).ready(function() {
 		.bind('keyup', function(){
 			$(this).ColorPickerSetColor(this.value);
 		});
-		
+
 	}
-	
+
 	if($('#horizontal-menu-container').length > 0) {
-	
+
 		// hide all 2nd level lists, until the user hovers over (then display the sub-list)
 		$('#horizontal-menu-container li ul').hide();
-		
+
 			$('#horizontal-menu-container li').hover(
 		        function(){
 		          $('ul:first', $(this)).show();
@@ -140,7 +140,7 @@ jQuery(document).ready(function() {
 		          $('ul', $(this)).hide();
 		        }
 		    );
-		    
+
 		// hide any 3rd level lists, even if the administrator has checked the "expand" box in the menu option
 	        $('#horizontal-menu-container li li').hover(
 	            function(){
@@ -149,29 +149,29 @@ jQuery(document).ready(function() {
 	            function() {}
 	        );
 	}
-        
-	if($('.featured-content-slider').length > 0) {    
+
+	if($('.featured-content-slider').length > 0) {
         /*
          * Featured Content Slider based on jquery cycle
-         * 
+         *
          */
-        
+
         $('.featured-content-slider')
         	.after('<div id="featured-content-slider-overlay">');
-        
-        $('.featured-content-slider .view-content').each(function(index, el) { 
-        	
+
+        $('.featured-content-slider .view-content').each(function(index, el) {
+
         	$(this).find('.views-field-title, .views-field-view-node, .views-field-teaser ').css(
-        			{ 'text-align': 'right', 'position': 'relative', 'top': '-' + $(this).find('.views-field-image-attach-images img').attr('height') / 4 + 'px' 
+        			{ 'text-align': 'right', 'position': 'relative', 'top': '-' + $(this).find('.views-field-image-attach-images img').attr('height') / 4 + 'px'
         		});
         	});
-        
+
         $('.featured-content-slider .view-content')
-        .before('<div id="featured-content-slider-nav">') 
-        .cycle({ 
-            fx:     'fade', 
-            speed:   1000, 
-            timeout: 5000, 
+        .before('<div id="featured-content-slider-nav">')
+        .cycle({
+            fx:     'fade',
+            speed:   1000,
+            timeout: 5000,
             pause:   1,
             cleartype: true,
             cleartypeNoBg: true,
@@ -180,41 +180,41 @@ jQuery(document).ready(function() {
                 var img = $(slide).children().eq(0).attr("src");
                 return '<li><a href="#"><img class="featured-content-slider-thumbnail" src="' + jQuery(slide).find('img').attr('src') + '" width="140" height="60" /></a></li>';
               },
-            //after: onAfter 
+            //after: onAfter
         });
         /*
-        function onAfter() { 
+        function onAfter() {
             $('#featured-content-slider-overlay').html('<p>' + this.alt + '</p>');
         }
         */
 	}
-	
+
 	if($('#edit-primermanager-selected-configuration').length > 0) {
-		
+
 		$('#edit-primermanager-selected-configuration').change(function() {
 			  /*alert('Handler for .change() called.');*/
-			
+
 			if($('#edit-primermanager-selected-configuration').val() != 'no-preset') {
-				
+
 				var selectedConfigKey = $('#edit-primermanager-selected-configuration').val();
 				var selectedConfiguration = presetConfigurations[selectedConfigKey].settings;
-				
-				$.each(selectedConfiguration, function(key, value) { 
-										
-					/* 
+
+				$.each(selectedConfiguration, function(key, value) {
+
+					/*
 					 * need to convert underscores from keys to hyphens to match the format of the form fields AND prepend with "edit-"
 					 * ie: key: "total_page_wrapper_top_offset" maps to form field: "edit-total-page-wrapper-top-offset"
 					*/
-					
+
 					$("#edit-" + key.replace(/_/g,"-")).val(value);
-					
+
 				});
-				
+
 			}
-			
-			
+
+
 		});
-		
+
 	}
-	
+
 });
