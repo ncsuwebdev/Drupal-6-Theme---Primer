@@ -18,6 +18,7 @@ body {
 	background: url('<?php echo theme_get_setting('background_image_url'); ?>') <?php if(!theme_get_setting('background_image_tile')): echo 'no-repeat'; endif; ?>;
 	<?php endif; ?>
 	background-color: <?php echo theme_get_setting('background_color'); ?>;
+        color: <?php echo theme_get_setting('site_font_color'); ?>;
 }
 .messages, .warning, .error {
     padding: 5px;
