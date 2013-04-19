@@ -12,6 +12,12 @@ p,fieldset,table {
     margin-bottom:1em;
 }
 
+a:focus {
+    outline: #CCC;
+    outline-style: dotted;
+    outline-width: medium;
+}
+
 form, td {
     background-color: inherit;
 }
@@ -55,6 +61,23 @@ legend {
     width: 1px;
     height: 1px;
     overflow:hidden;
+}
+.skipNav a {
+    position: absolute;
+    top: 50px;
+    left: 600px;
+    z-index: -100;
+    color: #000;
+}
+.skipNav a:focus, .skipNav a:active, .skipNav a:hover {
+    z-index: 99999;
+    width: 25em;
+    height: 2em;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 1.3em;
+    color: #CC0000;
 }
 
 /*----------------------------------------------------------------------------------------------------------
