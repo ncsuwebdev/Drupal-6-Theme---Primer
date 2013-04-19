@@ -12,26 +12,26 @@
             <div class="access skipNav">
                     <h2 role="navigation" aria-label="Accessibility Navigation List">Accessibility Navigation:</h2>
                             <ul>
-                            <li><a href="#main-content" title="Skip to main content area">Skip to Main Content Area</a></li>
+                            <li><a href="#main-content-access" title="Skip to main content area">Skip to Main Content Area</a></li>
                             <?php if($breadcrumb): ?>
-                                    <li><a href="#breadcrumb" title="Skip to breadcrumbs">Skip to breadcrumb list</a></li>
+                                    <li><a href="#breadcrumb-access" title="Skip to breadcrumbs">Skip to breadcrumb list</a></li>
                             <?php endif; ?>
                             <?php if($horizontal_main_menu): ?>
-                                    <li><a href="#horizontal-main-menu" title="Skip to main horizontal main menu">Skip to main horizontal menu</a></li>
+                                    <li><a href="#horizontal-main-menu-access" title="Skip to main horizontal main menu">Skip to main horizontal menu</a></li>
                             <?php endif; ?>
                             <?php if($horizontal_secondary_menu): ?>
-                                    <li><a href="#horizontal-secondary-menu" title="Skip to secondary horizontal main menu">Skip to secondary horizontal menu</a></li>
+                                    <li><a href="#horizontal-secondary-menu-access" title="Skip to secondary horizontal main menu">Skip to secondary horizontal menu</a></li>
                             <?php endif; ?>
                             <?php if($page['region-widths']['show-left-region']): ?>
-                                    <li><a href="#left-sidebar" title="Skip to left sidebar (primary navigation area)">Skip to left sidebar (primary navigation area)</a></li>
+                                    <li><a href="#left-sidebar-access" title="Skip to left sidebar (primary navigation area)">Skip to left sidebar (primary navigation area)</a></li>
                             <?php endif; ?>
                             <?php if($page['region-widths']['show-right-region']): ?>
-                                <li><a href="#right-sidebar" title="Skip to right sidebar">Skip to right sidebar</a></li>
+                                <li><a href="#right-sidebar-access" title="Skip to right sidebar">Skip to right sidebar</a></li>
                             <?php endif; ?>
                             <?php if($page['header_search']): ?>
-                                <li><a href="#site-search" title="Skip to search this site">Skip to search this site</a></li>
+                                <li><a href="#site-search-access" title="Skip to search this site">Skip to search this site</a></li>
                             <?php endif; ?>
-                            <li><a href="#footer" title="Skip to footer">Skip to footer region</a></li>
+                            <li><a href="#footer-access" title="Skip to footer">Skip to footer region</a></li>
                             </ul>
             </div>
             <!-- end accessibility links -->
@@ -66,7 +66,7 @@
 								</div>
 								<?php endif; ?>
 								<div id="head-forms" class="<?php if($header_small_right_menu): echo 'with-menu'; else: echo 'no-menu'; endif; ?>">
-									<div class="access" id="site-search">Search this site</div>    	
+									<div class="access" id="site-search-access">Search this site</div>    	
 								   	<div role="search" aria-label="Search this website" id="header-site-search">
 										<?php print $header_search; ?>
 									</div>
@@ -82,13 +82,13 @@
 				<div id="horizontal-menu-container" class="grid_<?php echo $page['region-widths']['maxPageWidth']; ?>">
 					<?php if($horizontal_main_menu): ?>
 						<div id="horizontal-main-menu">
-							<div class="access" id="horizontal-main-menu">Horizontal Main Menu</div>
+							<div class="access" id="horizontal-main-menu-access">Horizontal Main Menu</div>
 							<?php print $horizontal_main_menu; ?>
 						</div>
 					<?php endif; ?>
 					<?php if($horizontal_secondary_menu): ?>
 						<div id="horizontal-secondary-menu">
-							<div class="access" id="horizontal-secondary-menu">Horizontal Secondary Menu</id>
+							<div class="access" id="horizontal-secondary-menu-access">Horizontal Secondary Menu</id>
 							<?php print $horizontal_secondary_menu; ?>
 						</div>
 					<?php endif; ?>
@@ -100,7 +100,7 @@
 				<div id="content-area" class="grid_<?php echo $page['region-widths']['maxPageWidth']; ?> <?php if($page['region-widths']['show-left-region']): echo 'content-area-background-with-left-column'; else: echo 'content-area-background-without-left-column'; endif;?>">
 					<!-- begin grid for left side of the layout -->
 					<?php if($page['region-widths']['show-left-region']): ?>
-						<div class="access" id="left-sidebar" role="navigation" aria-label="Left Side Bar (Primary Navigation Area)">Left Side Bar (Primary Navigation Area)</div>    	
+						<div class="access" id="left-sidebar-access" role="navigation" aria-label="Left Side Bar (Primary Navigation Area)">Left Side Bar (Primary Navigation Area)</div>    	
 						<div class="grid_<?php echo $page['region-widths']['left-region-width']; ?>">
 							<div id="region-left-menu-area-container" class="container_<?php echo $page['region-widths']['left-region-width']; ?>">
 								<div id="region-left-menu" class="grid_<?php echo $page['region-widths']['left-region-width']; ?>">
@@ -151,7 +151,7 @@
 							<div id="region-center-content-container" class="container_<?php echo $page['region-widths']['center-region-width']; ?>">
 								<?php if ($breadcrumb && theme_get_setting('show_breadcrumbs')): ?>
 								<div id="region-breadcrumbs" class="grid_<?php echo $page['region-widths']['center-region-width']; ?>">
-									<div class="access" id="breadcrumb">Breadcrumbs</div>    	
+									<div class="access" id="breadcrumb-access">Breadcrumbs</div>    	
 									<div id="breadcrumb" class="alpha omega" role="navigation" aria-label="Breadcrumb Links List">
 										<?php print $breadcrumb; ?>
 									</div>
@@ -164,7 +164,7 @@
                                         </div>
                                     <?php endif; ?>
                                     <div id="main-content" role="main" aria-label="Main Content Area">	
-										<div class="access" id="main-content"></div>
+										<div class="access" id="main-content-access"></div>
 									    <?php if ($mission): print '<div id="mission">'. $mission .'</div>'; endif; ?>
 									    <?php if ($tabs): print '<div id="tabs-wrapper" class="clear-block">'; endif; ?>
 									    <?php if ($title): print '<div id="page-title"><h1'. ($tabs ? ' class="with-tabs"' : '') .'>'. $title .'</h1></div>'; endif; ?>
@@ -185,7 +185,7 @@
 								</div>
 							</div>
 							<?php if($page['region-widths']['show-right-region']): ?>
-								<div class="access" id="right-sidebar">Right Side Bar</div>    
+								<div class="access" id="right-sidebar-access">Right Side Bar</div>    
 								<div id="region-right-sidebar-container" class="container_<?php echo $page['region-widths']['right-region-width']; ?> <?php if ($breadcrumb && theme_get_setting('show_breadcrumbs') && $page['region-widths']['show-right-region']): echo 'right-sidebar-with-breadcrumbs'; endif; ?>">
 										<div id="region-right-sidebar" class="grid_<?php echo $page['region-widths']['right-region-width']; ?>">
 										<?php if($right_above_sidebar): ?>
@@ -222,7 +222,7 @@
 		<!-- Start footer area (everything underneath the main content area) -->
         <div id="footer-separator" class="grid_<?php echo ($page['region-widths']['maxPageWidth']); ?>"></div>
 		<div id="region-footer-container" class="container_<?php echo $page['region-widths']['maxPageWidth']; ?>">
-			<div class="access" id="footer">Footer</div>    
+			<div class="access" id="footer-access">Footer</div>    
 			<?php if($footer_menu): ?>
 				<div id="footer-horizontal-menu" class="grid_<?php echo $page['region-widths']['maxPageWidth']; ?>" role="contentinfo" aria-label="Footer">
 					<?php print $footer_menu; ?>
