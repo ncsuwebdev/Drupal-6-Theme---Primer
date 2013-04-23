@@ -439,12 +439,13 @@ function primer_comment_submitted($comment) {
  * Returns the themed submitted-by string for the node.
  */
 function primer_node_submitted($node) {
-  return t('!datetime — !username',
+  return t('!datetime',
     array(
       '!username' => theme('username', $node),
-      '!datetime' => format_date($node->created),
+      '!datetime' => 'Created: ' . format_date($node->created) . ', Last Updated: ' . format_date($node->changed),
     ));
 }
+
 
 /*
  * potentially obsolete function
