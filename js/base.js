@@ -179,7 +179,7 @@ jQuery(document).ready(function() {
             pagerAnchorBuilder: function(idx, slide) {
                 var img = $(slide).children().eq(0).attr("src");
                 return '<li><a href="#"><img class="featured-content-slider-thumbnail" src="' + jQuery(slide).find('img').attr('src') + '" width="140" height="60" /></a></li>';
-              },
+              }
             //after: onAfter
         });
         /*
@@ -217,19 +217,5 @@ jQuery(document).ready(function() {
 
   }
   
-    /*
-    * 
-    * converts target="_blank" links to a more accessible format
-    * 
-    * adds a span and text that is displayed on hover, active, and focus
-    *         
-    */
-    $("a[target=_blank]").each(function(index, el) { 
-        var el = $(el); 
-        el.html(el.html() + " <span class='linkTargetBlank'>(This link opens in a new window)</span>"); 
-        el.addClass('linkTargetBlankParent');
-    });
-
-
 
 });
