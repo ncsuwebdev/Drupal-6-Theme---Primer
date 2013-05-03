@@ -9,8 +9,8 @@
 	</head>
 	<body>
             <!-- start accessibility links -->
-            <div class="access skipNav">
-                    <h2 role="navigation" aria-label="Accessibility Navigation List">Accessibility Navigation:</h2>
+            <div class="access skipNav" role="navigation" aria-label="Accessibility Navigation List">
+                    <h2>Accessibility Navigation:</h2>
                             <ul>
                             <li><a href="#main-content-access" title="Skip to main content area">Skip to Main Content Area</a></li>
                             <?php if($breadcrumb): ?>
