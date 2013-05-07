@@ -9,11 +9,11 @@
 	</head>
 	<body>
             <!-- start accessibility links -->
-            <div class="access skipNav">
-                    <h2 role="navigation" aria-label="Accessibility Navigation List">Accessibility Navigation:</h2>
+            <div class="access skipNav" role="navigation" aria-label="Accessibility Navigation List">
+                    <h2>Accessibility Navigation:</h2>
                             <ul>
                             <li><a href="#main-content-access" title="Skip to main content area">Skip to Main Content Area</a></li>
-                            <?php if($breadcrumb): ?>
+                            <?php if ($breadcrumb && theme_get_setting('show_breadcrumbs')): ?>
                                     <li><a href="#breadcrumb-access" title="Skip to breadcrumbs">Skip to breadcrumb list</a></li>
                             <?php endif; ?>
                             <?php if($horizontal_main_menu): ?>
