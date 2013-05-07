@@ -88,7 +88,7 @@
 					<?php endif; ?>
 					<?php if($horizontal_secondary_menu): ?>
 						<div id="horizontal-secondary-menu">
-							<div class="access" id="horizontal-secondary-menu-access">Horizontal Secondary Menu</id>
+							<div class="access" id="horizontal-secondary-menu-access">Horizontal Secondary Menu</div>
 							<?php print $horizontal_secondary_menu; ?>
 						</div>
 					<?php endif; ?>
