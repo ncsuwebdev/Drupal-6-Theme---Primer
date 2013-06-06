@@ -9,7 +9,7 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li, 
 form, label, legend, fieldset, 
-table, caption, tbody, tfoot, thead, tr, th, td {
+caption {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -44,7 +44,12 @@ del {
 }
 
 /* tables still need 'cellspacing="0"' in the markup */
-table {
+table, tbody, tfoot, thead, tr, th, td {
 	border-collapse: collapse;
 	border-spacing: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
 }
