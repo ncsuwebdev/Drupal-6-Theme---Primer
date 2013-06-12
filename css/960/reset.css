@@ -7,9 +7,8 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li, 
-form, label, legend, fieldset, 
-caption {
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -18,6 +17,16 @@ caption {
 	vertical-align: baseline;
 	background: transparent;
 }
+
+table, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+}
+
 body {
 	line-height: 1;
 }
@@ -44,12 +53,7 @@ del {
 }
 
 /* tables still need 'cellspacing="0"' in the markup */
-table, tbody, tfoot, thead, tr, th, td {
+table {
 	border-collapse: collapse;
 	border-spacing: 0;
-        margin: 0;
-        padding: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: transparent;
 }

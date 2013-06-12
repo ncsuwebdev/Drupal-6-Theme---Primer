@@ -714,6 +714,17 @@ table.sticky-enabled td, table.views-table td {
     border-top: 1px solid #CCC;
 }
 
+/* basic formatting for tables that appear in the main content area */
+#main-content .node table {
+    margin: 1em;
+    border-collapse: collapse;
+}
+
+#main-content .node table td, #main-content .node table th {
+    padding: 0.3em;
+    border: 1px #ccc solid;
+}
+
 /* terms / taxonomy styles at the base of the node */
 .terms-title {
     float: left;
